@@ -1,0 +1,1 @@
+curl -uadmin:admin -X PUT "http://localhost:8080/alfresco/s/cmis/pwc/i/b977cad7-6cf4-4fe8-b306-a8ccf6ffd783?checkin=true&checkinComment=minor%20changes" -H "Content-Type: application/atom+xml" -d @/Users/jpotts/testCheckinSampleA.atom.xml
