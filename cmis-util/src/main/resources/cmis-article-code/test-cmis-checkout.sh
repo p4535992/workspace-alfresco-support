@@ -1,0 +1,1 @@
+curl -uadmin:admin -X POST "http://localhost:8080/alfresco/s/cmis/checkedout" -H "Content-Type: application/atom+xml;type=entry;charset=UTF-8" -d @/Users/jpotts/testCheckoutSampleA.atom.xml
