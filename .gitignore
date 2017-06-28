@@ -4,3 +4,8 @@
 /.metadata/
 /.recommenders/
 /alfresco-api-java-examples/bin
+/share-sdk-4.2/target
+/src-ricerca-cloud/target
+/my-aio-project/integration-tests/target
+/my-aio-project/my-aio-project-platform-jar/target
+/my-aio-project/my-aio-project-share-jar/target
