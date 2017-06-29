@@ -9,3 +9,8 @@
 /my-aio-project/integration-tests/target
 /my-aio-project/my-aio-project-platform-jar/target
 /my-aio-project/my-aio-project-share-jar/target
+/alfresco-allinone-4.2/solr/target
+/alfresco-allinone-4.2/share/target
+/alfresco-allinone-4.2/runner/target
+/alfresco-allinone-4.2/amp/target
+/alfresco-allinone-4.2/alfresco/target
