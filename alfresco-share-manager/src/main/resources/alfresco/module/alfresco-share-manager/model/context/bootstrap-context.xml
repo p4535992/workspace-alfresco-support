@@ -1,0 +1,8 @@
+<!-- Registration of new models -->
+<bean id="${project.artifactId}_dictionaryBootstrap" parent="dictionaryModelBootstrap" depends-on="dictionaryBootstrap">
+    <property name="models">
+        <list>
+            <value>alfresco/module/${project.artifactId}/model/scModel.xml</value>
+        </list>
+    </property>
+</bean>

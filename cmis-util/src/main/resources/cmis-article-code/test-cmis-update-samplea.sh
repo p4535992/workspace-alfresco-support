@@ -1,0 +1,1 @@
+curl -uadmin:admin -X PUT "http://localhost:8080/alfresco/s/cmis/i/777aad53-8b18-4f1f-80f6-e420936b3def" -H "Content-Type: application/atom+xml" -d @/Users/jpotts/testUpdateSampleA.atom.xml

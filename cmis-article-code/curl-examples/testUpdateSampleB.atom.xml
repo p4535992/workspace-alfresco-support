@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<entry xmlns="http://www.w3.org/2005/Atom" xmlns:app="http://www.w3.org/2007/app" xmlns:cmisra="http://docs.oasis-open.org/ns/cmis/restatom/200908/" xmlns:cmis="http://docs.oasis-open.org/ns/cmis/core/200908/" xmlns:alf="http://www.alfresco.org">
+    <title>sample-b.pdf</title>
+    <summary>Sample whitepaper B</summary>
+    <cmisra:object>
+       <cmis:properties>
+	 <cmis:propertyString propertyDefinitionId="sc:campaign"><cmis:value>Social Shopping</cmis:value><cmis:value>Application Syndication</cmis:value></cmis:propertyString>
+       </cmis:properties>
+    </cmisra:object>
+</entry>
