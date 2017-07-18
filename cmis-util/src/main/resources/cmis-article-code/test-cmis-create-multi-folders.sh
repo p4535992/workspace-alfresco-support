@@ -1,4 +1,0 @@
-curl -uadmin:admin -X POST "http://localhost:8080/alfresco/s/cmis/p/children" -H "Content-Type: application/atom+xml" -d @/Users/jpotts/testCreateSomecoFolder.atom.xml
-curl -uadmin:admin -X POST "http://localhost:8080/alfresco/s/cmis/p/Someco/children" -H "Content-Type: application/atom+xml" -d @/Users/jpotts/testCreateMarketingFolder.atom.xml
-curl -uadmin:admin -X POST "http://localhost:8080/alfresco/s/cmis/p/Someco/Marketing/children" -H "Content-Type: application/atom+xml" -d @/Users/jpotts/testCreateWhitepapersFolder.atom.xml
-curl -uadmin:admin -X POST "http://localhost:8080/alfresco/s/cmis/p/Someco/children" -H "Content-Type: application/atom+xml" -d @/Users/jpotts/testCreateSalesFolder.atom.xml

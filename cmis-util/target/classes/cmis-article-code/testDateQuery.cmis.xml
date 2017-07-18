@@ -1,5 +1,0 @@
-<cmis:query xmlns:cmis="http://docs.oasis-open.org/ns/cmis/core/200908/">
-  <cmis:statement><![CDATA[SELECT cmis:name,sc:published from sc:whitepaper where sc:published >= '2009-11-10T00:00:00.000-06:00' and sc:published < '2009-11-18T00:00:00.000-06:00']]></cmis:statement>
-  <cmis:skipCount>0</cmis:skipCount>
-  <cmis:maxItems>5</cmis:maxItems>
-</cmis:query>

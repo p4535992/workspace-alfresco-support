@@ -1,6 +1,0 @@
-#FileLock
-#Fri May 12 19:47:52 CEST 2017
-hostName=192.168.1.11
-id=15bfdc62472f58133f3a5fdd2e1b718243efb1fce43
-method=file
-server=192.168.1.11\:49778

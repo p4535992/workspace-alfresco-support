@@ -1,7 +1,0 @@
-target/
-.DS_Store
-.project
-.settings/
-.classpath
-.externalToolBuilders
-maven-eclipse.xml

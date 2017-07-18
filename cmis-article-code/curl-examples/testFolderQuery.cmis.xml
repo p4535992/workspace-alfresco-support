@@ -1,5 +1,0 @@
-<cmis:query xmlns:cmis="http://docs.oasis-open.org/ns/cmis/core/200908/">
-  <cmis:statement><![CDATA[SELECT cmis:name from cmis:document where in_tree('workspace://SpacesStore/3935ce21-9f6f-4d46-9e22-4f97e1d5d9d8') and contains('contract') and cm:description like '%sign%']]></cmis:statement>
-  <cmis:skipCount>0</cmis:skipCount>
-  <cmis:maxItems>5</cmis:maxItems>
-</cmis:query>
