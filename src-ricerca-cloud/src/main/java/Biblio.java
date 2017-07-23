@@ -17,10 +17,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
+/**
+ * 
+ *
+ * e.g. 127.0.0.1:4567/bulkimport?path=C:\Users\tenti\Desktop\ALFRESCO_ONE_5X_DEVELOPERS_GUIDE_SECOND_EDITION
+ */
 public class Biblio {
 
-    final private static String basepath = "http://192.168.99.100:8080/alfresco/api/-default-/public/";
+    final private static String basepath = "http://127.0.0.1:8080/alfresco/api/-default-/public/";
     final private static String search = "search/versions/1/search";
     final private static String upload = "alfresco/versions/1/nodes/-shared-/children";
     final private static String content = "alfresco/versions/1/nodes/%%ID%%/content";
@@ -83,6 +87,19 @@ public class Biblio {
             );
 
         });
+        
+        /*
+         * Agganciare una logica autorizzativa a tutte le route che rispondono ai verbi POST, PUT e DELETE.
+         */
+	    Spark.before((request,response)->{
+	        String method = request.requestMethod();
+	        if(method.equals("POST") || method.equals("PUT") || method.equals("DELETE")){
+	                  String authentication = request.headers("Authentication");
+	                  if(!"PASSWORD".equals(authentication)){
+	                	  Spark.halt(401, "User Unauthorized");
+	                  }
+	        }
+	    });
 
 
 
