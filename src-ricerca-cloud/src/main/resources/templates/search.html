@@ -48,7 +48,7 @@
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
             <div class="list-group ">
-                <a th:href="@{'http://192.168.99.100:8080/alfresco/api/-default-/public/alfresco/versions/1/nodes/' + ${a.get('id').asText()} + '/content?attachment=true'}" class="list-group-item list-group-item-success" th:each="a : ${answer}">
+                <a th:href="@{'http://127.0.0.1:8080/alfresco/api/-default-/public/alfresco/versions/1/nodes/' + ${a.get('id').asText()} + '/content?attachment=true'}" class="list-group-item list-group-item-success" th:each="a : ${answer}">
                     <span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span>
                     <th:block th:text="${a.get('name').asText()}"></th:block>
                     <span class="badge" th:text="|${a.get('content').get('sizeInBytes').asInt()/1024} kb|"></span>

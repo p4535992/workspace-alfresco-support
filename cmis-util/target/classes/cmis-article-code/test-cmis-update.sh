@@ -1,1 +1,0 @@
-curl -uadmin:admin -X PUT "http://localhost:8080/alfresco/s/cmis/s/workspace:SpacesStore/i/9361bb2e-30f6-4d97-a7e3-ec97777bae46" -H "Content-Type: application/atom+xml;type=entry" -d @/Users/jpotts/testUpdateSampleB.atom.xml
