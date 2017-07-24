@@ -1,6 +1,0 @@
-<config>
-   <filters>
-      <filter type="active" />
-      <filter type="inactive" />
-   </filters>
-</config>
