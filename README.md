@@ -10,4 +10,4 @@ https://github.com/jpotts/alfresco-developer-series.git
 
 https://github.com/jpotts/share-announcements.git
 
-https://github.com/covolution/activiti-custom-reports.git
+https://github.com/gravitonian/all-in-one-spock-testing
