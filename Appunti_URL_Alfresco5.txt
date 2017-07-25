@@ -1,0 +1,27 @@
+#You can easily check that your module is properly installed in your 
+#Alfresco repository, just open your browser on the 
+#following URL:
+http://localhost:8080/alfresco/s/api/dictionary
+
+#You can as well use the following URL that will show you only the types
+#defined in the SomeCo content model: 
+http://localhost:8080/alfresco/s/api/classes?nsp=sc
+
+#To validate that the property has been added to the type: 
+http://localhost:8080/alfresco/s/api/classes/sc_marketingDoc
+
+#To validate that the constraint is properly defined: 
+http://localhost:8080/alfresco/s/api/classes/sc_marketingDoc/property/sc_campaign
+
+#You can as well use the following URL to check that your association is properly defined: 
+http://localhost:8080/alfresco/s/api/classes/sc_doc
+
+#Alfresco should start cleanly without making any model-related complaints. 
+#Using the two following URLs, you can check that the aspect have been created properly:
+
+http://localhost:8080/alfresco/service/api/classes/sc_webable
+
+http://localhost:8080/alfresco/service/api/classes/sc_clientRelated 
+
+#You can check that everything is properly defined by opening this URL :
+http://localhost:8080/alfresco/service/api/classes?nsp=sc
