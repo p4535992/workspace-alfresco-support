@@ -376,7 +376,7 @@
     <!--
         Alfresco Maven Repositories
         -->
-        <!--  
+    
     <repositories>
         <repository>
             <id>alfresco-public</id>
@@ -390,7 +390,7 @@
                 <updatePolicy>daily</updatePolicy>
             </snapshots>
         </repository>
-       Alfresco Enterprise Edition Artifacts, put username/pwd for server in settings.xml
+      <!--  Alfresco Enterprise Edition Artifacts, put username/pwd for server in settings.xml -->
         <repository>
             <id>alfresco-private-repository</id>
             <url>https://artifacts.alfresco.com/nexus/content/groups/private</url>
@@ -410,7 +410,7 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-    -->
+  
   <modules>
     <module>alfresco-allinone-abd-platform-jar</module>
     <module>alfresco-allinone-abd-share-jar</module>

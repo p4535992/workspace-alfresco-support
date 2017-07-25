@@ -20,7 +20,8 @@ import java.util.Map;
 /**
  * 
  *
- * e.g. 127.0.0.1:4567/bulkimport?path=C:\Users\tenti\Desktop\ALFRESCO_ONE_5X_DEVELOPERS_GUIDE_SECOND_EDITION
+ * e.g. 127.0.0.1:4567/bulkimport?path=<PATH TO FOLDER OR FILE>
+ * e.g. 127.0.0.1:4567/search?q=<KEYWORD>
  */
 public class Biblio {
 

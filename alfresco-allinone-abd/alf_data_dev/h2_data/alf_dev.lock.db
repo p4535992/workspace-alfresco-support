@@ -1,6 +1,6 @@
 #FileLock
-#Sun Jul 23 17:04:56 CEST 2017
-hostName=DESKTOP-E05EGSP
-id=15d6ffab3b79b91fb0ee98bd1a3f96b388bc913307f
+#Tue Jul 25 17:32:30 CEST 2017
+hostName=Pancio-PC
+id=15d7a60cb427e35a135365e6ca1b8e750afe6462814
 method=file
-server=192.168.56.1\:15586
+server=192.168.1.207\:56800

@@ -67,7 +67,7 @@
                     <multiple>true</multiple> 
                     <constraints> 
                         <constraint ref="sc:campaignList" /> 
-                    </constraints> 
+                    </constraints>                    
                 </property> 
             </properties> 
         </type> 
