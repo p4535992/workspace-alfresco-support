@@ -1,0 +1,8 @@
+alf_data_dev
+target
+.settings
+.project
+.classpath
+alfresco.log
+share.log
+.idea

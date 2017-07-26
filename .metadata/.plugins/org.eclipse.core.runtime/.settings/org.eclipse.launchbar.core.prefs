@@ -1,0 +1,10 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:alfresco-allinone-abd INSTALL+RUN,org.eclipse.launchbar.core.descriptorType.default\:alfresco-allinone-abd INSTALL,org.eclipse.launchbar.core.descriptorType.default\:digitalSigningAlfresco INSTALL,org.eclipse.launchbar.core.descriptorType.default\:digitalSigningShare INSTALL
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:New_configuration/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:New_configuration/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:alfresco-allinone-abd\ INSTALL+RUN/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:alfresco-allinone-abd\ INSTALL+RUN/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:alfresco-allinone-abd\ INSTALL/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:alfresco-allinone-abd\ INSTALL/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

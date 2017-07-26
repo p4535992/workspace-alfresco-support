@@ -1,0 +1,7 @@
+<alfresco-config>
+    <config replace="true">
+        <I18N>
+            <tiny-mce-supported-locales>en,de,es,fr,it,ja,nl,zh_CN,ru,nb,pt_BR,sv,fi</tiny-mce-supported-locales>
+        </I18N>
+    </config>
+</alfresco-config>

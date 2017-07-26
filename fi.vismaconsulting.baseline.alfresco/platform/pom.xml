@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>fi.vismaconsulting.baseline.alfresco</groupId>
+        <artifactId>parent</artifactId>
+        <version>5.2.f.0</version>
+        <relativePath>../parent/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>platform</artifactId>
+    <version>5.2.f.4</version><!-- 5.2.f.4 -->
+    <packaging>pom</packaging>
+
+    <properties>
+        <tomcat.version>7.0.73</tomcat.version>
+        <log4j.version>1.2.17</log4j.version>
+        <mysql.version>5.1.39</mysql.version>
+        <h2.version>1.4.192</h2.version>
+
+        <platform.dir>${project.build.directory}/platform</platform.dir>
+
+        <tomcat.dir>${platform.dir}/tomcat</tomcat.dir>
+        <tomcat.source>org.apache.tomcat:tomcat:zip</tomcat.source>
+
+        <tomcat.web.sessionTimeout>240</tomcat.web.sessionTimeout>
+        <tomcat.context.useHttpOnly>false</tomcat.context.useHttpOnly>
+
+        <tomcat.server.sslPort>443</tomcat.server.sslPort>
+        <tomcat.server.ajpPort>8009</tomcat.server.ajpPort>
+        <tomcat.server.httpPort>8080</tomcat.server.httpPort>
+        <tomcat.server.commandPort>8005</tomcat.server.commandPort>
+        <tomcat.server.uriEncoding>UTF-8</tomcat.server.uriEncoding>
+        <tomcat.server.connectionTimeout>20000</tomcat.server.connectionTimeout>
+
+        <tomcat.env.jmxOpts/>
+        <tomcat.env.jvmOpts>-Xms512m -Xmx1024m -XX:+UseG1GC -XX:-DisableExplicitGC</tomcat.env.jvmOpts>
+        <tomcat.env.javaOpts/>
+        <tomcat.env.jrebelOpts/>
+        <tomcat.env.jrebelAgent/>
+
+        <tomcat.override.enabled>true</tomcat.override.enabled>
+        <tomcat.unifiedLogging.enabled>true</tomcat.unifiedLogging.enabled>
+
+        <alfresco.libext.sources>
+            mysql:mysql-connector-java:jar,
+            postgresql:postgresql:jar,
+            com.h2database:h2:jar,
+            org.alfresco:alfresco-repository:jar:h2scripts
+        </alfresco.libext.sources>
+
+        <platform.skip>false</platform.skip>
+        <platform.attach>true</platform.attach>
+        <platform.skip.package>false</platform.skip.package>
+
+        <config.common.skip>false</config.common.skip>
+        <config.common.filtering>true</config.common.filtering>
+
+        <!-- amp versions -->
+        <baseline.version>5.2.f.0</baseline.version>
+        <baseline-share.version>5.2.f.0</baseline-share.version>
+        <baseline-solr4.version>5.2.f.0</baseline-solr4.version>
+
+        <i18n.version>5.2.f.4</i18n.version>
+        <i18n-share.version>5.2.f.4</i18n-share.version>
+
+        <vfs.version>5.2.f.2</vfs.version>
+        <exif-transformer.version>5.2.f.0</exif-transformer.version>
+        <site-templates.version>5.2.f.0</site-templates.version>
+        <site-templates-share.version>5.2.f.0</site-templates-share.version>
+        <customize-site-logo.version>5.2.f.0</customize-site-logo.version>
+        <customize-site-logo-share.version>5.2.f.0</customize-site-logo-share.version>
+        <visma-branding-share.version>5.2.f.0</visma-branding-share.version>
+
+        <!-- override versions -->
+        <alfresco-repository-patch.version>5.2.f.2</alfresco-repository-patch.version>
+    </properties>
+
+    <dependencies>
+
+        <!-- tomcat -->
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat</artifactId>
+            <version>${tomcat.version}</version>
+            <type>zip</type>
+        </dependency>
+
+        <!-- override support -->
+        <dependency>
+            <groupId>fi.vismaconsulting.platform.tomcat</groupId>
+            <artifactId>override-support</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!-- unified logging -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>fi.vismaconsulting.platform</groupId>
+            <artifactId>platform-logging</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tomcat.extras</groupId>
+            <artifactId>tomcat-extras-juli</artifactId>
+            <version>${tomcat.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tomcat.extras</groupId>
+            <artifactId>tomcat-extras-juli-adapters</artifactId>
+            <version>${tomcat.version}</version>
+        </dependency>
+
+        <!-- alfresco libext -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>${h2.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.alfresco</groupId>
+            <artifactId>alfresco-repository</artifactId>
+            <version>${alfresco.version}</version>
+            <classifier>h2scripts</classifier>
+        </dependency>
+
+        <!-- alfresco, share, amps -->
+
+        <dependency>
+            <groupId>org.alfresco</groupId>
+            <artifactId>alfresco-platform</artifactId>
+            <version>${alfresco.version}</version>
+            <type>war</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.alfresco</groupId>
+            <artifactId>alfresco-share-services</artifactId>
+            <version>${share.version}</version>
+            <type>amp</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.alfresco</groupId>
+            <artifactId>share</artifactId>
+            <version>${share.version}</version>
+            <type>war</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.alfresco</groupId>
+            <artifactId>alfresco-solr4</artifactId>
+            <version>${alfresco.version}</version>
+            <type>war</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.alfresco</groupId>
+            <artifactId>alfresco-solr4</artifactId>
+            <version>${alfresco.version}</version>
+            <classifier>config</classifier>
+            <type>zip</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.alfresco</groupId>
+            <artifactId>alfresco-server-root</artifactId>
+            <version>${alfresco.version}</version>
+            <type>war</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.alfresco.aos-module</groupId>
+            <artifactId>alfresco-vti-bin</artifactId>
+            <version>1.1.5</version>
+            <type>war</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.alfresco.aos-module</groupId>
+            <artifactId>alfresco-aos-module</artifactId>
+            <version>1.1.6</version>
+            <type>amp</type>
+        </dependency>
+
+        <!-- alfresco baseline -->
+        <dependency>
+            <groupId>fi.vismaconsulting.baseline.alfresco</groupId>
+            <artifactId>baseline</artifactId>
+            <version>${baseline.version}</version>
+            <type>amp</type>
+        </dependency>
+        <dependency>
+            <groupId>fi.vismaconsulting.baseline.alfresco</groupId>
+            <artifactId>baseline-share</artifactId>
+            <version>${baseline-share.version}</version>
+            <type>amp</type>
+        </dependency>
+        <dependency>
+            <groupId>fi.vismaconsulting.baseline.alfresco</groupId>
+            <artifactId>baseline-solr4</artifactId>
+            <version>${baseline-solr4.version}</version>
+            <type>amp</type>
+        </dependency>
+
+        <!-- bundled overrides -->
+        <dependency>
+            <groupId>fi.vismaconsulting.baseline.alfresco</groupId>
+            <artifactId>alfresco-repository-patch</artifactId>
+            <version>${alfresco-repository-patch.version}</version>
+            <type>jar</type>
+        </dependency>
+
+        <!-- bundled amps -->
+        <dependency>
+            <groupId>fi.vismaconsulting.baseline.alfresco</groupId>
+            <artifactId>i18n</artifactId>
+            <version>${i18n.version}</version>
+            <type>amp</type>
+        </dependency>
+        <dependency>
+            <groupId>fi.vismaconsulting.baseline.alfresco</groupId>
+            <artifactId>i18n-share</artifactId>
+            <version>${i18n-share.version}</version>
+            <type>amp</type>
+        </dependency>
+        <dependency>
+            <groupId>fi.vismaconsulting.baseline.alfresco</groupId>
+            <artifactId>vfs</artifactId>
+            <version>${vfs.version}</version>
+            <type>amp</type>
+        </dependency>
+        <dependency>
+            <groupId>fi.vismaconsulting.baseline.alfresco</groupId>
+            <artifactId>exiftool-transformer</artifactId>
+            <version>${exif-transformer.version}</version>
+            <type>amp</type>
+        </dependency>
+        <dependency>
+            <groupId>fi.vismaconsulting.baseline.alfresco</groupId>
+            <artifactId>site-templates</artifactId>
+            <version>${site-templates.version}</version>
+            <type>amp</type>
+        </dependency>
+        <dependency>
+            <groupId>fi.vismaconsulting.baseline.alfresco</groupId>
+            <artifactId>site-templates-share</artifactId>
+            <version>${site-templates-share.version}</version>
+            <type>amp</type>
+        </dependency>
+        <dependency>
+            <groupId>fi.vismaconsulting.baseline.alfresco</groupId>
+            <artifactId>customize-site-logo</artifactId>
+            <version>${customize-site-logo.version}</version>
+            <type>amp</type>
+        </dependency>
+        <dependency>
+            <groupId>fi.vismaconsulting.baseline.alfresco</groupId>
+            <artifactId>customize-site-logo-share</artifactId>
+            <version>${customize-site-logo-share.version}</version>
+            <type>amp</type>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+               <!--
+                <plugin>
+                    <groupId>fi.vismaconsulting.maven.plugins</groupId>
+                    <artifactId>platform-maven-plugin</artifactId>
+                    <version>1.0</version>
+                    <configuration>
+                        <tomcatDir>${tomcat.dir}</tomcatDir>
+                        <tomcatSource>${tomcat.source}</tomcatSource>
+                        <tomcat>
+                            <web>
+                                <sessionTimeout>${tomcat.web.sessionTimeout}</sessionTimeout>
+                            </web>
+
+                            <context>
+                                <useHttpOnly>${tomcat.context.useHttpOnly}</useHttpOnly>
+                            </context>
+
+                            <server>
+                                <sslPort>${tomcat.server.sslPort}</sslPort>
+                                <ajpPort>${tomcat.server.ajpPort}</ajpPort>
+                                <httpPort>${tomcat.server.httpPort}</httpPort>
+                                <commandPort>${tomcat.server.commandPort}</commandPort>
+                                <uriEncoding>${tomcat.server.uriEncoding}</uriEncoding>
+                                <connectionTimeout>${tomcat.server.connectionTimeout}</connectionTimeout>
+                            </server>
+
+                            <env>
+                                <jmxOpts>${tomcat.env.jmxOpts}</jmxOpts>
+                                <jvmOpts>${tomcat.env.jvmOpts}</jvmOpts>
+                                <javaOpts>${tomcat.env.javaOpts}</javaOpts>
+                                <jrebelOpts>${tomcat.env.jrebelOpts}</jrebelOpts>
+                                <jrebelAgent>${tomcat.env.jrebelAgent}</jrebelAgent>
+                            </env>
+
+                            <override>
+                                <enabled>${tomcat.override.enabled}</enabled>
+                            </override>
+
+                            <unifiedLogging>
+                                <enabled>${tomcat.unifiedLogging.enabled}</enabled>
+                            </unifiedLogging>
+                        </tomcat>
+                    </configuration>
+                </plugin>
+                -->
+                <plugin>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.0.2</version>
+                    <configuration>
+                        <escapeString>\</escapeString>
+                        <nonFilteredFileExtensions>
+                            <nonFilteredFileExtension>jar</nonFilteredFileExtension>
+                            <nonFilteredFileExtension>zip</nonFilteredFileExtension>
+                            <nonFilteredFileExtension>class</nonFilteredFileExtension>
+                        </nonFilteredFileExtensions>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>fi.vismaconsulting.maven.plugins</groupId>
+                <artifactId>platform-maven-plugin</artifactId>
+                <version>1.0</version>
+                <executions>
+                    <execution>
+                        <id>prepare-platform</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>install-tomcat</goal>
+                            <goal>install-deps</goal>
+                            <goal>install-solr4-data</goal>
+                        </goals>
+                        <configuration>
+                            <skip>${platform.skip}</skip>
+                            <deps>
+                                <libExt>${alfresco.libext.sources}</libExt>
+                                <webapp>
+                                    <alfresco>org.alfresco:alfresco-platform:war,::amp,!:*-solr4:amp,!:*-share:amp,:alfresco-repository-patch:jar</alfresco>
+                                    <solr4>org.alfresco:alfresco-solr4:war,:*-solr4:amp</solr4>
+                                    <share>org.alfresco:share:war,:*-share:amp</share>
+
+                                    <!-- sharepoint extensions -->
+                                    <ROOT>org.alfresco:alfresco-server-root:war</ROOT>
+                                    <_vti_bin>org.alfresco.aos-module:alfresco-vti-bin:war</_vti_bin>
+                                </webapp>
+                            </deps>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>package-platform</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>package</goal>
+                        </goals>
+                        <configuration>
+                            <skip>${platform.skip}</skip>
+                            <attach>${platform.attach}</attach>
+                            <skipPackage>${platform.skip.package}</skipPackage>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>configure-platform</id>
+            <activation>
+                <file>
+                    <exists>src/main/config/common</exists>
+                </file>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-resources-plugin</artifactId>
+                        <version>3.0.1</version>
+                        <executions>
+                            <execution>
+                                <id>configure-platform</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>copy-resources</goal>
+                                </goals>
+                                <configuration>
+                                    <skip>${config.common.skip}</skip>
+                                    <overwrite>true</overwrite>
+                                    <useBuildFilters>true</useBuildFilters>
+                                    <resources>
+                                        <resource>
+                                            <directory>src/main/config/common</directory>
+                                            <filtering>false</filtering>
+                                        </resource>
+                                        <resource>
+                                            <directory>src/main/config/common</directory>
+                                            <filtering>${config.common.filtering}</filtering>
+                                            <includes>
+                                                <include>**/*.properties</include>
+                                                <include>**/*.xml</include>
+                                                <include>**/*.sh</include>
+                                            </includes>
+                                        </resource>
+                                    </resources>
+                                    <outputDirectory>${platform.dir}</outputDirectory>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        	<repositories>
+	            <repository>
+	                <id>nexus.vismaconsulting.fi_baseline-alfresco</id>
+	                <url>https://nexus.vismaconsulting.fi/repository/baseline-alfresco</url>
+	            </repository>
+	        </repositories>
+        </profile>
+    </profiles>
+    
+     <repositories>
+          <repository>
+              <id>nexus.vismaconsulting.fi_baseline-alfresco</id>
+              <!--  <url>https://nexus.vismaconsulting.fi/repository/baseline-alfresco</url> -->
+              <url>https://artifacts.alfresco.com/nexus/content/repositories/public/</url>
+          </repository>
+      </repositories>
+</project>

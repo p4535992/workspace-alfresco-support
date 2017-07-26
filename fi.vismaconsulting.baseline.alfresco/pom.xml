@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>fi.vismaconsulting.baseline.alfresco</groupId>
+    <artifactId>build-aggregator</artifactId>
+    <version>5.2.f.0</version>
+    <packaging>pom</packaging>
+
+    <description>
+       Build Aggregator for Alfresco 5.2.x baseline.
+
+       NOT INTENDED FOR BUILDING AND DEPLOYING JUST TO GET DEPENDENCIES TO IDEA !
+    </description>
+
+    <modules>
+        <module>parent</module>
+
+        <!-- sdk -->
+        <module>sdk-repo</module>
+        <module>sdk-share</module>
+
+        <module>modules</module>
+        <module>overrides</module>
+
+        <!-- platform builder -->
+        <module>platform</module>
+    </modules>
+    
+    <profiles>
+	   <profile>
+	        <id>baseline-alfresco</id>
+	        
+	        <repositories>
+	            <repository>
+	                <id>nexus.vismaconsulting.fi_baseline-alfresco</id>
+	                <!--  <url>https://nexus.vismaconsulting.fi/repository/baseline-alfresco</url> -->
+	                <url>https://artifacts.alfresco.com/nexus/content/repositories/public/</url>
+	            </repository>
+	        </repositories>
+	        
+	   </profile>
+	</profiles>
+    
+</project>
+

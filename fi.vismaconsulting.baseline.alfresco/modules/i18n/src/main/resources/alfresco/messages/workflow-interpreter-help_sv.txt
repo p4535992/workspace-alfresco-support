@@ -1,0 +1,309 @@
+    ##
+    ##
+##  Meta kommandon
+## 
+    ## 
+    
+    ok> help 
+    
+        Listar denna hjälp 
+    
+    ok> r 
+    
+        Repetera senaste kommando. 
+    
+    ok> user [<userName>] 
+    
+        Byt till angiven <userName>.  Om <userName> ej är angivet så visas nuvarande 
+        vald användare 
+    
+    ok> use
+    
+        Visa nuvarande workflow context.
+        
+    ##
+    ##  Quit / Exit
+    ##
+    
+        Om du kör en webbläsare, stäng detta fönster eller tab (och logga ut från Alfresco Explorer eller stäng webbläsare).
+    
+        Om du kör kommand-radsverktyg, skriv 'quit' eller 'exit'.
+    
+    ## 
+    ##  Workflow Definition Kommandon 
+    ## 
+    
+    ok> show file <definitionClassPath>
+    
+        Visar innehållet i file i sökvägen <definitionClassPath>.
+        
+        <definitionClassPath> sökväg till workflow defintionsfil. 
+    
+    ok> deploy <engine> <definitionClassPath> 
+    
+        Publicerar workflow definition till Alfresco server. 
+    
+        <definitionClassPath> class path till arbetsflödesdesdefinition. 
+        <engine> namn arbetsflödesmotor (tex. activiti)
+    
+    ok> redeploy
+    
+        Återpublicera den senaste arbetsflödesdefinitionen.
+    
+    ok> show definitions [all]
+    
+        Lista de senaste publicerade arbetsflödesdefinitionerna.  eller visa alla arbetsflödes
+        definitioner (inklusive föregående versioner) med det extra nyckelordet
+        'all'.
+    
+    ok> use definition [<workflowDefId>] 
+    
+        Växla till att avända arbetsflödesdefinitionen som identifieras av <workflowDefId>  Om 
+        <workflowDefId> utelämnas så visas den nu valda arbetsflödes- 
+        defintionen. 
+    
+    ok> undeploy definition <workflowDefId>
+    
+        Dra tillbaks senaste versionen av arbetsflödet identifierat genom 
+        <workflowDefId>.  Detta avslutar också och tar bort alla pågående 
+        arbetsflöden associerade med definitionen
+        
+        Om multipla versioner existerar så måste du dra tillbaks
+        var och en i tur och ordning för att helt ta bort dem eller ange kommandot 'undeploy
+        definition name'.
+    
+    ok> undeploy definition name <workflowName>
+    
+        Dra tillbaks alla versioner av en arbetsflödesdefinition  Liksom med 'undeploy
+        definition', alla pågående arbetsflöden associerade med varje version
+        kommer att avslutas
+    
+    ## 
+    ##  Variabel kommandon 
+    ## 
+    
+    Notera: Följande variabler definieras automatiskt när konsolen
+          startar.  De kan raderas eller modifieras.
+          
+          var bpm:package package 1       (test package of one document)
+          var bpm:assignee person admin   (test assignee who is admin)
+    
+
+    ok> var 
+    
+        Visa alla definierade variabler 
+    
+    ok> var <varName>[*]=<varValue> 
+    
+        Definiera eller uppdatera variabel. 
+    
+        <varName> variabelnamn 
+        [*] om angivet, definiera en kollektion 
+        <varValue> variable value (komma-separerad för att ange en lista av värden) 
+    
+        enligt 
+    
+        var bpm:assignee*=admin,fred 
+        var wf:notifyMe=true 
+    
+    ok> var <varName>[*] person <varValue> 
+    
+        Definiera eller uppdatera en (cm:person) node ref variabel. 
+    
+        <varName> variabelnamn 
+        [*] om angivet, definiera en kollektion 
+        <varValue> variable value (komma-separerad för att ange en lista av värden) 
+    
+        enligt 
+        
+        var bpm:assignee* person admin,fred 
+    
+    ok> var <varName>[*] group <varValue> 
+    
+        Definiera eller uppdatera en (usr:authorityContainer) node ref variabel. 
+    
+        <varName> variabelnamn 
+        [*] om angivet, definiera en kollektion 
+        <varValue> variable value (komma-separerad för att ange en lista av värden) 
+    
+        enligt 
+        
+        var bpm:groupAssignee group GROUP_Engineering
+    
+    ok> var <varName> package <itemCount>
+    
+        Definiera eller uppdatera en (bpm:workflowPackage) node ref variabel.
+        
+        Ett nytt arbetsflödespaket skapades som innehåller <itemCount> dokument objekt.
+        
+        enligt
+        
+        var bpm:package package 4    
+    
+    ok> var <varName>= 
+    
+        Radera en existerande variabel. 
+    
+        <varName> variabelnamn 
+    
+    ## 
+    ##  Workflow kommandon 
+    ## 
+        
+    ok> start [<varName[=varValue>]]* 
+    
+        Starta ett nytt arbetsflöde baserat på valt aktuell arbetsflödesdefinition.  Start 
+        Uppgiftsparametrar anges som nams/värde par eller referenser till fördefinierade 
+        variabler. 
+        
+        enligt 
+        
+        start bpm:assignee=david wf:predefined 
+        
+    ok> show workflows [all]
+    
+        Visa listan över aktiva arbetsflöden för aktuell vald 
+        arbetsflödesdefinition.  Eller, visa listan över alla arbetsflöden (senaste eller föregående
+        version av processdefinitionerna) när det används med nyckelordet 'all'.
+    
+    ok> use workflow <workflowId>
+    
+        Använd det specificerade <workflowId>.
+    
+    ok> desc workflow <workflowId> 
+    
+        Beskriv det specificerade <workflowId>. 
+    
+    ok> show paths [<workflowId>] 
+    
+        Visa arbetsflödets sökvägare för det specificerade <workflowId>.  Om <workflowId> 
+        inte angivits, visas sökvägarna för det nu valda arbetsflödet. 
+    
+    ok> desc path <pathId>
+    
+        Beskriv det specificerade <pathId>.  inkluderar en lista över egenskaper associerade
+        med sökvägen.
+    
+    ok> show transitions [<workflowId>] 
+    
+        Visar alla tillgängliga övergångar för det specificerade <workflowId>.  Om 
+        <workflowId> inte anges, visas övergångarna för det nu startade  
+        arbetsflödet. 
+    
+    ok> signal <pathId> [<transitionName>] 
+    
+        Signalerar övergång för specificerad <pathId>.  Om <transitionName> inte anges, 
+        används standardövergången. 
+    
+    ok> event <pathId> <eventtype>
+    
+        Skicka en händelse av anpassad 'eventtype' mot specificerad sökväg.
+    
+    ok> end workflow <workflowId> 
+    
+        Avbryt (end) angivet <workflowId>. 
+    
+    ok> delete workflow <workflowId>
+    
+        Forcera radering av angivet <workflowId>.
+    
+    ok> delete all workflows
+    
+        Forcera radering av alla pågående arbetsflöden.  Används försiktigt!
+    
+    ##
+    ##  Timer kommandon
+    ##
+    
+    ok> show timers [all]
+    
+        Visa en lista över aktiva timers för den nu valda 
+        arbetsflödesdefinition.  Eller, visa en lista över alla timers när det används 
+        tillsammans med nyckelordet 'all'.
+    
+    ## 
+    ##  Task kommandon 
+    ## 
+    
+    ok> show my tasks 
+    
+        Lista alla uppgifter för den nu valda användaren. 
+    
+    ok> show my completed 
+    
+        Lista alla färdigställa uppgifter för den nu valda användaren. 
+    
+    ok> show my pooled
+    
+        Lista alla uppgifter i en pool för den nu valda användaren.
+        
+    ok> show tasks [<pathId>] 
+    
+        Lista alla uppgifter som tillhör arbetsflödet <pathId>.  Om <pathId> är 
+        utelämnat, så visas uppgifterna för det nu aktuella 
+        arbetsflödet. 
+    
+    ok> desc task <taskId> 
+    
+        Beskriv uppgiften som identifieras av <taskId>. 
+    
+    ok> update task <taskid> [<varName[=varValue>]]* 
+    
+        Uppdatera statuse för angivet <taskId>.  Uppgiftsegenskaperna anges som 
+        namn/värde par eller referenser till fördefinierade 
+    
+        <varName> variabelnamn 
+        [*] om angivet, definiera en kollektion 
+        <varValue> variable value (komma-separerad för att ange en lista av värden) 
+        
+        enligt 
+        
+        update task jbpm$122 bpm:assignee=fred wf:notifyMe=false 
+    
+    ok> end task <taskId> [<transitionName>] 
+    
+        Avsluta uppgiften som identifieras av <taskId>.  Om <transitionName> inte anges, 
+        används standardövergången. 
+       
+    ok> query task [predicate]*
+    
+        Ställ förfrågan om uppgift.  Om inga [predicate] anges, alla pågående uppgifter 
+        returneras för alla aktiva arbetsflöden.
+        
+        Predicates är:
+        
+        taskId=<taskId>
+        taskName=<taskName>              e.g. taskName=wf:reviewTask
+        taskState=IN_PROGRESS|COMPLETED
+        taskActor=<actorId>              e.g. taskActor=admin
+        task.<propqname>=<propvalue>     e.g. task.bpm:outcome=approve
+        processId=<processId>
+        processName=<processName>        e.g. processName=wf:review
+        workflowDefinitionName=<name>    e.g. workflowDefinitionName=activitiAdhoc
+        processActive=true|false         e.g. processActive=true
+        process.<propqname>=<propvalue>  e.g. process.initiator=admin
+        orderBy=<orderBy>*               e.g. orderBy=TaskDue_Desc,TaskActor_Asc
+        
+        Där <orderBy> är en av:
+        
+        TaskId_Asc,
+        TaskId_Desc,
+        TaskCreated_Asc,
+        TaskCreated_Desc,
+        TaskDue_Asc,
+        TaskDue_Desc,
+        TaskName_Asc,
+        TaskName_Desc,
+        TaskActor_Asc,
+        TaskActor_Desc,
+        TaskState_Asc,
+        TaskState_Desc     
+        
+        till exempel ställ förfrågan för alla pågånde submissions för webprojekt X, ordnade efter sista datum, och inskickat av
+        
+        query task taskName=wcmwf:submitpending taskState=IN_PROGRESS \
+          process.wcwmf:webproject=workspace://SpacesStore/projectx orderBy=TaskDue_Desc,TaskActor_Asc
+        
+    ## 
+    ##  end 
+    ## 

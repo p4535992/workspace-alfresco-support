@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>fi.vismaconsulting.baseline.alfresco</groupId>
+    <artifactId>modules-build-aggregator</artifactId>
+    <version>5.2.f.0</version>
+    <packaging>pom</packaging>
+
+    <description>
+        Build Aggregator for Alfresco 5.2.x baseline.
+
+        NOT INTENDED FOR BUILDING AND DEPLOYING JUST TO GET DEPENDENCIES TO IDEA !
+    </description>
+
+    <modules>
+        <module>baseline</module>
+        <module>baseline-share</module>
+        <module>baseline-solr4</module>
+
+        <module>site-templates</module>
+        <module>site-templates-share</module>
+
+        <module>customize-site-logo</module>
+        <module>customize-site-logo-share</module>
+
+        <module>exiftool-transformer</module>
+
+        <module>vfs</module>
+
+        <module>i18n</module>
+        <module>i18n-share</module>
+
+        <module>visma-branding-share</module>
+    </modules>
+</project>
+

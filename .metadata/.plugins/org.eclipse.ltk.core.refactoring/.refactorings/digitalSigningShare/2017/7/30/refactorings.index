@@ -1,0 +1,16 @@
+1501078036512	Move 'web-extension' to 'java'
+1501083452599	Move 'module' to 'alfresco'
+1501083502256	Move 2 resources to 'web-extension'
+1501083505405	Move 'module-context.xml' to 'web-extension'
+1501083510328	Delete element
+1501083526300	Delete element
+1501083556418	Rename resource 'signing-context.xml'
+1501083614897	Move 'messages' to 'web-extension'
+1501083619432	Move 'site-webscripts' to 'web-extension'
+1501083643691	Move 'digitalSigningShare-context.xml' to 'web-extension'
+1501083697137	Move 'digitalSigning-config-custom.xml' to 'META-INF'
+1501083706110	Rename resource 'digitalSigning-config-custom.xml'
+1501083751447	Move 'components' to 'web'
+1501083755898	Delete element
+1501083878287	Rename resource 'digitalSigningShare-context.xml'
+1501083926580	Delete element

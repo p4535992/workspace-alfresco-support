@@ -1,0 +1,54 @@
+package it.abd.alfresco_allinone_abd.parameters;
+
+
+
+import org.alfresco.api.AlfrescoPublicApi;
+import org.alfresco.service.namespace.NamespaceService;
+import org.alfresco.service.namespace.QName;
+
+/**
+* Sc Model Constants
+*/
+@AlfrescoPublicApi
+public interface ScModel
+{
+   //
+   // System Model Definitions
+   //
+   static final String SC_MODEL = "http://www.alfresco.org/model/content/1.0";
+   static final String SC_PREFIX = "sc";
+	
+   // type for deleted nodes
+   static final QName TYPE_DOC = QName.createQName(NamespaceService.SYSTEM_MODEL_1_0_URI, "deleted");
+   static final QName PROP_ORIGINAL_ID = QName.createQName(NamespaceService.SYSTEM_MODEL_1_0_URI, "originalId");
+   
+   // base type constants
+   static final QName TYPE_BASE = QName.createQName(NamespaceService.SYSTEM_MODEL_1_0_URI, "base");
+   static final QName ASPECT_REFERENCEABLE = QName.createQName(NamespaceService.SYSTEM_MODEL_1_0_URI, "referenceable");
+   static final QName PROP_STORE_PROTOCOL = QName.createQName(NamespaceService.SYSTEM_MODEL_1_0_URI, "store-protocol");
+   static final QName PROP_STORE_IDENTIFIER = QName.createQName(NamespaceService.SYSTEM_MODEL_1_0_URI, "store-identifier");
+   static final QName PROP_NODE_UUID = QName.createQName(NamespaceService.SYSTEM_MODEL_1_0_URI, "node-uuid");
+   static final QName PROP_NODE_DBID = QName.createQName(NamespaceService.SYSTEM_MODEL_1_0_URI, "node-dbid");
+}
+<!-- Enterprise-wide generic document type --> 
+<type name="sc:doc"> 
+    <title>Someco Document</title> 
+    <parent>cm:content</parent> 
+    <associations> 
+        <association name="sc:relatedDocuments"> 
+            <title>Related Documents</title> 
+            <source> 
+                <mandatory>false</mandatory> 
+                <many>true</many> 
+            </source> 
+            <target> 
+                <class>sc:doc</class> 
+                <mandatory>false</mandatory> 
+                <many>true</many> 
+            </target> 
+        </association> 
+    </associations> 
+    <mandatory-aspects> 
+        <aspect>cm:generalclassifiable</aspect> 
+    </mandatory-aspects> 
+</type> 

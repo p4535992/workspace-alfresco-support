@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>fi.vismaconsulting.baseline.alfresco</groupId>
+    <artifactId>parent</artifactId>
+    <version>5.2.f.0</version>
+    <packaging>pom</packaging>
+    <name>Visma Consulting Alfresco Baseline</name>
+
+    <repositories>
+        <repository>
+            <id>nexus.vismaconsulting.fi_maven-public</id>
+            <url>https://nexus.vismaconsulting.fi/repository/maven-public</url>
+        </repository>
+        <repository>
+            <id>nexus.vismaconsulting.fi_alfresco-public</id>
+            <url>https://nexus.vismaconsulting.fi/repository/alfresco-public</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+            </releases>
+            <id>nexus.vismaconsulting.fi_maven-public</id>
+            <url>https://nexus.vismaconsulting.fi/repository/build-tools</url>
+        </pluginRepository>
+        <pluginRepository>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <id>nexus.vismaconsulting.fi_alfresco-public</id>
+            <url>https://nexus.vismaconsulting.fi/repository/alfresco-public</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <properties>
+        <share.version>5.2.e</share.version>
+        <alfresco.version>5.2.f</alfresco.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <app.amp.folder>src/main/amp</app.amp.folder>
+        <app.amp.output.folder>${project.build.directory}/${project.build.finalName}</app.amp.output.folder>
+        <app.amp.overlay.excludes/>
+        <app.amp.excludes/>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.0.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.5.1</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>2.1.2</version>
+                    <executions>
+                        <execution>
+                            <id>package-sources</id>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>jar-no-fork</goal>
+                            </goals>
+                            <configuration>
+                                <excludeResources>true</excludeResources>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.alfresco.maven.plugin</groupId>
+                    <artifactId>alfresco-maven-plugin</artifactId>
+                    <version>2.2.0</version>
+                    <extensions>true</extensions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>

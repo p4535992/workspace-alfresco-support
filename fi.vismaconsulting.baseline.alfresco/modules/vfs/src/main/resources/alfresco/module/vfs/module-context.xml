@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="vfsFileFolderService" class="fi.vismaconsulting.alfresco.repo.VfsFileFolderService">
+        <property name="siteService" ref="SiteService"/>
+        <property name="nodeService" ref="NodeService"/>
+        <property name="fileFolderService" ref="FileFolderService"/>
+        <property name="dictionaryService" ref="DictionaryService"/>
+    </bean>
+
+    <bean id="VfsFileFolderService" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="proxyInterfaces" value="org.alfresco.service.cmr.model.FileFolderService"/>
+        <property name="target" ref="vfsFileFolderService"/>
+        <property name="interceptorNames">
+            <list>
+                <idref local="VfsFileFolderService_transaction"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="VfsFileFolderService_transaction" class="org.springframework.transaction.interceptor.TransactionInterceptor">
+        <property name="transactionManager" ref="transactionManager"/>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="list*">${server.transaction.mode.readOnly}</prop>
+                <prop key="search*">${server.transaction.mode.readOnly}</prop>
+                <prop key="get*">${server.transaction.mode.readOnly}</prop>
+                <prop key="resolve*">${server.transaction.mode.readOnly}</prop>
+                <prop key="*">${server.transaction.mode.default}</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean class="fi.vismaconsulting.alfresco.repo.VfsFileFolderServiceInstaller"/>
+
+</beans>

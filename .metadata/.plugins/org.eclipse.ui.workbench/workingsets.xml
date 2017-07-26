@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1500889643999_1" label="alfresco-allinone-abd" name="alfresco-allinone-abd">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/integration-tests" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/alfresco-allinone-abd-platform-jar" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/alfresco-allinone-abd" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/alfresco-allinone-abd-share-jar" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1500627778364_0" label="Window Working Set" name="Aggregate for window 1500627778364"/>
+</workingSetManager>
