@@ -15,7 +15,7 @@
          This will also make them visible when creating rules.
         (will be merged with out-of-the-box configured types and aspects)
     =============================================================================================================-->
-
+    <!-- MODIFICATO ASPECT E PROP AGGIUNTI -->
     <config evaluator="string-compare" condition="DocumentLibrary" replace="true">      
         <types>
             <!-- Define the ACME base doc type as decedent from cm:content -->
@@ -97,9 +97,24 @@
                 <form labelId="search.form.label.cm_folder" descriptionId="search.form.desc.cm_folder">cm:folder</form>
 
                 <!-- Custom type -->
-                <form labelId="form.label.advancedsearch.acmeDocument"
-                      descriptionId="form.description.advancedsearch.acmeDocument">acme:document
+                <form labelId="form.label.advancedsearch.acmeDocument" 
+                descriptionId="form.description.advancedsearch.acmeDocument">acme:document   
                 </form>
+                
+                 <form labelId="type.sc_doc" 
+                 descriptionId="search.form.label.sc_doc">sc:doc</form> 
+                 <form labelId="type.sc_marketingDoc" 
+                 descriptionId="search.form.label.sc_marketingDoc">sc:marketingDoc</form> 
+                 <form labelId="type.sc_whitepaper" 
+                 descriptionId="search.form.label.sc_whitepaper">sc:whitepaper</form> 
+                 <form labelId="type.sc_hrDoc" 
+                 descriptionId="search.form.label.sc_hrDoc">sc:hrDoc</form> 
+                 <form labelId="type.sc_salesDoc" 
+                 descriptionId="search.form.label.sc_salesDoc">sc:salesDoc</form> 
+				 <form labelId="type.sc_opsDoc" 
+				 descriptionId="search.form.label.sc_opsDoc">sc:opsDoc</form> 
+                 <form labelId="type.sc_legalDoc" 
+                 descriptionId="search.form.label.sc_legalDoc">sc:legalDoc</form> 
             </forms>
         </advanced-search>
     </config>
@@ -465,7 +480,7 @@
         </forms>
     </config>
     
-    <!--  ASPECT E PROP AGGIUNTI -->
+    <!-- MODIFICATO ASPECT E PROP AGGIUNTI -->
     <config evaluator="aspect" condition="sc:webable">
          <forms> 
              <form> 
@@ -614,6 +629,46 @@
               </form> 
           </forms> 
        </config> 
+       
+       <!--  create search form for somedoc -->
+       <config evaluator="model-type" condition="sc:marketingDoc"> 
+            <forms> 
+                <form id="search"> 
+                  <field-visibility> 
+                    <show id="cm:name" /> 
+                    <show id="cm:title" force="true" /> 
+                    <show id="cm:description" force="true" /> 
+                    <show id="mimetype" /> 
+                    <show id="cm:modifier" for-mode="view" /> 
+                    <show id="cm:modified" for-mode="view" /> 
+                    <show id="sc:campaign" /> 
+                    <show id="sc:relatedDocuments" /> 
+                  </field-visibility> 
+                </form> 
+            </forms> 
+       </config> 
+       
+       <config evaluator="model-type" condition="sc:hrDoc"> 
+            <forms> 
+                <form> 
+                    <field-visibility> 
+                        <show id="cm:name" /> 
+                        <show id="cm:title" force="true" /> 
+                        <show id="cm:description" force="true" /> 
+                        <show id="mimetype" /> 
+                        <show id="cm:author" force="true" /> 
+                        <show id="size" for-mode="view" /> 
+                        <show id="cm:creator" for-mode="view" /> 
+                        <show id="cm:created" for-mode="view" /> 
+                        <show id="cm:modifier" for-mode="view" /> 
+                        <show id="cm:modified" for-mode="view" /> 
+                        <show id="sc:relatedDocuments" /> 
+                    </field-visibility> 
+                </form> 
+            </forms> 
+        </config> 
+       
+       
 
     
     

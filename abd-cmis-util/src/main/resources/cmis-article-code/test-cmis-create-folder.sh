@@ -1,0 +1,1 @@
+curl -X POST -uadmin:admin "http://localhost:8080/alfresco/s/cmis/p/children" -H "Content-Type: application/atom+xml" -d @/Users/jpotts/testCreateSomecoFolder.atom.xml

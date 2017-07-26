@@ -1,5 +1,0 @@
-<cmis:query xmlns:cmis="http://docs.oasis-open.org/ns/cmis/core/200908/">
-  <cmis:statement><![CDATA[SELECT cmis:name from sc:whitepaper where not(sc:isActive = true)]]></cmis:statement>
-  <cmis:skipCount>0</cmis:skipCount>
-  <cmis:maxItems>5</cmis:maxItems>
-</cmis:query>
