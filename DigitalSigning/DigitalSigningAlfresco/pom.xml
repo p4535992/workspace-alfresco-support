@@ -159,34 +159,7 @@
             <version>${alfresco.sdk.version}</version>
             <scope>test</scope>
         </dependency>
-	
-	
-		<!--
-		<dependency>
-			<groupId>org.alfresco</groupId>
-			<artifactId>alfresco-core</artifactId>
-			<version>${alfresco.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		-->
-		<!--  
-		<dependency>
-			<groupId>org.alfresco</groupId>
-			<artifactId>alfresco-repository</artifactId>
-			<version>${alfresco.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		-->
-		
-		<!--
-		<dependency>
-			<groupId>org.alfresco</groupId>
-			<artifactId>alfresco-data-model</artifactId>
-			<version>${alfresco.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		-->		
-		
+        
 		<dependency>
 			<groupId>com.itextpdf</groupId>
 			<artifactId>itextpdf</artifactId>
@@ -198,20 +171,6 @@
     		<artifactId>itext-pdfa</artifactId>
     		<version>5.5.11</version>
 		</dependency>
-		<!--  
-		<dependency>
-            <groupId>org.bouncycastle</groupId>
-            <artifactId>bcpkix-jdk15on</artifactId>
-            <version>1.57</version>
-            <type>jar</type>
-            <exclusions>
-            	<exclusion>
-            		<artifactId>bcprov-jdk15on</artifactId>
-            		<groupId>org.bouncycastle</groupId>
-            	</exclusion>
-            </exclusions>
-        </dependency>
-        -->
 		
 		<dependency>
     		<groupId>org.apache.santuario</groupId>
@@ -226,64 +185,20 @@
 		    <version>1.4.01</version>
 		    <scope>provided</scope>
 		</dependency>
+		
+		<dependency>
+		 	<groupId>it.abd.esb</groupId>
+		  	<artifactId>abd-sign-lib</artifactId>
+		  	<version>1.0.5-SNAPSHOT</version>
+		</dependency>
 		<!--  
 		<dependency>
-		    <groupId>org.bouncycastle</groupId>
-		    <artifactId>bcprov-ext-jdk15on</artifactId>
-		    <version>1.57</version>
+		 	<groupId>it.abd.esb.sign</groupId>
+		  	<artifactId>abd-sign-ws-client</artifactId>
+		  	<version>1.2-SNAPSHOT</version>
 		</dependency>
 		-->
-		
 	</dependencies>
-
-	<!-- Repositories to download Alfresco dependencies -->
-	 
-	<repositories>
-		<repository>
-			<id>alfresco-private</id>
-			<url>https://artifacts.alfresco.com/nexus/content/groups/private</url>
-		</repository>
-		<repository>
-		    <id>alfresco-public</id>
-			<url>https://artifacts.alfresco.com/nexus/content/groups/public</url>
-		</repository>
-		<repository>
-			<id>alfresco-thirdparty</id>
-			<url>https://artifacts.alfresco.com/nexus/content/repositories/thirdparty</url>
-		</repository>
-		<repository>
-			<id>alfresco-public-snapshots</id>
-			<url>https://artifacts.alfresco.com/nexus/content/repositories/public-snapshots</url>
-		</repository>
-		<repository>
-			<id>central</id>
-			<url>http://repo1.maven.org/maven2</url>
-		</repository>
-	</repositories>
-	
-	<pluginRepositories>
-		<pluginRepository>
-			<id>alfresco-private</id>
-			<url>https://artifacts.alfresco.com/nexus/content/groups/private</url>
-		</pluginRepository>
-		<pluginRepository>
-		    <id>alfresco-public</id>
-			<url>https://artifacts.alfresco.com/nexus/content/groups/public</url>
-		</pluginRepository>
-		<pluginRepository>
-			<id>alfresco-thirdparty</id>
-			<url>https://artifacts.alfresco.com/nexus/content/repositories/thirdparty</url>
-		</pluginRepository>
-		<pluginRepository>
-			<id>alfresco-public-snapshots</id>
-			<url>https://artifacts.alfresco.com/nexus/content/repositories/public-snapshots</url>
-		</pluginRepository>
-		<pluginRepository>
-			<id>central</id>
-			<url>http://repo1.maven.org/maven2</url>
-		</pluginRepository>
-	</pluginRepositories>
-	
 
 	<build>
 		<plugins>

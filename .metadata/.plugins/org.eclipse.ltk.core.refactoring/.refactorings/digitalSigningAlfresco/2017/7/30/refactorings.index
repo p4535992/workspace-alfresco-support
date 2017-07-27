@@ -20,3 +20,8 @@
 1501091892098	Move 'digitalSigning.properties' to 'digitalSigningAlfresco'
 1501102416718	Copy compilation unit
 1501134635752	Copy folder
+1501140693516	Move 'treeview' to 'org'
+1501140700796	Delete element
+1501140713808	Move 'treeview' to 'webscripts'
+1501141117299	Move 3 resources to 'treeview'
+1501143327997	Delete element

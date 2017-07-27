@@ -24,11 +24,13 @@ import org.alfresco.service.cmr.repository.NodeRef;
 import org.alfresco.service.cmr.repository.NodeService;
 import org.alfresco.service.cmr.security.AuthenticationService;
 import org.alfresco.service.cmr.security.PersonService;
+import org.apache.commons.io.IOUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.mozilla.javascript.Context;
 import org.mozilla.javascript.NativeObject;
 import org.mozilla.javascript.Scriptable;
+import org.slf4j.Logger;
 
 /**
  * Sign script service.
@@ -40,7 +42,8 @@ public class SigningServiceScript extends BaseScopableProcessorExtension {
 	/**
 	 * Logger.
 	 */
-	private final Log log = LogFactory.getLog(SigningServiceScript.class);
+	//private final Log log = LogFactory.getLog(SigningServiceScript.class);
+	private final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(SigningServiceScript.class);
 
 	/**
 	 * Sign service.
@@ -61,6 +64,88 @@ public class SigningServiceScript extends BaseScopableProcessorExtension {
 	 * Node service.
 	 */
 	private NodeService nodeService;
+	
+	
+	public void signSimple(final NativeObject parameters) {
+		log.info("Start SignSimple");
+		final DigitalSigningDTO signingDTO = new DigitalSigningDTO();
+		String keyPassword = null;
+		if (parameters.get("keyPassword", null) instanceof String) {
+			keyPassword = (String) parameters.get("keyPassword", null);
+		}
+		String filesToSignStr = null;
+		if (parameters.get("document", null) instanceof String) {
+			filesToSignStr = (String) parameters.get("document", null);
+		}
+		String destinationFolderStr = null;
+		if (parameters.get("destination", null) instanceof String) {
+			destinationFolderStr = (String) parameters.get("destination", null);
+		}
+		String reason = null;
+		if (parameters.get("reason", null) instanceof String) {
+			reason = (String) parameters.get("reason", null);
+		}
+		String location = null;
+		if (parameters.get("location", null) instanceof String) {
+			location = (String) parameters.get("location", null);
+		}
+		String contact = null;
+		if (parameters.get("contact", null) instanceof String) {
+			contact = (String) parameters.get("contact", null);
+		}
+		String imageStr = null;
+		if (parameters.get("image", null) instanceof String) {
+			imageStr = (String) parameters.get("image", null);
+		}
+		String field = null;
+		if (parameters.get("field", null) instanceof String) {
+			field = (String) parameters.get("field", null);
+		}
+				
+		// Get current user key
+		final String currentUser = authenticationService.getCurrentUserName();
+		final NodeRef currentUserNodeRef = personService.getPerson(currentUser);
+				
+		signingDTO.setCurrentUser(currentUser);
+		signingDTO.setKeyPassword(keyPassword);
+		signingDTO.setOpt(imageStr); //TODO chiedere cosa è OPT
+		signingDTO.setLocale(location);
+		signingDTO.setSignReason(reason);
+		signingDTO.setSigningField(field);
+
+		//Controllo se la verifica deve essere pades o no
+		
+		// Get file(s) to sign
+		if (filesToSignStr != null) {
+			final String[] nodeRefs = filesToSignStr.split(",");
+			final List<NodeRef> nodeRefsToSign = new ArrayList<NodeRef>();
+			signingDTO.setFilesToSign(nodeRefsToSign);
+			
+			for (int i = 0; i < nodeRefs.length ; i++) {
+				final String nodeRef = nodeRefs[i];
+				try {
+					final NodeRef fileToSign = new NodeRef(nodeRef);
+					if (fileToSign != null) {
+						signingDTO.getFilesToSign().add(fileToSign);
+					}
+				} catch (Exception e) {
+					log.error("document must be a valid nodeRef.");
+					throw new AlfrescoRuntimeException("document must be a valid nodeRef : " + nodeRef);
+				}
+			}
+			log.info("End SignSimple");
+		} else {
+			log.error("document(s) parameter is required.");
+			throw new AlfrescoRuntimeException("document parameter is required.");
+		}
+		try{		
+			digitalSigningService.sign(signingDTO);
+		}catch(Exception e){
+			log.error("Can't sign the obejct: " + signingDTO.toString());
+			throw e;
+		}
+		
+	}
 	
 	/**
 	 * Sign a document.
@@ -210,23 +295,20 @@ public class SigningServiceScript extends BaseScopableProcessorExtension {
 								}
 							}
 							if (!foundKey) {
-								log.error("No key file uploaded for user " + currentUser + ".");
-								log.error("No foundkey for signingDTO: " + signingDTO.toString());
-								throw new AlfrescoRuntimeException("No key file uploaded for user " + currentUser + ".");
+								String msg = "No key file uploaded for user " + currentUser + ". No foundkey for signingDTO: " + signingDTO.toString();
+								throw new AlfrescoRuntimeException(msg);
 							}
 						} else {
-							log.error("No key file uploaded for user " + currentUser + ".");
-							log.error("No Children for signingFolderNodeRef: " + signingFolderNodeRef + " make sure to have insert some certificate");
-							throw new AlfrescoRuntimeException("No key file uploaded for user " + currentUser);
+							String msg = "No key file uploaded for user " + currentUser + ". No Children for signingFolderNodeRef: " + signingFolderNodeRef + " make sure to have insert some certificate";
+							throw new AlfrescoRuntimeException(msg);
 						}
 					} else {
-						log.error("No key file uploaded for user " + currentUser + ".");
-						log.error("No valid signingFolderNodeRef is NULL, make sure to have created the folder"+ SigningConstants.KEY_FOLDER + " under " + currentUserHomeFolder);
-						throw new AlfrescoRuntimeException("No key file uploaded for user " + currentUser + ".");
+						String msg = "No key file uploaded for user " + currentUser + ". No valid signingFolderNodeRef is NULL, make sure to have created the folder"+ SigningConstants.KEY_FOLDER + " under " + currentUserHomeFolder;
+						throw new AlfrescoRuntimeException(msg);
 					}
 				} else {
-					log.error("User '" + currentUser + "' have no home folder.");
-					throw new AlfrescoRuntimeException("User '" + currentUser + "' have no home folder.");
+					String msg = "User '" + currentUser + "' have no home folder.";
+					throw new AlfrescoRuntimeException(msg);
 				}
 			}
 		}
@@ -338,8 +420,7 @@ public class SigningServiceScript extends BaseScopableProcessorExtension {
 		} else {
 			signingDTO.setTransformToPdfA(false);
 		}
-		
-		
+				
 		// Get file(s) to sign
 		if (filesToSignStr != null) {
 			final String[] nodeRefs = filesToSignStr.split(",");

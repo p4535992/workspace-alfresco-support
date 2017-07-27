@@ -5292,3 +5292,589 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag nam
 2017-07-27 08:07:03,486 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 47 resources
 2017-07-27 08:07:03,523 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-07-27 08:07:03,524 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ws\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 09:10:17,585 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.alfresco.plugin:digitalSigningAlfresco:1.2.0 @ C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\pom.xml.
+2017-07-27 09:10:19,335 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 09:10:19,370 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 09:10:19,402 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 09:11:01,375 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /digitalSigningAlfresco/src/main/java
+2017-07-27 09:11:01,376 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /digitalSigningAlfresco/src/main/resources
+2017-07-27 09:11:01,391 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /digitalSigningAlfresco/src/test/java
+2017-07-27 09:11:02,415 [Worker-15] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 68 sec
+2017-07-27 09:11:04,956 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.alfresco.plugin:digitalSigningShare:1.2.0 @ C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\pom.xml.
+2017-07-27 09:11:06,301 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 09:11:06,310 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 09:11:06,318 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 09:11:12,075 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /digitalSigningShare/src/main/java
+2017-07-27 09:11:12,076 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /digitalSigningShare/src/main/resources
+2017-07-27 09:11:12,081 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /digitalSigningShare/src/test/java
+2017-07-27 09:11:12,558 [Worker-10] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 8 sec
+2017-07-27 09:11:20,046 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 09:11:20,053 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 09:11:20,059 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 09:11:21,636 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:11:21,647 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2017-07-27 09:11:24,119 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:11:24,120 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 09:11:24,867 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 09:11:24,874 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 09:11:24,892 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 09:11:25,352 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:11:25,366 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 118 resources
+2017-07-27 09:11:26,928 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:11:26,928 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 09:13:20,019 [Worker-31] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco
+2017-07-27 09:13:20,021 [Worker-31] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 09:15:30,799 [Worker-34] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco
+2017-07-27 09:15:30,800 [Worker-34] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 09:15:33,209 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:15:33,230 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2017-07-27 09:15:33,364 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:15:33,364 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 09:16:00,994 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:16:01,013 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2017-07-27 09:16:01,084 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:16:01,085 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 09:16:02,664 [Worker-15] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco
+2017-07-27 09:16:02,665 [Worker-15] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 09:16:36,079 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:16:36,097 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2017-07-27 09:16:36,288 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:16:36,288 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 09:16:48,450 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:16:48,475 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2017-07-27 09:16:48,618 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:16:48,618 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 09:16:50,159 [Worker-32] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco
+2017-07-27 09:16:50,159 [Worker-32] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 09:17:36,460 [Worker-27] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare
+2017-07-27 09:17:36,460 [Worker-27] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 09:31:23,399 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:31:23,403 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-27 09:31:23,417 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:31:23,417 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 09:31:34,422 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:31:34,443 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2017-07-27 09:31:34,564 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:31:34,564 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 09:31:34,731 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:31:34,871 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 118 resources
+2017-07-27 09:31:35,028 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:31:35,029 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 09:31:41,118 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:31:41,119 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-27 09:31:41,134 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:31:41,134 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 09:31:54,494 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:31:54,494 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-27 09:31:54,512 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:31:54,512 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 09:32:09,001 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:32:09,002 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-27 09:32:09,013 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:32:09,013 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 09:32:33,458 [Worker-44] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco
+2017-07-27 09:32:33,459 [Worker-44] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 09:32:59,555 [Worker-42] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare
+2017-07-27 09:32:59,556 [Worker-42] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 09:38:05,671 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:38:05,693 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2017-07-27 09:38:05,799 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:38:05,799 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 09:38:39,247 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:38:39,265 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2017-07-27 09:38:39,334 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:38:39,334 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 09:38:39,449 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:38:39,474 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 118 resources
+2017-07-27 09:38:39,546 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:38:39,546 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 09:39:11,327 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:39:11,343 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2017-07-27 09:39:11,403 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:39:11,403 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 09:39:26,742 [Worker-48] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco
+2017-07-27 09:39:26,742 [Worker-48] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 09:39:53,563 [Worker-48] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare
+2017-07-27 09:39:53,563 [Worker-48] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 09:52:06,068 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:52:06,069 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-27 09:52:06,094 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:52:06,094 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 09:54:30,089 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:54:30,089 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-27 09:54:30,106 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:54:30,106 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 09:56:49,485 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:56:49,486 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-27 09:56:49,498 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:56:49,499 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 09:57:14,734 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:57:14,734 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-27 09:57:14,761 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:57:14,761 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 09:57:40,113 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:57:40,114 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-27 09:57:40,320 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:57:40,320 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 09:58:20,320 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:58:20,320 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-27 09:58:20,332 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:58:20,332 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 09:58:27,864 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:58:27,864 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-27 09:58:27,876 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:58:27,876 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 09:59:59,605 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:59:59,623 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2017-07-27 09:59:59,697 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:59:59,697 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 09:59:59,845 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:59:59,871 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 122 resources
+2017-07-27 09:59:59,982 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 09:59:59,988 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 10:00:34,260 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 10:00:34,260 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-27 10:00:34,268 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 10:00:34,269 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 10:00:50,348 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 10:00:50,349 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-27 10:00:50,357 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 10:00:50,358 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 10:01:19,302 [Worker-54] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco
+2017-07-27 10:01:19,302 [Worker-54] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 10:01:41,019 [Worker-59] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco
+2017-07-27 10:01:41,020 [Worker-59] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 10:02:09,047 [Worker-54] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare
+2017-07-27 10:02:09,047 [Worker-54] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 10:15:28,433 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 10:15:28,433 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-27 10:15:28,444 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 10:15:28,444 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 10:20:46,673 [Worker-63] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco
+2017-07-27 10:20:46,674 [Worker-63] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 10:21:13,391 [Worker-63] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare
+2017-07-27 10:21:13,391 [Worker-63] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 10:35:34,009 [Worker-62] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: it.abd:alfresco-allinone-abd:1.0-SNAPSHOT @ C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd\pom.xml.
+2017-07-27 10:35:35,800 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 10:35:35,809 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 10:35:35,817 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 10:35:42,161 [Worker-62] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: it.abd:alfresco-allinone-abd-platform-jar:1.0-SNAPSHOT @ C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd\alfresco-allinone-abd-platform-jar\pom.xml.
+2017-07-27 10:35:42,829 [Worker-62] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: it.abd:alfresco-allinone-abd-share-jar:1.0-SNAPSHOT @ C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd\alfresco-allinone-abd-share-jar\pom.xml.
+2017-07-27 10:35:44,934 [Worker-62] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: it.abd:integration-tests:1.0-SNAPSHOT @ C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd\integration-tests\pom.xml.
+2017-07-27 10:35:56,464 [Worker-62] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /alfresco-allinone-abd-platform-jar/src/main/java
+2017-07-27 10:35:56,465 [Worker-62] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /alfresco-allinone-abd-platform-jar/src/main/resources
+2017-07-27 10:35:56,467 [Worker-62] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /alfresco-allinone-abd-platform-jar/src/test/java
+2017-07-27 10:35:58,049 [Worker-62] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /integration-tests/src/main/java
+2017-07-27 10:35:58,067 [Worker-62] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /integration-tests/src/test/java
+2017-07-27 10:35:58,068 [Worker-62] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /integration-tests/src/test/resources
+2017-07-27 10:35:59,392 [Worker-62] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /alfresco-allinone-abd-share-jar/src/main/java
+2017-07-27 10:35:59,393 [Worker-62] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /alfresco-allinone-abd-share-jar/src/main/resources
+2017-07-27 10:35:59,394 [Worker-62] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /alfresco-allinone-abd-share-jar/src/test/java
+2017-07-27 10:36:00,777 [Worker-62] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 4 project(s) in 28 sec
+2017-07-27 10:36:25,636 [Worker-70] ERROR o.e.m.i.d.MavenDiscoveryService - Status ERROR: org.eclipse.equinox.p2.discovery code=0 Failed to discover all connectors. null children=[Status ERROR: org.eclipse.equinox.p2.discovery code=0 M2ERemoteBundleDiscoveryStrategy failed with an error org.eclipse.equinox.p2.core.ProvisionException: Unable to connect to repository http://download.eclipse.org/technology/m2e/discovery/directory-1.7.xml]
+2017-07-27 10:36:26,576 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 10:36:26,585 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 10:36:26,594 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 10:36:28,778 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 10:36:28,787 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 10:36:28,798 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 10:36:31,083 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 10:36:31,085 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2017-07-27 10:36:31,708 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 10:36:31,709 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd\alfresco-allinone-abd-platform-jar\src\test\resources
+2017-07-27 10:36:33,139 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 10:36:33,151 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 10:36:33,176 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 10:36:35,035 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 10:36:35,037 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2017-07-27 10:36:35,317 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 10:36:35,317 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd\alfresco-allinone-abd-share-jar\src\test\resources
+2017-07-27 10:36:36,711 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 10:36:36,731 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 10:36:36,741 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 10:36:38,931 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 10:36:38,931 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd\integration-tests\src\main\resources
+2017-07-27 10:36:38,944 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 10:36:38,945 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-07-27 10:46:22,765 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 10:46:22,765 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-27 10:46:22,847 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 10:46:22,847 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 10:47:10,249 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 10:47:10,250 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-27 10:47:10,263 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 10:47:10,264 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 10:47:18,456 [Worker-76] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 10:47:18,463 [Worker-76] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 10:47:18,475 [Worker-76] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 10:47:20,205 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 10:47:20,218 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-27 10:47:20,272 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 10:47:20,272 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 10:47:33,381 [Worker-77] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare
+2017-07-27 10:47:33,381 [Worker-77] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 10:47:58,323 [Worker-74] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco
+2017-07-27 10:47:58,323 [Worker-74] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 10:48:17,790 [Worker-75] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco
+2017-07-27 10:48:17,790 [Worker-75] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 11:03:08,028 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.alfresco.plugin:digitalSigningAlfresco:1.2.0 @ C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\pom.xml.
+2017-07-27 11:03:08,540 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:03:08,554 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:03:08,576 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:03:12,530 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:03:12,549 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 63 resources
+2017-07-27 11:03:12,761 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:03:12,761 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 11:03:19,156 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.alfresco.plugin:digitalSigningAlfresco:1.2.0 @ C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\pom.xml.
+2017-07-27 11:03:19,440 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:03:19,450 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:03:19,460 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:03:22,656 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:03:22,676 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 47 resources
+2017-07-27 11:03:22,892 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:03:22,892 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 11:03:23,570 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.alfresco.plugin:digitalSigningShare:1.2.0 @ C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\pom.xml.
+2017-07-27 11:03:23,843 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:03:23,851 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:03:23,859 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:03:25,031 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:03:25,041 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 122 resources
+2017-07-27 11:03:25,085 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:03:25,086 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 11:03:28,479 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.alfresco.plugin:digitalSigningShare:1.2.0 @ C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\pom.xml.
+2017-07-27 11:03:28,774 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:03:28,780 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:03:28,786 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:03:30,160 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:03:30,179 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 58 resources
+2017-07-27 11:03:30,309 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:03:30,310 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 11:03:41,988 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:03:41,997 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:03:42,005 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:03:42,734 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:03:42,735 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-27 11:03:42,744 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:03:42,744 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 11:03:45,469 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:03:45,471 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-27 11:03:45,491 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:03:45,491 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 11:04:34,461 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:04:34,468 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:04:34,476 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:04:36,011 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:04:36,013 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-27 11:04:36,028 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:04:36,029 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 11:04:38,335 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:04:38,336 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-27 11:04:38,351 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:04:38,351 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 11:04:48,113 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:04:48,114 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-27 11:04:48,128 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:04:48,128 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 11:04:50,992 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:04:50,993 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-27 11:04:51,002 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:04:51,003 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 11:04:54,297 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:04:54,308 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 47 resources
+2017-07-27 11:04:54,402 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:04:54,403 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 11:04:57,258 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:04:57,270 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 57 resources
+2017-07-27 11:04:57,595 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:04:57,595 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 11:06:23,967 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:06:23,967 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-27 11:06:23,984 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:06:23,984 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 11:07:30,224 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:07:30,225 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-27 11:07:30,237 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:07:30,238 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 11:07:33,352 [Worker-4] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco
+2017-07-27 11:07:33,354 [Worker-4] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 11:07:58,067 [Worker-5] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare
+2017-07-27 11:07:58,067 [Worker-5] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 11:22:51,612 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:22:51,619 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:22:51,633 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:22:53,483 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:22:53,489 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:22:53,495 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 11:22:55,624 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:22:55,627 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2017-07-27 11:22:55,857 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:22:55,858 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd\alfresco-allinone-abd-share-jar\src\test\resources
+2017-07-27 11:23:24,447 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:23:24,447 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-27 11:23:24,462 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:23:24,462 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 11:24:04,961 [Worker-24] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd
+2017-07-27 11:24:04,962 [Worker-24] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 11:25:49,398 [Worker-19] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco
+2017-07-27 11:25:49,398 [Worker-19] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 11:26:16,528 [Worker-23] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco
+2017-07-27 11:26:16,528 [Worker-23] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 11:28:44,166 [Worker-23] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare
+2017-07-27 11:28:44,166 [Worker-23] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 11:48:06,551 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:48:06,553 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-27 11:48:06,578 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:48:06,578 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd\alfresco-allinone-abd-share-jar\src\test\resources
+2017-07-27 11:49:24,998 [Worker-29] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: es.keensoft.alfresco:esign-cert-repo:1.5.2 @ C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-esign-cert\esign-cert-repo\pom.xml.
+2017-07-27 11:49:27,543 [Worker-29] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: es.keensoft.alfresco:esign-cert-share:1.5.2 @ C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-esign-cert\esign-cert-share\pom.xml.
+2017-07-27 11:49:29,620 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Added timestamp to version - 1.5.2.1707271149
+2017-07-27 11:49:38,929 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Successfull Refresh Web Scripts for Alfresco Repository
+2017-07-27 11:49:39,497 [Worker-29] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /esign-cert-repo/src/main/java
+2017-07-27 11:49:39,498 [Worker-29] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /esign-cert-repo/src/main/amp
+2017-07-27 11:49:39,524 [Worker-29] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /esign-cert-repo/src/test/java
+2017-07-27 11:49:39,525 [Worker-29] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /esign-cert-repo/src/test/resources
+2017-07-27 11:49:39,533 [Worker-29] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /esign-cert-repo/src/test/properties/local
+2017-07-27 11:50:00,176 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Added timestamp to version - 1.5.2.1707271150
+2017-07-27 11:50:01,255 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Connection failed to localhost:8081, null webapp refresh aborted
+2017-07-27 11:50:01,521 [Worker-29] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /esign-cert-share/src/main/java
+2017-07-27 11:50:01,522 [Worker-29] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /esign-cert-share/src/main/resources
+2017-07-27 11:50:01,565 [Worker-29] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /esign-cert-share/src/main/amp
+2017-07-27 11:50:01,582 [Worker-29] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /esign-cert-share/src/test/java
+2017-07-27 11:50:01,583 [Worker-29] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /esign-cert-share/src/test/resources
+2017-07-27 11:50:02,942 [Worker-29] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 2 project(s) in 46 sec
+2017-07-27 11:50:08,807 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Added timestamp to version - 1.5.2.1707271150
+2017-07-27 11:50:08,863 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:50:08,867 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-esign-cert\esign-cert-repo\src\main\resources
+2017-07-27 11:50:08,870 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources to ../esign-cert-repo-1.5.2
+2017-07-27 11:50:17,982 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Successfull Refresh Web Scripts for Alfresco Repository
+2017-07-27 11:50:17,998 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:50:17,999 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-27 11:50:18,057 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-27 11:50:18,114 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:50:18,119 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource to alfresco/module/esign-cert-repo
+2017-07-27 11:50:18,140 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:50:18,141 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2017-07-27 11:50:19,483 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Added timestamp to version - 1.5.2.1707271150
+2017-07-27 11:50:19,602 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:50:19,603 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-07-27 11:50:19,816 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 31 resources to ../esign-cert-share-1.5.2
+2017-07-27 11:50:21,448 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Connection failed to localhost:8081, null webapp refresh aborted
+2017-07-27 11:50:24,114 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - sign-action.js (1580b) -> sign-action-min.js (1047b)[66%]
+2017-07-27 11:50:25,805 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - constantes.js (574b) -> constantes-min.js (96b)[16%]
+2017-07-27 11:50:28,410 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - miniapplet.js (134895b) -> miniapplet-min.js (49170b)[36%]
+2017-07-27 11:50:30,101 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - sign-action.js (1580b) -> sign-action-min.js (1047b)[66%]
+2017-07-27 11:50:30,101 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - total input (138629b) -> output (51360b)[37%]
+2017-07-27 11:50:30,104 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - nb warnings: 0, nb errors: 0
+2017-07-27 11:50:30,119 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:50:30,120 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-27 11:50:30,168 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:50:30,169 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource to alfresco/module/esign-cert-share
+2017-07-27 11:50:30,187 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 11:50:30,188 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 24 resources
+2017-07-27 11:50:45,245 [Worker-19] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd
+2017-07-27 11:50:45,245 [Worker-19] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 11:51:26,292 [Worker-29] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-esign-cert\esign-cert-repo
+2017-07-27 11:51:26,292 [Worker-29] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 11:52:01,365 [Worker-32] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-esign-cert\esign-cert-share
+2017-07-27 11:52:01,366 [Worker-32] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 12:11:15,474 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Added timestamp to version - 1.5.2.1707271211
+2017-07-27 12:11:15,492 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 12:11:15,497 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-07-27 12:11:15,508 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 31 resources to ../esign-cert-share-1.5.2
+2017-07-27 12:11:16,664 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Connection failed to localhost:8081, null webapp refresh aborted
+2017-07-27 12:11:16,672 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - No files have changed, so skipping the processing
+2017-07-27 12:11:16,672 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - No files have changed, so skipping the processing
+2017-07-27 12:11:16,672 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - No files have changed, so skipping the processing
+2017-07-27 12:11:16,672 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - nb warnings: 0, nb errors: 0
+2017-07-27 12:11:16,686 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 12:11:16,688 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-27 12:11:16,706 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 12:11:16,716 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource to alfresco/module/esign-cert-share
+2017-07-27 12:11:16,779 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 12:11:16,786 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 24 resources
+2017-07-27 12:16:52,185 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Added timestamp to version - 1.5.2.1707271216
+2017-07-27 12:16:52,206 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 12:16:52,206 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-esign-cert\esign-cert-repo\src\main\resources
+2017-07-27 12:16:52,215 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources to ../esign-cert-repo-1.5.2
+2017-07-27 12:17:01,582 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Successfull Refresh Web Scripts for Alfresco Repository
+2017-07-27 12:17:01,605 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 12:17:01,607 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-27 12:17:01,617 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-27 12:17:01,638 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 12:17:01,645 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource to alfresco/module/esign-cert-repo
+2017-07-27 12:17:01,664 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 12:17:01,672 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2017-07-27 12:37:06,637 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Added timestamp to version - 1.5.2.1707271237
+2017-07-27 12:37:06,650 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 12:37:06,657 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-27 12:37:06,661 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource to ../esign-cert-share-1.5.2
+2017-07-27 12:37:07,726 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Connection failed to localhost:8081, null webapp refresh aborted
+2017-07-27 12:37:07,752 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - No files have changed, so skipping the processing
+2017-07-27 12:37:07,753 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - No files have changed, so skipping the processing
+2017-07-27 12:37:07,753 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - No files have changed, so skipping the processing
+2017-07-27 12:37:07,754 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - nb warnings: 0, nb errors: 0
+2017-07-27 12:37:07,765 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 12:37:07,766 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-27 12:37:07,779 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 12:37:07,779 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource to alfresco/module/esign-cert-share
+2017-07-27 12:37:07,792 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 12:37:07,792 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-27 12:40:56,146 [Worker-42] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-esign-cert\esign-cert-share
+2017-07-27 12:40:56,146 [Worker-42] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 12:41:26,869 [Worker-51] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-esign-cert\esign-cert-repo
+2017-07-27 12:41:26,869 [Worker-51] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 12:42:11,966 [Worker-51] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-esign-cert\esign-cert-repo
+2017-07-27 12:42:11,966 [Worker-51] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 12:54:38,853 [Worker-49] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration PAdESLTV references closed project esign-cert-repo
+org.eclipse.core.runtime.CoreException: Launch configuration PAdESLTV references closed project esign-cert-repo
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1280) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:226) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.8.0.v20160509-1230.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:207) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:552) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:425) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:309) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:335) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-07-27 12:54:38,857 [Worker-49] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration PAdESLTV references closed project esign-cert-repo
+org.eclipse.core.runtime.CoreException: Launch configuration PAdESLTV references closed project esign-cert-repo
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1280) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:226) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.8.0.v20160509-1230.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:207) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:552) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:425) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:310) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:335) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-07-27 12:54:38,874 [Worker-49] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration PAdESLTV references closed project esign-cert-repo
+org.eclipse.core.runtime.CoreException: Launch configuration PAdESLTV references closed project esign-cert-repo
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1280) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:226) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.8.0.v20160509-1230.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:207) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2161) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:384) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:250) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:220) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:173) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:311) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:335) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-07-27 12:54:57,195 [Worker-49] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.alfresco.plugin:digitalSigningShare:1.2.0 @ C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\pom.xml.
+2017-07-27 12:54:57,988 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 12:54:57,995 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 12:54:58,001 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 12:55:01,463 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 12:55:01,470 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 12:55:01,477 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 12:55:02,480 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 12:55:02,482 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 58 resources
+2017-07-27 12:55:02,733 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 12:55:02,733 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 12:55:03,654 [Worker-56] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.alfresco.plugin:digitalSigningAlfresco:1.2.0 @ C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\pom.xml.
+2017-07-27 12:55:03,890 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 12:55:03,895 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 12:55:03,903 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 12:55:07,437 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 12:55:07,443 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 12:55:07,450 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 12:55:09,039 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 12:55:09,040 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 47 resources
+2017-07-27 12:55:09,295 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 12:55:09,295 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 12:55:10,892 [Worker-58] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare
+2017-07-27 12:55:10,893 [Worker-58] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 12:55:34,747 [Worker-53] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco
+2017-07-27 12:55:34,749 [Worker-53] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U -Dmaven.test.skip=true -DskipTests clean install
+2017-07-27 14:56:43,108 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 14:56:43,151 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 50 resources
+2017-07-27 14:56:43,367 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 14:56:43,368 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 14:58:13,627 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 14:58:14,310 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 14:58:14,321 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 14:58:18,672 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 14:58:18,687 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 14:58:18,701 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 14:58:23,821 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 14:58:23,823 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2017-07-27 14:58:24,059 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 14:58:24,061 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd\alfresco-allinone-abd-platform-jar\src\test\resources
+2017-07-27 14:58:30,645 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 14:58:30,662 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2017-07-27 14:58:30,719 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 14:58:30,720 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd\alfresco-allinone-abd-share-jar\src\test\resources
+2017-07-27 14:58:30,908 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 14:58:30,909 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-27 14:58:30,929 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 14:58:30,930 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 14:58:31,468 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 14:58:31,812 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 58 resources
+2017-07-27 14:58:32,074 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 14:58:32,074 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare\src\test\resources
+2017-07-27 14:58:33,775 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 14:58:33,789 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 14:58:33,808 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 14:58:37,946 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 14:58:37,947 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd\integration-tests\src\main\resources
+2017-07-27 14:58:37,958 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 14:58:37,960 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-07-27 16:58:32,424 [Worker-90] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.alfresco.plugin:digitalSigningAlfresco:1.2.0 @ C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\pom.xml.
+2017-07-27 16:58:33,572 [Worker-90] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 16:58:33,689 [Worker-90] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 16:58:33,698 [Worker-90] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 16:58:41,094 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 16:58:41,108 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 50 resources
+2017-07-27 16:58:41,235 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 16:58:41,235 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 16:58:45,340 [Worker-91] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 16:58:45,349 [Worker-91] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 16:58:45,356 [Worker-91] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 16:58:47,123 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 16:58:47,124 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-27 16:58:47,149 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-27 16:58:47,150 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\src\test\resources
+2017-07-27 20:20:32,932 [Worker-111] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.alfresco.plugin:digitalSigningAlfresco:1.2.0 @ C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco\pom.xml.
+2017-07-27 20:20:33,779 [Worker-111] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 20:20:33,793 [Worker-111] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-27 20:20:33,799 [Worker-111] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details

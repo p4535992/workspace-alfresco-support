@@ -17,3 +17,5 @@ https://gitlab.vismaconsulting.fi/baseline/alfresco.git
 https://github.com/jpotts/share-site-creators.git
 
 https://github.com/rouxemmanuel/DigitalSigning.git
+
+https://github.com/keensoft/alfresco-esign-cert.git

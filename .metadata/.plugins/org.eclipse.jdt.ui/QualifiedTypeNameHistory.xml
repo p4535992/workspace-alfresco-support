@@ -4,4 +4,5 @@
 <fullyQualifiedTypeName name="javax.xml.namespace.QName"/>
 <fullyQualifiedTypeName name="org.alfresco.service.namespace.NamespaceService"/>
 <fullyQualifiedTypeName name="org.alfresco.service.namespace.QName"/>
+<fullyQualifiedTypeName name="org.apache.http.ParseException"/>
 </qualifiedTypeNameHistroy>

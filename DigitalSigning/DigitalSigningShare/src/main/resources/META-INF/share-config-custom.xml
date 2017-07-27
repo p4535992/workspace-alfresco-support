@@ -6,12 +6,14 @@
 		<dependencies>
 			<css src="/components/documentlibrary/sign-action.css" />
 			<js src="/components/documentlibrary/sign-action.js" />
+			<css src="/components/documentlibrary/signsimple-action.css" />
+			<js src="/components/documentlibrary/signsimple-action.js" />
 		</dependencies>
 	</config>
 
 	<!-- Document Library Actions config section -->
-	<config evaluator="string-compare" condition="DocLibActions">
-		<!-- paramedit action -->
+	  
+	<config evaluator="string-compare" condition="DocLibActions">	
 		<actions>
          	<action id="sign" type="javascript" icon="sign" label="actions.sign">
             	<param name="function">onActionSign</param>
@@ -30,6 +32,30 @@
 
 			<actionGroup id="document-details">
 				<action index="120" id="sign" />
+			</actionGroup>
+		</actionGroups>
+	</config>
+	
+	<config evaluator="string-compare" condition="DocLibActions">
+		<!-- paramedit action -->
+		<actions>
+         	<action id="signsimple" type="javascript" icon="sign" label="actions.signsimple">
+            	<param name="function">onActionSignSimple</param>
+            	<permissions>
+               		<permission allow="true">Write</permission>
+            	</permissions>
+            	<evaluator>evaluator.doclib.action.digitalSigning.canSign</evaluator>
+            	<evaluator negate="true">evaluator.doclib.indicator.digitalSigning.signedDoc</evaluator>
+         	</action>
+		</actions>
+		
+		<actionGroups>
+			<actionGroup id="document-browse">
+				<action index="120" id="signsimple" />
+			</actionGroup>
+
+			<actionGroup id="document-details">
+				<action index="120" id="signsimple" />
 			</actionGroup>
 		</actionGroups>
 	</config>
@@ -109,6 +135,19 @@
 		<multi-select>
          <action type="action-link" id="onActionSign" label="menu.selected-items.sign" />
       	</multi-select>
+      	
+      	 <aspects>
+            <visible>
+                <aspect name="dgtsgn:signed"/>
+                <aspect name="dgtsgn:key" /> 
+                <aspect name="dgtsgn:image" /> 
+                <aspect name="dgtsgn:originalDoc" /> 
+            </visible>
+            <addable> <!-- defaults to visible config -->
+            </addable>
+            <removeable> <!-- defaults to visible config -->
+            </removeable>
+        </aspects>
 	</config>
 
 </alfresco-config>

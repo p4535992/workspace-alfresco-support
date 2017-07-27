@@ -18,7 +18,9 @@ public class SigningUtils {
 	/**
 	 * Logger.
 	 */
-	private final static Log log = LogFactory.getLog(SigningUtils.class);
+	//private final static Log log = LogFactory.getLog(SigningUtils.class);
+	private final static org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(SigningUtils.class);
+
 
 	/**
 	 * Validate DigitalSigningDTO object.

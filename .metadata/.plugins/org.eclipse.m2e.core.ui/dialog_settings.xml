@@ -14,15 +14,16 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
-			<item value="C:\ws\workspace-alfresco-support\DigitalSigning"/>
-			<item value="C:\ws\workspace-alfresco-support\alfresco-allinone-abd"/>
+			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-esign-cert"/>
+			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd"/>
 			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare"/>
 			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco"/>
+			<item value="C:\ws\workspace-alfresco-support\DigitalSigning"/>
+			<item value="C:\ws\workspace-alfresco-support\alfresco-allinone-abd"/>
 			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\abd-cmis-util"/>
 			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\fi.vismaconsulting.baseline.alfresco"/>
 			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\src-ricerca-cloud"/>
 			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd\integration-tests"/>
-			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
