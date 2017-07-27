@@ -14,6 +14,8 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\ws\workspace-alfresco-support\DigitalSigning"/>
+			<item value="C:\ws\workspace-alfresco-support\alfresco-allinone-abd"/>
 			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare"/>
 			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco"/>
 			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\abd-cmis-util"/>

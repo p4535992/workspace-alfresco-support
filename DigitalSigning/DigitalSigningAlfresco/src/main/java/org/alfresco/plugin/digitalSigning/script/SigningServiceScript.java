@@ -64,6 +64,8 @@ public class SigningServiceScript extends BaseScopableProcessorExtension {
 	
 	/**
 	 * Sign a document.
+	 * Questo metodo è il più complesso e completo allo stesos tempo
+	 * pemrette all'utente un pieno controllo della firma
 	 * 
 	 * @param parameters sign parameters
 	 */
@@ -209,14 +211,17 @@ public class SigningServiceScript extends BaseScopableProcessorExtension {
 							}
 							if (!foundKey) {
 								log.error("No key file uploaded for user " + currentUser + ".");
+								log.error("No foundkey for signingDTO: " + signingDTO.toString());
 								throw new AlfrescoRuntimeException("No key file uploaded for user " + currentUser + ".");
 							}
 						} else {
 							log.error("No key file uploaded for user " + currentUser + ".");
-							throw new AlfrescoRuntimeException("No key file uploaded for user " + currentUser + ".");
+							log.error("No Children for signingFolderNodeRef: " + signingFolderNodeRef + " make sure to have insert some certificate");
+							throw new AlfrescoRuntimeException("No key file uploaded for user " + currentUser);
 						}
 					} else {
 						log.error("No key file uploaded for user " + currentUser + ".");
+						log.error("No valid signingFolderNodeRef is NULL, make sure to have created the folder"+ SigningConstants.KEY_FOLDER + " under " + currentUserHomeFolder);
 						throw new AlfrescoRuntimeException("No key file uploaded for user " + currentUser + ".");
 					}
 				} else {
@@ -419,14 +424,17 @@ public class SigningServiceScript extends BaseScopableProcessorExtension {
 							}
 							if (!foundKey) {
 								log.error("No key file uploaded for user " + currentUser + ".");
+								log.error("No foundkey for verifyingDTO: " + verifyingDTO.toString());
 								throw new AlfrescoRuntimeException("No key file uploaded for user " + currentUser + ".");
 							}
 						} else {
 							log.error("No key file uploaded for user " + currentUser + ".");
+							log.error("No Children for signingFolderNodeRef: " + signingFolderNodeRef);
 							throw new AlfrescoRuntimeException("No key file uploaded for user " + currentUser + ".");
 						}
 					} else {
 						log.error("No key file uploaded for user " + currentUser + ".");
+						log.error("No valid signingFolderNodeRef is NULL, make sure to have created the folder"+ SigningConstants.KEY_FOLDER + " under " + currentUserHomeFolder);
 						throw new AlfrescoRuntimeException("No key file uploaded for user " + currentUser + ".");
 					}
 				} else {

@@ -458,5 +458,18 @@ public class DigitalSigningDTO {
 	public final void setTransformToPdfA(boolean transformToPdfA) {
 		this.transformToPdfA = transformToPdfA;
 	}
+
+	@Override
+	public String toString() {
+		return "DigitalSigningDTO [filesToSign=" + filesToSign + ", keyFile=" + keyFile + ", keyPassword=" + keyPassword
+				+ ", destinationFolder=" + destinationFolder + ", signReason=" + signReason + ", signLocation="
+				+ signLocation + ", signContact=" + signContact + ", image=" + image + ", signingField=" + signingField
+				+ ", position=" + position + ", pages=" + pages + ", depth=" + depth + ", locationX=" + locationX
+				+ ", locationY=" + locationY + ", xMargin=" + xMargin + ", yMargin=" + yMargin + ", signWidth="
+				+ signWidth + ", signHeight=" + signHeight + ", pageNumber=" + pageNumber + ", isDetached=" + isDetached
+				+ ", transformToPdfA=" + transformToPdfA + ", locale=" + locale + "]";
+	}
+	
+	
 	
 }

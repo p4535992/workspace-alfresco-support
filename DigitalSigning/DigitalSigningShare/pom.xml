@@ -11,7 +11,7 @@
   	<!-- Default properties -->
 	<properties>
 		<!-- Module id -->
-		<alfresco.module.id>digitalSigning</alfresco.module.id>
+		<alfresco.module.id>digitalSigningShare</alfresco.module.id>
 		
 		<!-- Alfresco Maven Plugin version to use -->
         <alfresco.sdk.version>3.0.1</alfresco.sdk.version>
@@ -269,27 +269,7 @@
 					<source>${maven.compiler.source}</source>
 					<target>${maven.compiler.target}</target>
 				</configuration>
-			</plugin>
-			<plugin>
-				<artifactId>maven-antrun-plugin</artifactId>
-				<version>1.6</version>
-				<inherited>false</inherited>
-				<executions>
-					<execution>
-						<id>initialize-classes</id>
-						<phase>initialize</phase>
-						<configuration>
-							<target>
-								<!-- Clean and create distribution directory -->
-								<mkdir dir="target/classes" />
-							</target>
-						</configuration>
-						<goals>
-							<goal>run</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+			</plugin>			
         </plugins>
         
         <pluginManagement>
