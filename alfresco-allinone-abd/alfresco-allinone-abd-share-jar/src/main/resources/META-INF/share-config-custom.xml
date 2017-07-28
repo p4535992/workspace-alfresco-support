@@ -16,7 +16,7 @@
         (will be merged with out-of-the-box configured types and aspects)
     =============================================================================================================-->
     <!-- MODIFICATO ASPECT E PROP AGGIUNTI -->
-    <config evaluator="string-compare" condition="DocumentLibrary" replace="true">      
+    <config evaluator="string-compare" condition="DocumentLibrary">      
         <types>
             <!-- Define the ACME base doc type as decedent from cm:content -->
             <!--  

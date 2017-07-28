@@ -14,8 +14,15 @@ https://github.com/gravitonian/all-in-one-spock-testing
 
 https://gitlab.vismaconsulting.fi/baseline/alfresco.git
 
+** COOL ADDON
+
 https://github.com/jpotts/share-site-creators.git
 
-https://github.com/rouxemmanuel/DigitalSigning.git
+** DIGITAL SIGN PDF
 
-https://github.com/keensoft/alfresco-esign-cert.git
+https://github.com/rouxemmanuel/DigitalSigning.git 
+
+https://github.com/keensoft/alfresco-esign-cert.git 
+
+https://github.com/form4/alfresco-pdf-toolkit.git
+https://github.com/ntmcminn/alfresco-pdf-toolkit
