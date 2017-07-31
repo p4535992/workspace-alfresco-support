@@ -6,10 +6,10 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/alfresco-allinone-abd" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/alfresco-allinone-abd-share-jar" type="4"/>
 </workingSet>
-<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1501235750938_2" label="pdf-toolkit" name="pdf-toolkit">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pdf-toolkit-repo" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pdf-toolkit-share" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/alfresco-pdf-toolkit" type="4"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1501235750938_2" label="pdf-toolkit" name="pdf-toolkit"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1501431713443_3" label="alfresco-sdk-aggregator" name="alfresco-sdk-aggregator">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/alfresco-sdk-alfresco-sdk-aggregator-2.2.0" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/alfresco-sdk-parent" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1500627778364_0" label="Window Working Set" name="Aggregate for window 1500627778364"/>
 </workingSetManager>

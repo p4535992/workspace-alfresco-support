@@ -16,7 +16,7 @@
         (will be merged with out-of-the-box configured types and aspects)
     =============================================================================================================-->
     <!-- MODIFICATO ASPECT E PROP AGGIUNTI -->
-    <config evaluator="string-compare" condition="DocumentLibrary">      
+    <config evaluator="string-compare" condition="DocumentLibrary">      <!-- TODO replace="true" nasconde altir amp sia con replace che senza -->
         <types>
             <!-- Define the ACME base doc type as decedent from cm:content -->
             <!--  
@@ -53,8 +53,8 @@
             </type> 
         </types>
         <aspects>
-            <visible>
-                <aspect name="acme:securityClassified"/>
+            <visible>          
+                <!-- Standard Aspect -->               
                 <aspect name="cm:generalclassifiable" /> 
                 <aspect name="cm:complianceable" /> 
                 <aspect name="cm:dublincore" /> 
@@ -73,6 +73,10 @@
                 <aspect name="dp:restrictable" /> 
                 <aspect name="smf:customConfigSmartFolder" /> 
                 <aspect name="smf:systemConfigSmartFolder" /> 
+                
+                <!-- Custom aspect -->
+            
+                <aspect name="acme:securityClassified"/>
                 <aspect name="sc:webable" /> 
                 <aspect name="sc:clientRelated" /> 
             </visible>

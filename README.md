@@ -1,3 +1,7 @@
+### Start Archetype alfresco
+mvn archetype:generate -Dfilter=org.alfresco.maven.archetype:alfresco-allinone-archetype
+
+
 ### REPOSITORY TO REMEMBER
 
 https://github.com/ideiudicibus/sinekarta.git 
