@@ -18,6 +18,18 @@
 		<item value="false" key="SEARCH_IN_BINARIES"/>
 		<section name="HISTORY6">
 			<item value="true" key="ignoreCase"/>
+			<item value="0" key="scope"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="" key="textPattern"/>
+			<item value="false" key="isRegExSearch"/>
+			<list key="fileNamePatterns">
+				<item value="*.ftl"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY7">
+			<item value="true" key="ignoreCase"/>
 			<item value="3" key="scope"/>
 			<item value="false" key="isWholeWord"/>
 			<item value="association.ftl" key="textPattern"/>
@@ -28,23 +40,11 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY7">
-			<item value="true" key="ignoreCase"/>
-			<item value="3" key="scope"/>
-			<item value="false" key="isWholeWord"/>
-			<item value="Encrypted properties must be encrypted by the client" key="textPattern"/>
-			<item value="false" key="isRegExSearch"/>
-			<list key="fileNamePatterns">
-				<item value="*"/>
-			</list>
-			<list key="workingSets">
-			</list>
-		</section>
 		<section name="HISTORY4">
 			<item value="true" key="ignoreCase"/>
-			<item value="3" key="scope"/>
+			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="menu.selected-items.sign" key="textPattern"/>
+			<item value="association" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -56,7 +56,7 @@
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="add" key="textPattern"/>
+			<item value="onActionAddImagesToPdfFiles" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -66,12 +66,12 @@
 		</section>
 		<section name="HISTORY5">
 			<item value="true" key="ignoreCase"/>
-			<item value="0" key="scope"/>
+			<item value="3" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="" key="textPattern"/>
+			<item value="menu.selected-items.sign" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
-				<item value="*.ftl"/>
+				<item value="*"/>
 			</list>
 			<list key="workingSets">
 			</list>
@@ -85,7 +85,7 @@
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="org.tenthline." key="textPattern"/>
+			<item value="add" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -97,7 +97,7 @@
 			<item value="true" key="ignoreCase"/>
 			<item value="3" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="aspect" key="textPattern"/>
+			<item value="Encrypted properties must be encrypted by the client" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -107,9 +107,9 @@
 		</section>
 		<section name="HISTORY9">
 			<item value="true" key="ignoreCase"/>
-			<item value="0" key="scope"/>
+			<item value="3" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="onActionAddImagesToPdfFiles" key="textPattern"/>
+			<item value="aspect" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -121,7 +121,7 @@
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="/association" key="textPattern"/>
+			<item value="form.lib.ftl" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -133,7 +133,7 @@
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="association" key="textPattern"/>
+			<item value="/association" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -145,7 +145,7 @@
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="Alfresco Digital Signing Plugin -SDK" key="textPattern"/>
+			<item value="ks-file-48" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -157,7 +157,7 @@
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="form.lib.ftl" key="textPattern"/>
+			<item value="Alfresco Digital Signing Plugin -SDK" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>

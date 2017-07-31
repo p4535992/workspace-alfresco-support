@@ -20,6 +20,8 @@ https://gitlab.vismaconsulting.fi/baseline/alfresco.git
 
 ** COOL ADDON
 
+https://github.com/form4/alfresco-triggerauthenticationsync.git
+
 https://github.com/jpotts/share-site-creators.git
 
 ** DIGITAL SIGN PDF
@@ -30,3 +32,7 @@ https://github.com/keensoft/alfresco-esign-cert.git
 
 https://github.com/form4/alfresco-pdf-toolkit.git
 https://github.com/ntmcminn/alfresco-pdf-toolkit
+
+logger.log(e);
+logger.log(e.stack);
+console.log(e.stack);

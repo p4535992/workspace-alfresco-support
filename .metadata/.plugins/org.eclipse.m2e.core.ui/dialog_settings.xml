@@ -33,6 +33,11 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\workspace-eclipse-2017\digitalsigning-repo-220-abd"/>
+			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-triggerauthenticationsync"/>
+			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-sdk-alfresco-lifecycle-aggregator-1.1.1"/>
+			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd"/>
+			<item value="C:\workspace-eclipse-2017\DigitalSigning"/>
 			<item value="C:\ws\workspace-alfresco-support\alfresco-sdk-alfresco-sdk-aggregator-2.2.0\"/>
 			<item value="C:\ws\workspace-alfresco-support\alfresco-sdk-alfresco-sdk-aggregator-2.2.0"/>
 			<item value="C:\ws\workspace-alfresco-support\alfresco-allinone-abd"/>
@@ -41,13 +46,8 @@
 			<item value="C:\ws\DigitalSigning"/>
 			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-pdf-toolkit"/>
 			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-esign-cert"/>
-			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\alfresco-allinone-abd"/>
 			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningShare"/>
 			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\DigitalSigning\DigitalSigningAlfresco"/>
-			<item value="C:\ws\workspace-alfresco-support\DigitalSigning"/>
-			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\abd-cmis-util"/>
-			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\fi.vismaconsulting.baseline.alfresco"/>
-			<item value="C:\workspace-eclipse-2017\workspace-alfresco-support\src-ricerca-cloud"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

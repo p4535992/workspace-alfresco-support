@@ -1,14 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.alfresco.api.AlfrescoPublicApi"/>
-<fullyQualifiedTypeName name="javax.xml.namespace.QName"/>
-<fullyQualifiedTypeName name="org.alfresco.service.namespace.NamespaceService"/>
-<fullyQualifiedTypeName name="org.alfresco.service.namespace.QName"/>
-<fullyQualifiedTypeName name="org.apache.http.ParseException"/>
-<fullyQualifiedTypeName name="org.alfresco.plugin.digitalSigning.dto.DigitalSigningDTO"/>
-<fullyQualifiedTypeName name="org.alfresco.plugin.digitalSigning.model.SigningModel"/>
-<fullyQualifiedTypeName name="org.alfresco.plugin.digitalSigning.model.SigningConstants"/>
-<fullyQualifiedTypeName name="org.alfresco.plugin.digitalSigning.utils.CryptUtils"/>
-<fullyQualifiedTypeName name="org.alfresco.plugin.digitalSigning.dto.VerifyResultDTO"/>
-<fullyQualifiedTypeName name="org.alfresco.plugin.digitalSigning.dto.VerifyingDTO"/>
+<fullyQualifiedTypeName name="it.abd.sign.lib.SignUtils"/>
 </qualifiedTypeNameHistroy>
