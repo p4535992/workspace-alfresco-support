@@ -14018,3 +14018,20 @@ java.lang.NullPointerException: null
 2017-07-31 17:26:14,411 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource to alfresco/module/digitalsigning-repo-220-abd
 2017-07-31 17:26:14,422 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-07-31 17:26:14,422 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-01 17:50:23,028 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-08-01 17:50:25,127 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Added timestamp to version - 1.2.0.1708011750
+2017-08-01 17:50:25,754 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-01 17:50:25,760 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-01 17:50:25,851 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 50 resources to C:\workspace-eclipse-2017\digitalsigning-repo-220-abd\target/amp
+2017-08-01 17:50:27,698 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Connection failed to localhost:8081, null webapp refresh aborted
+2017-08-01 17:50:27,812 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-01 17:50:27,813 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\digitalsigning-repo-220-abd\src\main\profiles\${envClassifier}
+2017-08-01 17:50:28,535 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - nb warnings: 0, nb errors: 0
+2017-08-01 17:50:28,549 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-01 17:50:28,549 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace-eclipse-2017\digitalsigning-repo-220-abd\src\test\resources
+2017-08-01 17:50:28,563 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-01 17:50:28,567 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource to alfresco/module/digitalsigning-repo-220-abd
+2017-08-01 17:50:28,608 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-01 17:50:28,613 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 49 resources
+2017-08-01 19:41:54,438 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to build parent project for org.alfresco.maven:alfresco-sdk-parent:pom:2.1.1
+2017-08-01 19:41:54,443 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to build parent project for de.form4.alfresco:manualsynctrigger-repo:amp:1.0.0
