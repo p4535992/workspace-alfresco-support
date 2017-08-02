@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="__aKtwHUGEee9NZ0MlJ5pLQ" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="__aKtwXUGEee9NZ0MlJ5pLQ" bindingContexts="__aMk6nUGEee9NZ0MlJ5pLQ">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;digitalSigningModel.xml&quot; tooltip=&quot;digitalsigning-repo-220-abd/src/main/amp/config/alfresco/module/digitalsigning-repo-220/model/digitalSigningModel.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-220-abd/src/main/amp/config/alfresco/module/digitalsigning-repo-220/model/digitalSigningModel.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;module-context.xml&quot; tooltip=&quot;digitalsigning-repo-220-abd/src/main/amp/config/alfresco/module/digitalsigning-repo-220/module-context.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-220-abd/src/main/amp/config/alfresco/module/digitalsigning-repo-220/module-context.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;share-config-custom.xml&quot; tooltip=&quot;digitalsigning-share-220/src/main/resources/META-INF/share-config-custom.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-share-220/src/main/resources/META-INF/share-config-custom.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SigningService.java&quot; tooltip=&quot;digitalsigning-repo-220-abd/src/main/java/org/alfresco/plugin/digitalSigning/service/SigningService.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-220-abd/src/main/java/org/alfresco/plugin/digitalSigning/service/SigningService.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SigningServiceScript.java&quot; tooltip=&quot;digitalsigning-repo-220-abd/src/main/java/org/alfresco/plugin/digitalSigning/script/SigningServiceScript.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-220-abd/src/main/java/org/alfresco/plugin/digitalSigning/script/SigningServiceScript.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; tooltip=&quot;digitalsigning-repo-220-abd/pom.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-220-abd/pom.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.jsdt.ui.CompilationUnitEditor&quot; name=&quot;search.get.js&quot; tooltip=&quot;digitalsigning-repo-220/src/main/amp/config/alfresco/extension/templates/webscripts/alfresco/digitalSigning/search/search.get.js&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-220/src/main/amp/config/alfresco/extension/templates/webscripts/alfresco/digitalSigning/search/search.get.js&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditorNoSource&quot; name=&quot;ContentModel.class&quot; tooltip=&quot;org.alfresco.model.ContentModel&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=digitalsigning-repo-300/C:\/Users\/Pancio\/.m2\/repository\/org\/alfresco\/alfresco-data-model\/6.7\/alfresco-data-model-6.7.jar&amp;lt;org.alfresco.model(ContentModel.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SigningConstants.java&quot; tooltip=&quot;digitalsigning-repo-300/src/main/java/org/alfresco/plugin/digitalSigning/model/SigningConstants.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-300/src/main/java/org/alfresco/plugin/digitalSigning/model/SigningConstants.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SigningServiceScript.java&quot; tooltip=&quot;digitalsigning-repo-300/src/main/java/org/alfresco/plugin/digitalSigning/script/SigningServiceScript.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-300/src/main/java/org/alfresco/plugin/digitalSigning/script/SigningServiceScript.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SigningWebScript.java&quot; tooltip=&quot;digitalsigning-repo-300/src/main/java/org/alfresco/plugin/digitalSigning/webscript/SigningWebScript.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-300/src/main/java/org/alfresco/plugin/digitalSigning/webscript/SigningWebScript.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; tooltip=&quot;digitalSigningAlfresco/pom.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalSigningAlfresco/pom.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;digitalSigningModel.xml&quot; tooltip=&quot;digitalsigning-repo-220/target/amp/config/alfresco/module/digitalsigning-repo-220/model/digitalSigningModel.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-220/target/amp/config/alfresco/module/digitalsigning-repo-220/model/digitalSigningModel.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; tooltip=&quot;digitalsigning-share-220/pom.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-share-220/pom.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; tooltip=&quot;digitalsigning-repo-220/pom.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-220/pom.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;action-context.xml&quot; tooltip=&quot;alfresco-allinone-abd-platform-jar/src/main/resources/alfresco/module/alfresco-allinone-abd-platform-jar/context/action-context.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/alfresco-allinone-abd-platform-jar/src/main/resources/alfresco/module/alfresco-allinone-abd-platform-jar/context/action-context.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.PropertiesFileEditor&quot; name=&quot;scModel.properties&quot; tooltip=&quot;alfresco-allinone-abd-platform-jar/src/main/resources/alfresco/module/alfresco-allinone-abd-platform-jar/messages/scModel.properties&quot;>&#xD;&#xA;&lt;persistable path=&quot;/alfresco-allinone-abd-platform-jar/src/main/resources/alfresco/module/alfresco-allinone-abd-platform-jar/messages/scModel.properties&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;module-context.xml&quot; tooltip=&quot;alfresco-allinone-abd-platform-jar/src/main/resources/alfresco/module/alfresco-allinone-abd-platform-jar/module-context.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/alfresco-allinone-abd-platform-jar/src/main/resources/alfresco/module/alfresco-allinone-abd-platform-jar/module-context.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ScModelParameter.java&quot; tooltip=&quot;alfresco-allinone-abd-platform-jar/src/main/java/it/abd/alfresco_allinone_abd/parameters/ScModelParameter.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/alfresco-allinone-abd-platform-jar/src/main/java/it/abd/alfresco_allinone_abd/parameters/ScModelParameter.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SetWebFlag.java&quot; tooltip=&quot;alfresco-allinone-abd-platform-jar/src/main/java/it/abd/alfresco_allinone_abd/actions/SetWebFlag.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/alfresco-allinone-abd-platform-jar/src/main/java/it/abd/alfresco_allinone_abd/actions/SetWebFlag.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; tooltip=&quot;digitalsigning-share-300/pom.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-share-300/pom.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; tooltip=&quot;digitalsigning-share-220/pom.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-share-220/pom.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; tooltip=&quot;digitalsigning-repo-300/pom.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-300/pom.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; tooltip=&quot;digitalsigning-repo-220/pom.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-220/pom.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; tooltip=&quot;digitalsigning-repo-220-abd/pom.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-220-abd/pom.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CertificateAlert.java&quot; tooltip=&quot;digitalsigning-repo-300/src/main/java/org/alfresco/plugin/digitalSigning/scheduledAction/CertificateAlert.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-300/src/main/java/org/alfresco/plugin/digitalSigning/scheduledAction/CertificateAlert.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CertificateAlert.java&quot; tooltip=&quot;digitalsigning-repo-220-abd/src/main/java/org/alfresco/plugin/digitalSigning/scheduledAction/CertificateAlert.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-220-abd/src/main/java/org/alfresco/plugin/digitalSigning/scheduledAction/CertificateAlert.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CertificateAlert.java&quot; tooltip=&quot;digitalsigning-repo-220/src/main/java/org/alfresco/plugin/digitalSigning/scheduledAction/CertificateAlert.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-220/src/main/java/org/alfresco/plugin/digitalSigning/scheduledAction/CertificateAlert.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;digitalSigningModel.xml&quot; tooltip=&quot;digitalsigning-repo-220/src/main/amp/config/alfresco/module/digitalsigning-repo-220/model/digitalSigningModel.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-220/src/main/amp/config/alfresco/module/digitalsigning-repo-220/model/digitalSigningModel.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;digitalSigningModel.xml&quot; tooltip=&quot;digitalsigning-repo-220-abd/src/main/amp/config/alfresco/module/digitalsigning-repo-220-abd/model/digitalSigningModel.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/digitalsigning-repo-220-abd/src/main/amp/config/alfresco/module/digitalsigning-repo-220-abd/model/digitalSigningModel.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="__aKtwXUGEee9NZ0MlJ5pLQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="__aKtwnUGEee9NZ0MlJ5pLQ" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
@@ -97,6 +97,7 @@
           <tags>persp.actionSet:ajelementCreation</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="__aKtxXUGEee9NZ0MlJ5pLQ" selectedElement="__aKty3UGEee9NZ0MlJ5pLQ" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="__aKtxnUGEee9NZ0MlJ5pLQ" elementId="topLeft" containerData="2027" selectedElement="__aKtx3UGEee9NZ0MlJ5pLQ">
+              <tags>noFocus</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="__aKtx3UGEee9NZ0MlJ5pLQ" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="__aLV0nUGEee9NZ0MlJ5pLQ"/>
               <children xsi:type="advanced:Placeholder" xmi:id="__aKtyHUGEee9NZ0MlJ5pLQ" elementId="org.eclipse.ui.views.ResourceNavigator" ref="__aLWNXUGEee9NZ0MlJ5pLQ"/>
               <children xsi:type="advanced:Placeholder" xmi:id="__aKtyXUGEee9NZ0MlJ5pLQ" elementId="org.eclipse.jdt.ui.TypeHierarchy" toBeRendered="false" ref="__aLWNnUGEee9NZ0MlJ5pLQ"/>
@@ -122,6 +123,58 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="__aKt2nUGEee9NZ0MlJ5pLQ" elementId="org.eclipse.ui.views.BookmarkView" toBeRendered="false" ref="__aL7_XUGEee9NZ0MlJ5pLQ"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="__aKt23UGEee9NZ0MlJ5pLQ" elementId="org.eclipse.ui.views.ProgressView" ref="__aL7_nUGEee9NZ0MlJ5pLQ"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="__aKt3HUGEee9NZ0MlJ5pLQ" elementId="org.eclipse.search.ui.views.SearchView" ref="__aL8BXUGEee9NZ0MlJ5pLQ"/>
+              </children>
+            </children>
+          </children>
+        </children>
+        <children xsi:type="advanced:Perspective" xmi:id="_W0d_wHeeEeeKCsxr10RGSg" elementId="org.eclipse.team.ui.TeamSynchronizingPerspective" selectedElement="_W0d_wXeeEeeKCsxr10RGSg" label="Team Synchronizing" iconURI="platform:/plugin/org.eclipse.team.ui/$nl$/icons/full/eview16/synch_synch.gif">
+          <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,"/>
+          <tags>persp.actionSet:org.eclipse.mylyn.doc.actionSet</tags>
+          <tags>persp.actionSet:org.eclipse.mylyn.tasks.ui.navigation</tags>
+          <tags>persp.actionSet:org.eclipse.ui.cheatsheets.actionSet</tags>
+          <tags>persp.actionSet:org.eclipse.rse.core.search.searchActionSet</tags>
+          <tags>persp.actionSet:org.eclipse.search.searchActionSet</tags>
+          <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.annotationNavigation</tags>
+          <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.navigation</tags>
+          <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo</tags>
+          <tags>persp.actionSet:org.eclipse.ui.externaltools.ExternalToolsSet</tags>
+          <tags>persp.actionSet:org.eclipse.ui.actionSet.keyBindings</tags>
+          <tags>persp.actionSet:org.eclipse.ui.actionSet.openFiles</tags>
+          <tags>persp.actionSet:org.eclipse.wst.jsdt.chromium.debug.ui.actionSets</tags>
+          <tags>persp.actionSet:com.github.sdbg.debug.ui.launchActionSet</tags>
+          <tags>persp.actionSet:com.gwtplugins.gdt.eclipse.core.actionSet</tags>
+          <tags>persp.newWizSC:org.eclipse.ui.wizards.new.project</tags>
+          <tags>persp.newWizSC:org.eclipse.ui.wizards.new.folder</tags>
+          <tags>persp.newWizSC:org.eclipse.ui.wizards.new.file</tags>
+          <tags>persp.viewSC:org.eclipse.team.sync.views.SynchronizeView</tags>
+          <tags>persp.viewSC:org.eclipse.ui.navigator.ProjectExplorer</tags>
+          <tags>persp.viewSC:org.eclipse.ui.views.ContentOutline</tags>
+          <tags>persp.viewSC:org.eclipse.ui.views.TaskList</tags>
+          <tags>persp.viewSC:org.eclipse.ui.views.ProblemView</tags>
+          <tags>persp.actionSet:org.eclipse.team.ui.actionSet</tags>
+          <tags>persp.perspSC:org.eclipse.ui.resourcePerspective</tags>
+          <tags>persp.viewSC:org.eclipse.mylyn.tasks.ui.views.repositories</tags>
+          <tags>persp.showIn:org.eclipse.ui.navigator.ProjectExplorer</tags>
+          <tags>persp.showIn:org.eclipse.team.ui.GenericHistoryView</tags>
+          <tags>persp.showIn:org.eclipse.team.sync.views.SynchronizeView</tags>
+          <tags>persp.showIn:org.eclipse.tm.terminal.view.ui.TerminalsView</tags>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_W0d_wXeeEeeKCsxr10RGSg" selectedElement="_W0d_wneeEeeKCsxr10RGSg" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_W0d_wneeEeeKCsxr10RGSg" containerData="4500" selectedElement="_W0d_w3eeEeeKCsxr10RGSg">
+              <children xsi:type="basic:PartStack" xmi:id="_W0d_w3eeEeeKCsxr10RGSg" elementId="top" containerData="7000" selectedElement="_W0d_xHeeEeeKCsxr10RGSg">
+                <tags>org.eclipse.e4.primaryNavigationStack</tags>
+                <children xsi:type="advanced:Placeholder" xmi:id="_W0d_xHeeEeeKCsxr10RGSg" elementId="org.eclipse.team.sync.views.SynchronizeView" ref="_WzrVkHeeEeeKCsxr10RGSg"/>
+              </children>
+              <children xsi:type="basic:PartStack" xmi:id="_W0d_xXeeEeeKCsxr10RGSg" elementId="org.eclipse.mylyn.tasks.ui.views.repositoriesMStack" containerData="3000" selectedElement="_W0d_xneeEeeKCsxr10RGSg">
+                <children xsi:type="advanced:Placeholder" xmi:id="_W0d_xneeEeeKCsxr10RGSg" elementId="org.eclipse.mylyn.tasks.ui.views.repositories" ref="_W0ZuUHeeEeeKCsxr10RGSg"/>
+              </children>
+            </children>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_W0d_x3eeEeeKCsxr10RGSg" containerData="5500" selectedElement="_W0d_yHeeEeeKCsxr10RGSg">
+              <children xsi:type="advanced:Placeholder" xmi:id="_W0d_yHeeEeeKCsxr10RGSg" elementId="org.eclipse.ui.editorss" containerData="8000" ref="__aLVgXUGEee9NZ0MlJ5pLQ"/>
+              <children xsi:type="basic:PartStack" xmi:id="_W0d_yXeeEeeKCsxr10RGSg" elementId="top2" containerData="2000" selectedElement="_W0d_yneeEeeKCsxr10RGSg">
+                <tags>org.eclipse.e4.secondaryDataStack</tags>
+                <children xsi:type="advanced:Placeholder" xmi:id="_W0d_yneeEeeKCsxr10RGSg" elementId="org.eclipse.team.ui.GenericHistoryView" ref="_WzuY4HeeEeeKCsxr10RGSg"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_W0d_y3eeEeeKCsxr10RGSg" elementId="org.eclipse.ui.views.TaskList" ref="__aL753UGEee9NZ0MlJ5pLQ"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_W0d_zHeeEeeKCsxr10RGSg" elementId="org.eclipse.ui.views.ProblemView" ref="__aL75nUGEee9NZ0MlJ5pLQ"/>
               </children>
             </children>
           </children>
@@ -157,12 +210,12 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="__aLVgXUGEee9NZ0MlJ5pLQ" elementId="org.eclipse.ui.editorss" selectedElement="__aLVgnUGEee9NZ0MlJ5pLQ">
-      <children xsi:type="basic:PartStack" xmi:id="__aLVgnUGEee9NZ0MlJ5pLQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_AS2bwHbUEee0nJOl4rXOYw">
+      <children xsi:type="basic:PartStack" xmi:id="__aLVgnUGEee9NZ0MlJ5pLQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_VwWwAHehEeeKCsxr10RGSg">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="__aLVhHUGEee9NZ0MlJ5pLQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="README.md" iconURI="platform:/plugin/org.eclipse.mylyn.wikitext.ui/icons/editor-icon.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.mylyn.wikitext.ui.editor.markupEditor&quot; name=&quot;README.md&quot; partName=&quot;README.md&quot; title=&quot;README.md&quot; tooltip=&quot;alfresco-allinone-abd-share-jar/src/main/resources/alfresco/web-extension/site-webscripts/org/alfresco/README.md&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/alfresco-allinone-abd-share-jar/src/main/resources/alfresco/web-extension/site-webscripts/org/alfresco/README.md&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.mylyn.wikitext.ui.editor.markupEditor&quot; name=&quot;README.md&quot; partName=&quot;README.md&quot; title=&quot;README.md&quot; tooltip=&quot;alfresco-allinone-abd-share-jar/src/main/resources/alfresco/web-extension/site-webscripts/org/alfresco/README.md&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/alfresco-allinone-abd-share-jar/src/main/resources/alfresco/web-extension/site-webscripts/org/alfresco/README.md&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;269&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.mylyn.wikitext.ui.editor.markupEditor</tags>
           <tags>removeOnHide</tags>
@@ -198,7 +251,7 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="__aLVinUGEee9NZ0MlJ5pLQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="scModel.properties" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/file_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.PropertiesFileEditor&quot; name=&quot;scModel.properties&quot; partName=&quot;scModel.properties&quot; title=&quot;scModel.properties&quot; tooltip=&quot;alfresco-allinone-abd-platform-jar/src/main/resources/alfresco/module/alfresco-allinone-abd-platform-jar/messages/scModel.properties&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/alfresco-allinone-abd-platform-jar/src/main/resources/alfresco/module/alfresco-allinone-abd-platform-jar/messages/scModel.properties&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.PropertiesFileEditor&quot; name=&quot;scModel.properties&quot; partName=&quot;scModel.properties&quot; title=&quot;scModel.properties&quot; tooltip=&quot;alfresco-allinone-abd-platform-jar/src/main/resources/alfresco/module/alfresco-allinone-abd-platform-jar/messages/scModel.properties&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/alfresco-allinone-abd-platform-jar/src/main/resources/alfresco/module/alfresco-allinone-abd-platform-jar/messages/scModel.properties&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1096&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.PropertiesFileEditor</tags>
           <tags>removeOnHide</tags>
@@ -675,19 +728,97 @@
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_AS2bwHbUEee0nJOl4rXOYw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="digitalSigningModel.xml" iconURI="platform:/plugin/com.android.ide.eclipse.adt/icons/android_file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;digitalSigningModel.xml&quot; partName=&quot;digitalSigningModel.xml&quot; title=&quot;digitalSigningModel.xml&quot; tooltip=&quot;digitalsigning-repo-220-abd/src/main/amp/config/alfresco/module/digitalsigning-repo-220/model/digitalSigningModel.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/digitalsigning-repo-220-abd/src/main/amp/config/alfresco/module/digitalsigning-repo-220/model/digitalSigningModel.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.android.ide.eclipse.editors.CommonXmlEditor</tags>
-          <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
-        </children>
         <children xsi:type="basic:Part" xmi:id="_PMgXoHbUEee0nJOl4rXOYw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="module-context.xml" iconURI="platform:/plugin/com.android.ide.eclipse.adt/icons/android_file.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;module-context.xml&quot; partName=&quot;module-context.xml&quot; title=&quot;module-context.xml&quot; tooltip=&quot;digitalsigning-repo-220-abd/src/main/amp/config/alfresco/module/digitalsigning-repo-220/module-context.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/digitalsigning-repo-220-abd/src/main/amp/config/alfresco/module/digitalsigning-repo-220/module-context.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>com.android.ide.eclipse.editors.CommonXmlEditor</tags>
           <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_6azS8HeGEeeKCsxr10RGSg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="digitalSigningModel.xml" iconURI="platform:/plugin/com.android.ide.eclipse.adt/icons/android_file.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;digitalSigningModel.xml&quot; partName=&quot;digitalSigningModel.xml&quot; title=&quot;digitalSigningModel.xml&quot; tooltip=&quot;digitalsigning-repo-220-abd/src/main/amp/config/alfresco/module/digitalsigning-repo-220-abd/model/digitalSigningModel.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/digitalsigning-repo-220-abd/src/main/amp/config/alfresco/module/digitalsigning-repo-220-abd/model/digitalSigningModel.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.android.ide.eclipse.editors.CommonXmlEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_CBPf4HeHEeeKCsxr10RGSg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="digitalSigningShare-slingshot-application-context.xml" iconURI="platform:/plugin/com.android.ide.eclipse.adt/icons/android_file.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;digitalSigningShare-slingshot-application-context.xml&quot; partName=&quot;digitalSigningShare-slingshot-application-context.xml&quot; title=&quot;digitalSigningShare-slingshot-application-context.xml&quot; tooltip=&quot;digitalsigning-share-220/src/main/amp/config/alfresco/web-extension/digitalSigningShare-slingshot-application-context.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/digitalsigning-share-220/src/main/amp/config/alfresco/web-extension/digitalSigningShare-slingshot-application-context.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.android.ide.eclipse.editors.CommonXmlEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_8M-McHeMEeeKCsxr10RGSg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="digitalSigningModel.xml" iconURI="platform:/plugin/com.android.ide.eclipse.adt/icons/android_file.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;digitalSigningModel.xml&quot; partName=&quot;digitalSigningModel.xml&quot; title=&quot;digitalSigningModel.xml&quot; tooltip=&quot;digitalsigning-repo-220/src/main/amp/config/alfresco/module/digitalsigning-repo-220/model/digitalSigningModel.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/digitalsigning-repo-220/src/main/amp/config/alfresco/module/digitalsigning-repo-220/model/digitalSigningModel.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.android.ide.eclipse.editors.CommonXmlEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_PoFIAHeSEeeKCsxr10RGSg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="digitalsigning-repo-220/pom.xml" iconURI="platform:/plugin/org.eclipse.m2e.editor/icons/editor-pom.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; partName=&quot;digitalsigning-repo-220/pom.xml&quot; title=&quot;digitalsigning-repo-220/pom.xml&quot; tooltip=&quot;digitalsigning-repo-220/pom.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/digitalsigning-repo-220/pom.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.m2e.editor.MavenPomEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_axsgwHeSEeeKCsxr10RGSg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="digitalsigning-repo-220-abd/pom.xml" iconURI="platform:/plugin/org.eclipse.m2e.editor/icons/editor-pom.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; partName=&quot;digitalsigning-repo-220-abd/pom.xml&quot; title=&quot;digitalsigning-repo-220-abd/pom.xml&quot; tooltip=&quot;digitalsigning-repo-220-abd/pom.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/digitalsigning-repo-220-abd/pom.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.m2e.editor.MavenPomEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_dGVc4HeSEeeKCsxr10RGSg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="digitalsigning-repo-300/pom.xml" iconURI="platform:/plugin/org.eclipse.m2e.editor/icons/editor-pom.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; partName=&quot;digitalsigning-repo-300/pom.xml&quot; title=&quot;digitalsigning-repo-300/pom.xml&quot; tooltip=&quot;digitalsigning-repo-300/pom.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/digitalsigning-repo-300/pom.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.m2e.editor.MavenPomEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_hvdkIHeSEeeKCsxr10RGSg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="digitalsigning-share-220/pom.xml" iconURI="platform:/plugin/org.eclipse.m2e.editor/icons/editor-pom.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; partName=&quot;digitalsigning-share-220/pom.xml&quot; title=&quot;digitalsigning-share-220/pom.xml&quot; tooltip=&quot;digitalsigning-share-220/pom.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/digitalsigning-share-220/pom.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.m2e.editor.MavenPomEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_j-XrsHeSEeeKCsxr10RGSg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="digitalsigning-share-300/pom.xml" iconURI="platform:/plugin/org.eclipse.m2e.editor/icons/editor-pom.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; partName=&quot;digitalsigning-share-300/pom.xml&quot; title=&quot;digitalsigning-share-300/pom.xml&quot; tooltip=&quot;digitalsigning-share-300/pom.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/digitalsigning-share-300/pom.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.m2e.editor.MavenPomEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_oKl_EHeTEeeKCsxr10RGSg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="CertificateAlert.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CertificateAlert.java&quot; partName=&quot;CertificateAlert.java&quot; title=&quot;CertificateAlert.java&quot; tooltip=&quot;digitalsigning-repo-220/src/main/java/org/alfresco/plugin/digitalSigning/scheduledAction/CertificateAlert.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/digitalsigning-repo-220/src/main/java/org/alfresco/plugin/digitalSigning/scheduledAction/CertificateAlert.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3434&quot; selectionTopPixel=&quot;900&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_sm1g4HeTEeeKCsxr10RGSg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="CertificateAlert.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CertificateAlert.java&quot; partName=&quot;CertificateAlert.java&quot; title=&quot;CertificateAlert.java&quot; tooltip=&quot;digitalsigning-repo-220-abd/src/main/java/org/alfresco/plugin/digitalSigning/scheduledAction/CertificateAlert.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/digitalsigning-repo-220-abd/src/main/java/org/alfresco/plugin/digitalSigning/scheduledAction/CertificateAlert.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3277&quot; selectionTopPixel=&quot;964&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_7hzrYHeTEeeKCsxr10RGSg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="CertificateAlert.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CertificateAlert.java&quot; partName=&quot;CertificateAlert.java&quot; title=&quot;CertificateAlert.java&quot; tooltip=&quot;digitalsigning-repo-300/src/main/java/org/alfresco/plugin/digitalSigning/scheduledAction/CertificateAlert.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/digitalsigning-repo-300/src/main/java/org/alfresco/plugin/digitalSigning/scheduledAction/CertificateAlert.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;10630&quot; selectionTopPixel=&quot;3283&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_S6H0oHefEeeKCsxr10RGSg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ScModelParameter.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ScModelParameter.java&quot; partName=&quot;ScModelParameter.java&quot; title=&quot;ScModelParameter.java&quot; tooltip=&quot;alfresco-allinone-abd-platform-jar/src/main/java/it/abd/alfresco_allinone_abd/parameters/ScModelParameter.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/alfresco-allinone-abd-platform-jar/src/main/java/it/abd/alfresco_allinone_abd/parameters/ScModelParameter.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;44&quot; selectionOffset=&quot;157&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_6xlR4HefEeeKCsxr10RGSg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SetWebFlag.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SetWebFlag.java&quot; partName=&quot;SetWebFlag.java&quot; title=&quot;SetWebFlag.java&quot; tooltip=&quot;alfresco-allinone-abd-platform-jar/src/main/java/it/abd/alfresco_allinone_abd/actions/SetWebFlag.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/alfresco-allinone-abd-platform-jar/src/main/java/it/abd/alfresco_allinone_abd/actions/SetWebFlag.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;787&quot; selectionTopPixel=&quot;94&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_VwWwAHehEeeKCsxr10RGSg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="action-context.xml" iconURI="platform:/plugin/com.android.ide.eclipse.adt/icons/android_file.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;action-context.xml&quot; partName=&quot;action-context.xml&quot; title=&quot;action-context.xml&quot; tooltip=&quot;alfresco-allinone-abd-platform-jar/src/main/resources/alfresco/module/alfresco-allinone-abd-platform-jar/context/action-context.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/alfresco-allinone-abd-platform-jar/src/main/resources/alfresco/module/alfresco-allinone-abd-platform-jar/context/action-context.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.android.ide.eclipse.editors.CommonXmlEditor</tags>
+          <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
@@ -885,6 +1016,39 @@
       <tags>View</tags>
       <tags>categoryTag:Mylyn</tags>
     </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_WzrVkHeeEeeKCsxr10RGSg" elementId="org.eclipse.team.sync.views.SynchronizeView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Synchronize" iconURI="platform:/plugin/org.eclipse.team.ui/icons/full/eview16/synch_synch.gif" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.team.ui"/>
+      <persistedState key="originalCompatibilityViewClass" value="org.eclipse.team.internal.ui.synchronize.SynchronizeView"/>
+      <tags>View</tags>
+      <tags>categoryTag:Team</tags>
+      <menus xmi:id="_W7-V8HeeEeeKCsxr10RGSg" elementId="org.eclipse.team.sync.views.SynchronizeView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_W7-V8XeeEeeKCsxr10RGSg" elementId="org.eclipse.team.sync.views.SynchronizeView"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_WzuY4HeeEeeKCsxr10RGSg" elementId="org.eclipse.team.ui.GenericHistoryView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="History" iconURI="platform:/plugin/org.eclipse.team.ui/icons/full/eview16/history_view.gif" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.team.ui"/>
+      <persistedState key="originalCompatibilityViewClass" value="org.eclipse.team.internal.ui.history.GenericHistoryView"/>
+      <tags>View</tags>
+      <tags>categoryTag:Team</tags>
+      <menus xmi:id="_X6sA8HeeEeeKCsxr10RGSg" elementId="org.eclipse.team.ui.GenericHistoryView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_X6sA8XeeEeeKCsxr10RGSg" elementId="org.eclipse.team.ui.GenericHistoryView"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_W0ZuUHeeEeeKCsxr10RGSg" elementId="org.eclipse.mylyn.tasks.ui.views.repositories" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Task Repositories" iconURI="platform:/plugin/org.eclipse.mylyn.tasks.ui/icons/eview16/repositories.gif" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.mylyn.tasks.ui"/>
+      <persistedState key="originalCompatibilityViewClass" value="org.eclipse.mylyn.internal.tasks.ui.views.TaskRepositoriesView"/>
+      <tags>View</tags>
+      <tags>categoryTag:Mylyn</tags>
+      <menus xmi:id="_X20NkHeeEeeKCsxr10RGSg" elementId="org.eclipse.mylyn.tasks.ui.views.repositories">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_X20NkXeeEeeKCsxr10RGSg" elementId="org.eclipse.mylyn.tasks.ui.views.repositories"/>
+    </sharedElements>
     <trimBars xmi:id="__aL8RHUGEee9NZ0MlJ5pLQ" elementId="org.eclipse.ui.main.toolbar">
       <children xsi:type="menu:ToolBar" xmi:id="__aL8RXUGEee9NZ0MlJ5pLQ" elementId="group.file" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -892,11 +1056,14 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="__aL8R3UGEee9NZ0MlJ5pLQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_m76wEHbQEee0nJOl4rXOYw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="__aQPNnUGEee9NZ0MlJ5pLQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6vJ3UHdPEeeKCsxr10RGSg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="__aQPNnUGEee9NZ0MlJ5pLQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="__aL8V3UGEee9NZ0MlJ5pLQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="__aL8WHUGEee9NZ0MlJ5pLQ" elementId="additions" toBeRendered="false"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_W15jIHeeEeeKCsxr10RGSg" elementId="org.eclipse.team.ui.actionSet" visible="false">
+        <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="__aL8m3UGEee9NZ0MlJ5pLQ" elementId="org.eclipse.jdt.ui.JavaElementCreationActionSet" visible="false">
         <tags>Draggable</tags>
@@ -925,10 +1092,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="__aL8unUGEee9NZ0MlJ5pLQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_m8G9UHbQEee0nJOl4rXOYw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="__aQOznUGEee9NZ0MlJ5pLQ"/>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_LpRQMHW9EeeZZ8G0n2DLhQ" elementId="org.eclipse.jdt.ui.PropertiesFileEditor" visible="false">
-        <tags>Draggable</tags>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6vZu8HdPEeeKCsxr10RGSg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="__aQOznUGEee9NZ0MlJ5pLQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="__aL8yHUGEee9NZ0MlJ5pLQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
