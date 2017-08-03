@@ -16,7 +16,7 @@
         (will be merged with out-of-the-box configured types and aspects)
     =============================================================================================================-->
     <!-- MODIFICATO ASPECT E PROP AGGIUNTI -->
-    <config evaluator="string-compare" condition="DocumentLibrary">      <!-- TODO replace="true" nasconde altir amp sia con replace che senza -->
+    <config evaluator="string-compare" condition="DocumentLibrary" replace="true">      <!-- TODO replace="true" nasconde altir amp sia con replace che senza -->
         <types>
             <!-- Define the ACME base doc type as decedent from cm:content -->
             <!--  

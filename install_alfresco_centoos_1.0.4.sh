@@ -13,21 +13,12 @@
 # -------
 echo "--- START ALFRESCO SCRIPT INSTALLER ---"
 
-#
-export ALF_HOME=/opt/alfresco-community-201707
-export ALF_DATA_HOME=$ALF_HOME/alf_data
-export CATALINA_HOME=$ALF_HOME/tomcat
-export ALF_USER=alfresco
-export ALF_GROUP=$ALF_USER
-export APTVERBOSITY="-qq -y"
-export TMP_INSTALL=/tmp/alfrescoinstall
-#Da sistemare la ricerca della versione di alfresco
-export ALFRESCO_INSTALLER_URL=https://sourceforge.net/projects/alfresco/files/Alfresco%20201707%20Community/alfresco-community-installer-201707-linux-x64.bin/download
-#Da sistemare le ricerca della versione java 
-#export JDK_ORACLE_URL_RPM=http://download.oracle.com/otn-pub/java/jdk/8u131/jdk-8u131-linux-x64.rpm
+if [ "$(id -u)" != "0" ]; then
+   echo "This script must be run as root" 1>&2
+   exit 1
+	#sudo su
+fi
 
-#6,7,8
-export JDK_VERSION=8
 #
 # Color variables
 txtund=$(tput sgr 0 1)          # Underline
@@ -58,13 +49,12 @@ echogreen(){
 #export https_proxy=http://192.168.1.188:3128/
 #export ftp_proxy=http://192.168.1.188:3128/
 
-
-
 #create the temp folder where put the installers
-if [ -d "/tmp/alfrescoinstall" ]; then
-	rm -rf alfrescoinstall
+if [[ -d "/tmp/alfrescoinstall" ]]; then
+   rm -rf alfrescoinstall 
+else
+   mkdir /tmp/alfrescoinstall
 fi
-mkdir /tmp/alfrescoinstall
 
 echo
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
@@ -72,67 +62,100 @@ echogreen "Alfresco CentoOS installer by Marco Tenti."
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 echo
 
+echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+echoblue "Your Properties"
+echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+#
+export ALF_HOME=/opt/alfresco-community-201707
+export ALF_DATA_HOME=$ALF_HOME/alf_data
+export CATALINA_HOME=$ALF_HOME/tomcat
+export ALF_USER=alfresco
+export ALF_GROUP=$ALF_USER
+export APTVERBOSITY="-qq -y"
+export TMP_INSTALL=/tmp/alfrescoinstall
+#Da sistemare la ricerca della versione di alfresco
+export ALFRESCO_INSTALLER_URL=https://sourceforge.net/projects/alfresco/files/Alfresco%20201707%20Community/alfresco-community-installer-201707-linux-x64.bin/download
+#Da sistemare le ricerca della versione java 
+#export JDK_ORACLE_URL_RPM=http://download.oracle.com/otn-pub/java/jdk/8u131/jdk-8u131-linux-x64.rpm
+#6,7,8
+export JDK_VERSION=8
+export MAVEN_VERSION=3.3.9
+
+export ALF_ADMIN_PASS=admin
+export ALD_NAME_SCRIPT_SERVICE=alfresco
+
 echo "PATH INSTALL ALFRESCO:" $ALF_HOME
-if [ "$(id -u)" != "0" ]; then
-   echo "This script must be run as root" 1>&2
-   exit 1
-	#sudo su
-fi
+echo "ALF_DATA_HOME:" $ALF_DATA_HOME
+echo "CATALINA_HOME:" $CATALINA_HOME
+echo "ALF_USER:" $ALF_USER
+echo "ALF_GROUP:" $ALF_USER
+echo "TMP_INSTALL:" $TMP_INSTALL
+#Da sistemare la ricerca della versione di alfresco
+echo "ALFRESCO_INSTALLER_URL:" $ALFRESCO_INSTALLER_URL
+echo "JDK_VERSION:" $JDK_VERSION "(you donwload the last version)"
+echo "MAVEN_VERSION:" $MAVEN_VERSION
+echo "ALF_ADMIN_PASS:" $ALF_ADMIN_PASS
+echo "ALD_NAME_SCRIPT_SERVICE:" $ALD_NAME_SCRIPT_SERVICE
 
 echo
-echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-echo "Preparing for install. Updating the package index files..."
-echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+echoblue "--- Preparing for install. Updating the package index files..."
 #yum update && upgrade
 echo
 
+if [ "`which mc`" = "" ]; then
+echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+echo "--- You need to install mc. mc is used for developing the application."
+echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+yum -y install mc
+fi
+
 if [ "`which wget`" = "" ]; then
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-echo "You need to install wget. Wget is used for downloading components to install."
+echo "--- You need to install wget. Wget is used for downloading components to install."
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-yum install wget
+yum -y install wget
 fi
 
 if [ "`which sed`" = "" ]; then
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-echo "You need to install sed. Sed is used for replace content of a file."
+echo "--- You need to install sed. Sed is used for replace content of a file."
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-yum install sed
+yum -y install sed
 fi
 
 if [ "`which tar`" = "" ]; then
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-echo "You need to install tar. Tar is used for read and extract gz archive."
+echo "--- You need to install tar. Tar is used for read and extract gz archive."
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-yum install tar
+yum -y install tar
 fi
 
 if [ "`which rpm`" = "" ]; then
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-echo "You need to install rpm. rpm is used for read and extract gz archive."
+echo "--- You need to install rpm. rpm is used for read and extract gz archive."
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-yum install rpm
+yum -y install rpm
 fi
 
-echoblue "Installiamo gli spacchettizatori per poter leggere i pacchetti compressi con midnight commander"
+echoblue "--- Installiamo gli spacchettizatori per poter leggere i pacchetti compressi con midnight commander ---"
 
 if [ "`which zip`" = "" ]; then
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-echo "You need to install zip. zip is used for read and extract archive."
+echo "--- You need to install zip. zip is used for read and extract archive."
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 yum -y install zip unzip
 fi
 
 if [ "`which gzip`" = "" ]; then
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-echo "You need to install gzip. gzip is used for read and extract archive."
+echo "--- You need to install gzip. gzip is used for read and extract archive."
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 yum -y install gzip gunzip
 fi
 
-if [ "`which p7zip`" = "" ]; then
+if [ "`which 7z`" = "" ]; then
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-echo "You need to install 7zip. 7zip is used for read and extract archive."
+echo "--- You need to install 7zip. 7zip is used for read and extract archive."
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 cat /etc/*release
 sudo yum install -y -q epel-release
@@ -144,8 +167,13 @@ fi
 
 #Install some dependencies not bundled in the Alfresco installer:
 echoblue "--- Installiamo i pacchetti base per Libre Office di alfresco ---"
-yum install llibXt libXrender libSM libICE libXext fontconfig cups-libs mesa-libGLU libGLU 
+if [ "`which fc-query`" = "" ]; then
+	#Some or all of the libraries needed to support LibreOffice were not found on your system: fontconfig libSM libICE libXrender libXext libcups libGLU libcairo2 libgl1-mesa-glx
+	sudo yum -y install fontconfig libSM libICE libXrender libXext libcups libGLU libcairo2 libgl1-mesa-glx
+	#sudo yum -y install llibXt libXrender libSM libICE libXext fontconfig cups-libs mesa-libGLU libGLU 
+	#sudo yum install cairo-devel
 
+fi
 #echo
 #echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 #echo "You need to add a system user that runs the tomcat Alfresco instance."
@@ -164,7 +192,12 @@ yum install llibXt libXrender libSM libICE libXext fontconfig cups-libs mesa-lib
 #Operazioni consigliate dagli esperti 
 #Create the alfresco group
 echoblue "--- Create the alfresco group"
-sudo groupadd alfresco 
+if [ $(getent group alfresco) ]; then
+  echored "--- groupadd: group 'alfresco' already exists"
+else
+  #echo "group does not exist."
+  sudo groupadd alfresco 
+fi
 #Create the alfresco user:
 #sudo adduser-m -g alfresco alfresco 
 #Define a password for the alfresco user:
@@ -179,7 +212,7 @@ sudo usermod -a -G alfresco root
 
 #search for if any older JDK versions are installed in your system
 #rpm -qa | grep -E '^open[jre|jdk]|j[re|dk]'
-echoblue "Verify of the JVM"
+echoblue "--- Verify of the JVM ---"
 if [[ $(java -version 2>&1) == *"OpenJDK"* ]]; 
 then 
 	echored "--- WARNING: You have open jdk installed. Install Java JDK."; 
@@ -262,12 +295,13 @@ else
 	echoblue '--- You have already a jdk java'; 
 fi
 
-echoblue "Verify of Maven"
-if [[ $(mvn -version 2>&1) == *"command not found"* ]]; then
-	wget http://mirrors.gigenet.com/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
-	tar -zxvf apache-maven-3.3.9-bin.tar.gz -C /opt/
+echoblue "--- Verify of Maven ---"
+#if [[ $(mvn -version 2>&1) == *"command not found"* ]]; then
+if [ "`which mvn`" = "" ]; then
+	wget "http://mirrors.gigenet.com/apache/maven/maven-3/"$MAVEN_VERSION"/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz" -P /tmp/alfrescoinstall
+	tar -zxvf "/tmp/alfrescoinstall/apache-maven-"$MAVEN_VERSION"-bin.tar.gz" -C /opt/
 	#Settiamo la variabile di ambiente MAVEN_HOME sulla macchina:
-	export M2_HOME='/opt/apache-maven-3.3.9'
+	export M2_HOME='/opt/apache-maven-'$MAVEN_VERSION
 	export M2="$M2_HOME/bin"
 	export PATH="$PATH:$M2"
 	echogreen "--- Finished installing Maven"
@@ -277,16 +311,14 @@ fi
 
 #Create the folder where we'll install Alfresco and give access to our newly created user:
 echoblue "--- Create the folder where we'll install Alfresco and give access to our newly created user ---"
-if [ -d "/tmp/alfrescoinstall" ]; then
-	
+if [[ -d "/tmp/alfrescoinstall" ]]; then
+   echo 
 else
    sudo mkdir $ALF_HOME
 fi
-
 #sudo chown alfresco:root $ALF_HOME
 
 #echo "--- Scriviamo il servizio di supporto su /etc/init.d (consigliato dagli esperti come aggiuna a quello creato da automatico dall'installer ---"
-
 #cat > /etc/init.d/alfresco-service <<- EOF
 #!/bin/sh -e
 #
@@ -303,7 +335,6 @@ fi
 # echo "Usage: /etc/init.d/alfresco [start|stop|restart]"
 #fi
 #EOF
-
 
 #cat > /etc/init.d/alfresco-service <<- EOF 
 #!/bin/sh 
@@ -347,9 +378,17 @@ fi
 #sudo chmod +x /etc/init.d/alfresco-service        
 
 #Make the installer executable:
-wget -O /tmp/alfrescoinstall/myAlfrescoInstaller.bin $ALFRESCO_INSTALLER_URL
-chmod +x /tmp/alfrescoinstall/myAlfrescoInstaller.bin
-sudo /tmp/alfrescoinstall/myAlfrescoInstaller.bin
+echoblue "--- Install Alfresco Community "
+if service --status-all | grep -Fq 'alfresco'; then    
+	echored "--- You already have a alfresco update the script to manage this case "	
+else
+	wget -O /tmp/alfrescoinstall/myAlfrescoInstaller.bin $ALFRESCO_INSTALLER_URL
+	chmod +x /tmp/alfrescoinstall/myAlfrescoInstaller.bin
+	#sudo /tmp/alfrescoinstall/myAlfrescoInstaller.bin --installer-language it --prefix /opt/alfresco-community-201707 --alfresco_admin_password admin
+	sudo /tmp/alfrescoinstall/myAlfrescoInstaller.bin --mode unattended --installer-language it --prefix $ALF_HOME --alfresco_admin_password $ALF_ADMIN_PASS --baseunixservice_script_name $ALD_NAME_SCRIPT_SERVICE --enable-components javaalfresco,postgres,libreofficecomponent,alfrescosolr4,aosmodule,alfrescowcmqs,alfrescogoogledocs --disable-components alfrescosolr
+	echo "--- You have installed alfresco communitiy on the path:" $ALF_HOME
+	echogreen "--- Finished installing Alfresco Community"
+fi
 
 echogreen "--- END ALFRESCO SCRIPT INSTALLER ---"
 
