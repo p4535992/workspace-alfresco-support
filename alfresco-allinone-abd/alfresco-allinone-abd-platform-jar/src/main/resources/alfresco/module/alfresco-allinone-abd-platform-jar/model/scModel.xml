@@ -99,8 +99,20 @@
             <title>Someco Legal Document</title> 
             <parent>sc:doc</parent> 
         </type> 
+        
+        <!-- POLICY -->
+    
+	    <type name="sc:hrPolicy"> 
+         	<title>Someco HR Policy</title> 
+         	<parent>sc:hrDoc</parent>
+            <mandatory-aspects> 
+	         	<aspect>cm:replaceable</aspect> 
+       		</mandatory-aspects> 			         
+	    </type> 
 	     
 	</types> 
+		
+	<!-- ASPECTS -->
 	
     <aspects> 
         <aspect name="sc:webable"> 
@@ -129,9 +141,6 @@
             </properties> 
         </aspect> 
     </aspects> 
-	
-	
-    
-	
+
 </model>
   

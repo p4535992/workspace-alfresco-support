@@ -18,10 +18,14 @@ import it.abd.alfresco_allinone_abd.parameters.ScModelParameter;
 
 public class SetWebFlag extends ActionExecuterAbstractBase { 
 	
-	protected  NodeService nodeService;
+	private static org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(SetWebFlag.class);
+	
+	
 	public final static String NAME = "set-web-flag"; 
 
-    public final static String PARAM_ACTIVE = "active"; 
+    public final static String PARAM_ACTIVE = "active";
+    
+    protected  NodeService nodeService;
 
     @Override 
     protected void executeImpl(Action action, NodeRef actionedUponNodeRef) { 
