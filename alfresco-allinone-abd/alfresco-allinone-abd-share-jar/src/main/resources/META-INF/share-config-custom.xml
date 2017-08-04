@@ -34,6 +34,7 @@
                 <subtype name="sc:opsDoc" /> 
                 <subtype name="sc:legalDoc" /> 
                 <subtype name="acme:document"/>
+                <subtype name="sc:hrPolicy" />
             </type> 
  
             <type name="sc:doc"> 
@@ -43,6 +44,7 @@
                 <subtype name="sc:salesDoc" /> 
                 <subtype name="sc:opsDoc" /> 
                 <subtype name="sc:legalDoc" /> 
+                <subtype name="sc:hrPolicy" />
             </type> 
  
             <type name="cm:folder"> 
@@ -55,6 +57,8 @@
             <type name="sc:hrDoc">
 				<subtype name="sc:hrPolicy" />
 			</type>
+			
+			
         </types>
         <aspects>
             <visible>          
