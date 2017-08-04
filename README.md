@@ -35,3 +35,6 @@ https://github.com/keensoft/alfresco-esign-cert.git
 https://github.com/form4/alfresco-pdf-toolkit.git
 https://github.com/ntmcminn/alfresco-pdf-toolkit
 
+** NOT RELATED TO ALFRESCO BUT USEFUL 
+
+https://github.com/MatheusArleson/PdfUtil.git

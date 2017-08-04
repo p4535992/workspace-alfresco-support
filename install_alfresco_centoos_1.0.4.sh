@@ -298,6 +298,7 @@ fi
 echoblue "--- Verify of Maven ---"
 #if [[ $(mvn -version 2>&1) == *"command not found"* ]]; then
 if [ "`which mvn`" = "" ]; then
+	echored "--- WARNING: You not have maven. Install Maven."; 
 	wget "http://mirrors.gigenet.com/apache/maven/maven-3/"$MAVEN_VERSION"/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz" -P /tmp/alfrescoinstall
 	tar -zxvf "/tmp/alfrescoinstall/apache-maven-"$MAVEN_VERSION"-bin.tar.gz" -C /opt/
 	#Settiamo la variabile di ambiente MAVEN_HOME sulla macchina:
@@ -380,13 +381,14 @@ fi
 #Make the installer executable:
 echoblue "--- Install Alfresco Community "
 if service --status-all | grep -Fq 'alfresco'; then    
-	echored "--- You already have a alfresco update the script to manage this case "	
+	echored "--- You already have a alfresco update the script to manage this case or set manually a new alfresco server"	
 else
 	wget -O /tmp/alfrescoinstall/myAlfrescoInstaller.bin $ALFRESCO_INSTALLER_URL
 	chmod +x /tmp/alfrescoinstall/myAlfrescoInstaller.bin
+	echo "--- You are installing alfresco community on the path:" $ALF_HOME "wait for 5 minutes...."
 	#sudo /tmp/alfrescoinstall/myAlfrescoInstaller.bin --installer-language it --prefix /opt/alfresco-community-201707 --alfresco_admin_password admin
 	sudo /tmp/alfrescoinstall/myAlfrescoInstaller.bin --mode unattended --installer-language it --prefix $ALF_HOME --alfresco_admin_password $ALF_ADMIN_PASS --baseunixservice_script_name $ALD_NAME_SCRIPT_SERVICE --enable-components javaalfresco,postgres,libreofficecomponent,alfrescosolr4,aosmodule,alfrescowcmqs,alfrescogoogledocs --disable-components alfrescosolr
-	echo "--- You have installed alfresco communitiy on the path:" $ALF_HOME
+	echo "--- ... You have installed alfresco community on the path:" $ALF_HOME
 	echogreen "--- Finished installing Alfresco Community"
 fi
 
