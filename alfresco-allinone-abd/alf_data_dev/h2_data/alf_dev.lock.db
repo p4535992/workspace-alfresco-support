@@ -1,6 +1,6 @@
 #FileLock
-#Tue Jul 25 20:52:30 CEST 2017
+#Sun Aug 06 18:57:58 CEST 2017
 hostName=DESKTOP-E05EGSP
-id=15d7b17bd7f7aa1254a1f4d2ffe06d40bb74f9c5c2b
+id=15db87b365328f5f98013805e29a7eba58f8329ec24
 method=file
-server=192.168.56.1\:23284
+server=192.168.10.1\:13757
