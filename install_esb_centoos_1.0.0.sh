@@ -5,10 +5,8 @@
 #
 # 2017 ABD
 #
-# PROBLEMI DA RICOLVERE :
-#  1)Se si installa più volte la JVM tende a manifestare problemi di unpackaging
-#  2) Rendere più dinamica la scelta della versione dell JVM (per ora prende sempre la più recente della versione setatta)
-#  3) Rendere più dinamica la scelta della versione di alfresco.
+# PROBLEMI DA RISOLVERE :
+#  1)Le specifiche di questo script sono relative a una macchina standard di 4G
 #
 # -------
 echo "--- START ALFRESCO SCRIPT INSTALLER ---"
@@ -49,13 +47,6 @@ echogreen(){
 #export https_proxy=http://192.168.1.188:3128/
 #export ftp_proxy=http://192.168.1.188:3128/
 
-#create the temp folder where put the installers
-if [[ -d "/tmp/alfrescoinstall" ]]; then
-   rm -rf alfrescoinstall 
-else
-   mkdir /tmp/alfrescoinstall
-fi
-
 echo
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 echogreen "Alfresco CentoOS installer by Marco Tenti."
@@ -66,41 +57,54 @@ echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 echoblue "Your Properties"
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 #
-export ALF_HOME=/opt/alfresco-community-201707
-export ALF_DATA_HOME=$ALF_HOME/alf_data
-export CATALINA_HOME=$ALF_HOME/tomcat
-export ALF_USER=alfresco
-export ALF_GROUP=$ALF_USER
-export APTVERBOSITY="-qq -y"
-export TMP_INSTALL=/tmp/alfrescoinstall
+export SERVICEMIX_HOME=/opt/apache-servicemix-6.0.0
+export SERVICEMIX_DATA_HOME=$SERVICEMIX_HOME/data
+export TMP_INSTALL=/tmp/servicemixinstall
 #Da sistemare la ricerca della versione di alfresco
-export ALFRESCO_INSTALLER_URL=https://sourceforge.net/projects/alfresco/files/Alfresco%20201707%20Community/alfresco-community-installer-201707-linux-x64.bin/download
+export SERVICEMIX_VERSION=6.0.0
+export SERVICEMIX_INSTALLER_URL=http://archive.apache.org/dist/servicemix/servicemix-6/6.0.0/apache-servicemix-6.0.0.zip
 #Da sistemare le ricerca della versione java 
 #export JDK_ORACLE_URL_RPM=http://download.oracle.com/otn-pub/java/jdk/8u131/jdk-8u131-linux-x64.rpm
 #6,7,8
 export JDK_VERSION=8
 export MAVEN_VERSION=3.3.9
 
-export ALF_ADMIN_PASS=admin
-export ALD_NAME_SCRIPT_SERVICE=alfresco
+export SERVICEMIX_WEBCONSOLE_USER=smx
+export SERVICEMIX_WEBCONSOLE_PASS=smx
+export SERVICEMIX_PASS_ADMINABDGROUP=kdflgft82
+export SERVICEMIX_NAME_SCRIPT_SERVICE=servicemix
 
-echo "PATH INSTALL ALFRESCO:" $ALF_HOME
-echo "ALF_DATA_HOME:" $ALF_DATA_HOME
-echo "CATALINA_HOME:" $CATALINA_HOME
-echo "ALF_USER:" $ALF_USER
-echo "ALF_GROUP:" $ALF_USER
+echo "SERVICEMIX_HOME:" $SERVICEMIX_HOME
+echo "SERVICEMIX_DATA_HOME:" $SERVICEMIX_DATA_HOME
 echo "TMP_INSTALL:" $TMP_INSTALL
-#Da sistemare la ricerca della versione di alfresco
-echo "ALFRESCO_INSTALLER_URL:" $ALFRESCO_INSTALLER_URL
+#Da sistemare la ricerca della versione di servicemix
+echo "SERVICEMIX_VERSION:" $SERVICEMIX_VERSION
+echo "SERVICEMIX_INSTALLER_URL:" $SERVICEMIX_INSTALLER_URL
 echo "JDK_VERSION:" $JDK_VERSION "(you donwload the last version)"
 echo "MAVEN_VERSION:" $MAVEN_VERSION
-echo "ALF_ADMIN_PASS:" $ALF_ADMIN_PASS
-echo "ALD_NAME_SCRIPT_SERVICE:" $ALD_NAME_SCRIPT_SERVICE
+echo "SERVICEMIX_WEBCONSOLE_USER:" $SERVICEMIX_WEBCONSOLE_USER
+echo "SERVICEMIX_WEBCONSOLE_PASS:" $SERVICEMIX_WEBCONSOLE_PASS
+echo "SERVICEMIX_PASS_ADMINABDGROUP:" $SERVICEMIX_PASS_ADMINABDGROUP
+echo "SERVICEMIX_NAME_SCRIPT_SERVICE" $SERVICEMIX_NAME_SCRIPT_SERVICE
+
+#create the temp folder where put the installers
+if [[ -d $TMP_INSTALL ]]; then
+   rm -rf alfrescoinstall 
+else
+   mkdir $TMP_INSTALL
+fi
 
 echo
 echoblue "--- Preparing for install. Updating the package index files..."
 #yum update && upgrade
 echo
+
+if [ "`which screen`" = "" ]; then
+echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+echo "--- You need to install screen. screen is used for developing the application."
+echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+yum -y install screen
+fi
 
 if [ "`which mc`" = "" ]; then
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
@@ -153,62 +157,12 @@ echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 yum -y install gzip gunzip
 fi
 
-if [ "`which 7z`" = "" ]; then
+if [ "`which sed`" = "" ]; then
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-echo "--- You need to install 7zip. 7zip is used for read and extract archive."
+echo "--- You need to install sed. sed is used for modify content of the file."
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-cat /etc/*release
-sudo yum install -y -q epel-release
-sudo rpm -U --quiet http://mirrors.kernel.org/fedora-epel/6/i386/epel-release-6-8.noarch.rpm
-sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
-sudo yum repolist
-sudo yum install -y -q p7zip p7zip-plugins
+yum -y install sed
 fi
-
-#Install some dependencies not bundled in the Alfresco installer:
-echoblue "--- Installiamo i pacchetti base per Libre Office di alfresco ---"
-if [ "`which fc-query`" = "" ]; then
-	#Some or all of the libraries needed to support LibreOffice were not found on your system: fontconfig libSM libICE libXrender libXext libcups libGLU libcairo2 libgl1-mesa-glx
-	sudo yum -y install fontconfig libSM libICE libXrender libXext libcups libGLU libcairo2 libgl1-mesa-glx
-	#sudo yum -y install llibXt libXrender libSM libICE libXext fontconfig cups-libs mesa-libGLU libGLU 
-	#sudo yum install cairo-devel
-
-fi
-#echo
-#echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-#echo "You need to add a system user that runs the tomcat Alfresco instance."
-#echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-#read -e -p "Add alfresco system user${ques} [y/n] " -i "n" addalfresco
-#if [ "$addalfresco" = "y" ]; then
-#  sudo adduser --system --disabled-login --disabled-password --group $ALF_USER
-#  echo
-#  echogreen "Finished adding alfresco user"
-#  echo
-#else
-#  echo "Skipping adding alfresco user"
-#  echo
-#fi
-
-#Operazioni consigliate dagli esperti 
-#Create the alfresco group
-echoblue "--- Create the alfresco group"
-if [ $(getent group alfresco) ]; then
-  echored "--- groupadd: group 'alfresco' already exists"
-else
-  #echo "group does not exist."
-  sudo groupadd alfresco 
-fi
-#Create the alfresco user:
-#sudo adduser-m -g alfresco alfresco 
-#Define a password for the alfresco user:
-#Inserimento manuale nuovo utente alfresco
-#sudo passwd alfresco
-#Inserimento automatico
-#echo alfresco:nuova_password | chpasswd 
-
-#Add the root user to the alfresco group too:
-echoblue "--- Add the root user to the alfresco group too"
-sudo usermod -a -G alfresco root
 
 #search for if any older JDK versions are installed in your system
 #rpm -qa | grep -E '^open[jre|jdk]|j[re|dk]'
@@ -239,9 +193,9 @@ then
 		readonly jdk_download_url4=$(curl -s $jdk_download_url3 | egrep -o "http\:\/\/download.oracle\.com\/otn-pub\/java\/jdk\/[7-8]u[0-9]+\-(.*)+\/jdk-[7-8]u[0-9]+(.*)linux-x64.$ext")
 
 		for dl_url in ${jdk_download_url4[@]}; do
-			wget -O /tmp/alfrescoinstall/jdk-8u141-linux-x64.rpm --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" -N $dl_url
+			wget -O $TMP_INSTALL/jdk-8u141-linux-x64.rpm --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" -N $dl_url
 		done
-		rpm --nosignature -ivh --force --prefix=/usr/java/ /tmp/alfrescoinstall/jdk-8u141-linux-x64.rpm
+		rpm --nosignature -ivh --force --prefix=/usr/java/ $TMP_INSTALL/jdk-8u141-linux-x64.rpm
 		#rpm --nosignature -ivh /tmp/alfrescoinstall/jdk-8u141-linux-x64.rpm
 		export JAVA_HOME=/usr/java/default
 		export JRE_HOME=/usr/java/jre
@@ -277,11 +231,11 @@ then
 	readonly jdk_download_url4=$(curl -s $jdk_download_url3 | egrep -o "http\:\/\/download.oracle\.com\/otn-pub\/java\/jdk\/[7-8]u[0-9]+\-(.*)+\/jdk-[7-8]u[0-9]+(.*)linux-x64.$ext")
 
 	for dl_url in ${jdk_download_url4[@]}; do
-		wget -O /tmp/alfrescoinstall/jdk-8u141-linux-x64.rpm --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" -N $dl_url
+		wget -O $TMP_INSTALL/jdk-8u141-linux-x64.rpm --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" -N $dl_url
 	done
 	
 	#delete /var/lib/alternatives/ on CentOS 6&7
-	rpm --nosignature -ivh --force --prefix=/usr/java/ /tmp/alfrescoinstall/jdk-8u141-linux-x64.rpm
+	rpm --nosignature -ivh --force --prefix=/usr/java/ $TMP_INSTALL/jdk-8u141-linux-x64.rpm
 	#rpm --nosignature -ivh /tmp/alfrescoinstall/jdk-8u141-linux-x64.rpm
 	#rpm --nosignature -Uvh /tmp/alfrescoinstall/jdk-8u141-linux-x64.rpm
 	export JAVA_HOME=/usr/java/default
@@ -299,8 +253,8 @@ echoblue "--- Verify of Maven ---"
 #if [[ $(mvn -version 2>&1) == *"command not found"* ]]; then
 if [ "`which mvn`" = "" ]; then
 	echored "--- WARNING: You not have maven. Install Maven."; 
-	wget "http://mirrors.gigenet.com/apache/maven/maven-3/"$MAVEN_VERSION"/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz" -P /tmp/alfrescoinstall
-	tar -zxvf "/tmp/alfrescoinstall/apache-maven-"$MAVEN_VERSION"-bin.tar.gz" -C /opt/
+	wget "http://mirrors.gigenet.com/apache/maven/maven-3/"$MAVEN_VERSION"/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz" -P $TMP_INSTALL
+	tar -zxvf $TMP_INSTALL"/apache-maven-"$MAVEN_VERSION"-bin.tar.gz" -C /opt/
 	#Settiamo la variabile di ambiente MAVEN_HOME sulla macchina:
 	export M2_HOME='/opt/apache-maven-'$MAVEN_VERSION
 	export M2="$M2_HOME/bin"
@@ -310,106 +264,150 @@ else
 	echoblue '--- You have already Maven'; 
 fi
 
-#Create the folder where we'll install Alfresco and give access to our newly created user:
-echoblue "--- Create the folder where we'll install Alfresco and give access to our newly created user ---"
-if [[ -d "/tmp/alfrescoinstall" ]]; then
-   echo 
+echoblue "--- Install of ServiceMix ---"
+
+if [ ! -d "$SERVICEMIX_HOME" ]; then
+	# Control will enter here if $DIRECTORY doesn't exist.
+	wget $SERVICEMIX_INSTALLER_URL -P $TMP_INSTALL
+	unzip -a apache-servicemix-$SERVICEMIX_VERSION.zip -d /opt/
+	
+	#Appendiamo il testo su setenv
+	#To append a contains of bar.txt to to foo.txt, enter
+	#cat $SERVICEMIX_HOME/bin/setenv >> setenv2	
+	echo '#MOD ABD INIZIO\nexport JAVA_HOME=/usr/java/default/\nexport M2_HOME="/opt/apache-maven-'"$MAVEN_VERSION"'\nexport M2="$M2_HOME/bin\nexport PATH="$PATH:$M2\nexport PATH=”$PATH:$JAVA_HOME/bin”\nexport JAVA_MIN_MEM=2048M\nexport JAVA_MAX_MEM=3072M\n#MOD ABD FINE' >> $SERVICEMIX_HOME/bin/setenv
+	
+	#Appendiamo il testo su user.properties
+	echo 'abd = '"$SERVICEMIX_PASS_ADMINABDGROUP"',_g_:admingroup' >> $SERVICEMIX_HOME/etc/users.properties
+	
+	chmod +x $SERVICEMIX_HOME/bin/servicemix
+	sh $SERVICEMIX_HOME/bin/servicemix
+	
+	# start in background
+	#./bin/start
+	# wait till SSH daemon is up
+	#sleep 5
+	# run your commands
+	#./bin/client -u $SERVICEMIX_WEBCONSOLE_USER -p $SERVICEMIX_WEBCONSOLE_PASS "your command here" 
+	
+	# wait till SSH daemon is up
+	sleep 10
+	
+	feature:install webconsole
+	feature:install wrapper
+	#wrapper:install -s manual -n servicemix -d servicemix
+	#wrapper:install -s AUTO_START -n KARAF -d Karaf -D Karaf
+	wrapper:install -s AUTO_START -n $SERVICEMIX_NAME_SCRIPT_SERVICE -d $SERVICEMIX_NAME_SCRIPT_SERVICE -D $SERVICEMIX_NAME_SCRIPT_SERVICE
+	shutdown
+	
+	#replace the content on the wrapper-conf file service
+	sed -i 's/wrapper.java.command=java/wrapper.java.command=%JAVA_HOME%/bin/java\nwrapper.java.maxmemory=3072/g;' $SERVICEMIX_HOME/etc/$SERVICEMIX_NAME_SCRIPT_SERVICE-wrapper-conf
+	#remove symboli link and copy the script to etc/init.d
+	rm /etc/init.d/$SERVICEMIX_NAME_SCRIPT_SERVICE-service
+	cp $SERVICEMIX_HOME/etc/$SERVICEMIX_NAME_SCRIPT_SERVICE-wrapper-conf /etc/init.d/
+	mv /etc/init.d/$SERVICEMIX_NAME_SCRIPT_SERVICE-wrapper-conf /etc/init.d/$SERVICEMIX_NAME_SCRIPT_SERVICE-service
+		
+	echogreen "--- Finished installing servicemix"
 else
-   sudo mkdir $ALF_HOME
+	echoblue '--- You have already servicemix'; 
 fi
-#sudo chown alfresco:root $ALF_HOME
 
-#echo "--- Scriviamo il servizio di supporto su /etc/init.d (consigliato dagli esperti come aggiuna a quello creato da automatico dall'installer ---"
-#cat > /etc/init.d/alfresco-service <<- EOF
-#!/bin/sh -e
-#
-#ALFRESCO_SCRIPT="/opt/alfresco/alfresco.sh"
-#
-#if [ "$1" = "start" ]; then
-# su - alfresco "${ALFRESCO_SCRIPT}" "start"
-#elif [ "$1" = "stop" ]; then
-# su - alfresco "${ALFRESCO_SCRIPT}" "stop"
-#elif [ "$1" = "restart" ]; then
-# su - alfresco "${ALFRESCO_SCRIPT}" "stop"
-# su - alfresco "${ALFRESCO_SCRIPT}" "start"
-#else
-# echo "Usage: /etc/init.d/alfresco [start|stop|restart]"
-#fi
-#EOF
+echoblue "--- Install of mysql ---"
+if [ "`which mysql`" = "" ]; then
+	# Enable Ubuntu Firewall and allow SSH & MySQL Ports
+	ufw enable
+	ufw allow 22
+	ufw allow 3306
 
-#cat > /etc/init.d/alfresco-service <<- EOF 
-#!/bin/sh 
-# 
-#        RETVAL=0 
-# 
-#        start () { 
-#            /opt/alfresco-community/alfresco.sh start "$2" 
-#            RETVAL=$? 
-#            if [ -d "/var/lock/subsys" ]&& [ `id -u` = 0 ] && 
-#             [ $RETVAL -eq 0 ] ; then 
-#                  touch /var/lock/subsys/alfresco 
-#            fi 
-# 
-#        } 
-# 
-#        stop () { 
-#            /opt/alfresco-community/alfresco.sh stop "$2" 
-#            RETVAL=$? 
-#        } 
-#  
-#        case "$1" in 
-#            start) 
-#                start "$@" 
-#                ;; 
-#            stop) 
-#                stop "$@" 
-#                ;; 
-#            restart) 
-#                stop "$@" 
-#                start "$@" 
-#                ;; 
-#            *) 
-#                /opt/alfresco-community/alfresco.sh "$@" 
-#                RETVAL=$? 
-#        esac 
-#        exit $RETVAL 
-#EOF
-#sed -i -e 's+$PATH_ALFRESCO+XXXXXXXXXX+g' /etc/init.d/alfresco-service
-#Make this script executable
-#sudo chmod +x /etc/init.d/alfresco-service        
+	# Install essential packages
+	yum -y install zsh htop
+	# Install MySQL Server in a Non-Interactive mode. Default root password will be "root"
+	echo "mysql-server-5.6 mysql-server/root_password password root" | sudo debconf-set-selections
+	echo "mysql-server-5.6 mysql-server/root_password_again password root" | sudo debconf-set-selection
+	#informarsi se per caso occorre mettere “mariadb” al posto di mysql
+	yum -y install mysql-server-5.6
+	
+	# Run the MySQL Secure Installation wizard
+	#/usr/bin/mysql_secure_installation
+	echo -e "root\nn\nY\nY\nY\nY\n" | mysql_secure_installation
 
-#Make the installer executable:
-echoblue "--- Install Alfresco Community "
-if service --status-all | grep -Fq 'alfresco'; then    
-	echored "--- You already have a alfresco update the script to manage this case or set manually a new alfresco server"	
+	sed -i 's/127\.0\.0\.1/0\.0\.0\.0/g' /etc/mysql/my.cnf
+	mysql -uroot -p -e 'USE mysql; UPDATE `user` SET `Host`="%" WHERE `User`="root" AND `Host`="localhost"; DELETE FROM `user` WHERE `Host` != "%" AND `User`="root"; FLUSH PRIVILEGES;'
+	
+	service mysql restart
+		
+	chkconfig mysqld on
+	echogreen "--- Finished installing mysql"
 else
-	wget -O /tmp/alfrescoinstall/myAlfrescoInstaller.bin $ALFRESCO_INSTALLER_URL
-	chmod +x /tmp/alfrescoinstall/myAlfrescoInstaller.bin
-	echo "--- You are installing alfresco community on the path:" $ALF_HOME "wait for 5 minutes...."
-	#sudo /tmp/alfrescoinstall/myAlfrescoInstaller.bin --installer-language it --prefix /opt/alfresco-community-201707 --alfresco_admin_password admin
-	sudo /tmp/alfrescoinstall/myAlfrescoInstaller.bin --mode unattended --installer-language it --prefix $ALF_HOME --alfresco_admin_password $ALF_ADMIN_PASS --baseunixservice_script_name $ALD_NAME_SCRIPT_SERVICE --enable-components javaalfresco,postgres,libreofficecomponent,alfrescosolr4,aosmodule,alfrescowcmqs,alfrescogoogledocs --disable-components alfrescosolr
-	echo "--- ... You have installed alfresco community on the path:" $ALF_HOME
-	echogreen "--- Finished installing Alfresco Community"
+	echoblue '--- You have already mysql'; 
 fi
+
+#create setting.xml di maven per importare le librerie abd
+cat <<EOF > /root/.m2/settings.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <pluginGroups></pluginGroups>
+  <proxies>
+  </proxies>
+  <servers>
+	<server>
+	  <id>abd-releases</id>
+	  <username>externalApp</username>
+	  <password>het5w6xlo91</password>
+	</server>
+	<server>      
+		<id>abd-snapshots</id>      
+		<username>externalApp</username>      
+		<password>het5w6xlo91</password>    
+	</server>  
+	<server>
+	  <id>centralMirror</id>
+	  <username>externalApp</username>
+	  <password>het5w6xlo91</password>
+	</server>
+  </servers>
+  <mirrors>
+	<mirror>
+	  <id>centralMirror</id>
+	  <mirrorOf>central</mirrorOf>
+	  <name>Human Readable Name for this Mirror.</name>
+	  <url>http://localhost:8687/nexus/content/repositories/central/</url>
+	</mirror>     
+  </mirrors>
+	<profiles> 
+		<profile> 
+			<id>abd</id> 
+			<activation> 
+				<activeByDefault>true</activeByDefault> 
+			</activation>
+			<repositories>
+				<repository> 
+					<id>abd-releases</id> 
+					<name>releases</name> 
+					<url>http://localhost:8687/nexus/content/repositories/releases/</url> 
+					<snapshots> 
+						<enabled>false</enabled> 
+					</snapshots>
+				</repository>
+				<repository> 
+					<id>abd-snapshots</id> 
+					<name>snapshots</name> 
+					<url>http://localhost:8687/nexus/content/repositories/snapshots/</url> 
+					<snapshots> 
+					<enabled>true</enabled> 
+					</snapshots>
+				</repository>
+			</repositories>
+		</profile> 
+	</profiles> 
+	<activeProfiles> 
+		<activeProfile>abd</activeProfile> 
+	</activeProfiles> 
+</settings>
+EOF
 
 echogreen "--- END ALFRESCO SCRIPT INSTALLER ---"
 
 
-
-
-#SETTAGGIO MIDNIGHT
-#Midnight commander tries to open war files as tgz files. Is should open them as zip files instead.
-#To fix this open "Edit extension file" in "Command" menue (F9, C, e). Search for ".war" and delete it from the listings. The modified listing should look like:
-
-# .tgz, .tpz, .tar.gz, .tar.z, .tar.Z, .ipk, .gem
-#regex/\.t([gp]?z|ar\.g?[zZ])$|\.ipk$|\.gem$
-#<------>Open=%cd %p/utar://
-#<------>View=%view{ascii} /usr/libexec/mc/ext.d/archive.sh view tar.gz
-
-#Then add the following snippet somewhere in the file:
-
-# .war, .amp
-#regex/\.war$|.\amp$
-#<------>Open=%cd %p/uzip://
-#<------>View=%view{ascii} /usr/libexec/mc/ext.d/archive.sh view zip
 

@@ -26,6 +26,10 @@ https://github.com/form4/alfresco-triggerauthenticationsync.git
 
 https://github.com/jpotts/share-site-creators.git
 
+### Customize Form and Surf extensions
+
+https://github.com/douglascrp/alfresco-value-assistance.git
+
 ** DIGITAL SIGN PDF
 
 https://github.com/rouxemmanuel/DigitalSigning.git 
