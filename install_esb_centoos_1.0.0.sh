@@ -256,7 +256,7 @@ if [ "`which mvn`" = "" ]; then
 	wget "http://mirrors.gigenet.com/apache/maven/maven-3/"$MAVEN_VERSION"/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz" -P $TMP_INSTALL
 	tar -zxvf $TMP_INSTALL"/apache-maven-"$MAVEN_VERSION"-bin.tar.gz" -C /opt/
 	#Settiamo la variabile di ambiente MAVEN_HOME sulla macchina:
-	export M2_HOME='/opt/apache-maven-'$MAVEN_VERSION
+	export M2_HOME='/opt/apache-maven-'$MAVEN_VERSION''
 	export M2="$M2_HOME/bin"
 	export PATH="$PATH:$M2"
 	echogreen "--- Finished installing Maven"
@@ -279,8 +279,9 @@ if [ ! -d "$SERVICEMIX_HOME" ]; then
 	#Appendiamo il testo su user.properties
 	echo 'abd = '"$SERVICEMIX_PASS_ADMINABDGROUP"',_g_:admingroup' >> $SERVICEMIX_HOME/etc/users.properties
 	
-	chmod +x $SERVICEMIX_HOME/bin/servicemix
-	sh $SERVICEMIX_HOME/bin/servicemix
+	#chmod +x $SERVICEMIX_HOME/bin/servicemix
+	#sh $SERVICEMIX_HOME/bin/servicemix
+	$SERVICEMIX_HOME/bin/servicemix
 	
 	# start in background
 	#./bin/start
@@ -293,11 +294,19 @@ if [ ! -d "$SERVICEMIX_HOME" ]; then
 	sleep 10
 	
 	feature:install webconsole
+	#installazione automatica con il nome del servizio KARAF-service
 	feature:install wrapper
+	
 	#wrapper:install -s manual -n servicemix -d servicemix
 	#wrapper:install -s AUTO_START -n KARAF -d Karaf -D Karaf
-	wrapper:install -s AUTO_START -n $SERVICEMIX_NAME_SCRIPT_SERVICE -d $SERVICEMIX_NAME_SCRIPT_SERVICE -D $SERVICEMIX_NAME_SCRIPT_SERVICE
+	#wrapper:install -s AUTO_START -n servicemix6 -d servicemix6 -D $SERVICEMIX_NAME_SCRIPT_SERVICE
+	#wrapper:install -s manual -n servicemix6 -d servicemix6 -D "ServiceMix 6"
+	#wrapper:install -s AUTO_START -n servicemix6 -d servicemix6 -D "ServiceMix 6"
+	#wrapper:install -s AUTO_START -n KARAF -d Karaf -D "Karaf Service"
+	
+	#wrapper:install -s AUTO_START -n $SERVICEMIX_NAME_SCRIPT_SERVICE -d $SERVICEMIX_NAME_SCRIPT_SERVICE -D $SERVICEMIX_NAME_SCRIPT_SERVICE
 	shutdown
+	yes
 	
 	#replace the content on the wrapper-conf file service
 	sed -i 's/wrapper.java.command=java/wrapper.java.command=%JAVA_HOME%/bin/java\nwrapper.java.maxmemory=3072/g;' $SERVICEMIX_HOME/etc/$SERVICEMIX_NAME_SCRIPT_SERVICE-wrapper-conf
