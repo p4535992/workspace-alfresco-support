@@ -13,6 +13,6 @@
 	<import resource="classpath:alfresco/module/${project.artifactId}/context/webscript-context.xml" />
 	<import resource="classpath:alfresco/module/${project.artifactId}/context/action-context.xml" /> 
     <import resource="classpath:alfresco/module/${project.artifactId}/context/behavior-context.xml" /> 
- 
-
+    <import resource="classpath:alfresco/module/${project.artifactId}/context/extractor-context.xml" /> 
+	<import resource="classpath:alfresco/module/${project.artifactId}/context/transformer-context.xml" /> 
 </beans>

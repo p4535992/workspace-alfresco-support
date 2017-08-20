@@ -10,6 +10,56 @@
              alfresco/tomcat/shared/classes/alfresco/web-extension/share-config-custom.xml
      -->
 <alfresco-config>
+
+	
+	<!-- Custom DocLibActions config section -->
+	   
+	<config evaluator="string-compare" condition="DocLibActions">
+	  <actions>
+	    <action id="my-document-new-publish" icon="publish" type="javascript" label="actions.mycompany.mynewpublish">
+	      <!--  Additional parameters for onRepoAction function  -->
+	      <!--  
+	      <param name="function">onActionSimpleRepoAction</param>
+          <param name="action">transform-to-pdf-action</param>
+          <param name="script-ref">Company Home/Data Dictionary/Scripts/transformToPdf.js</param>
+	      -->
+	      
+	      <param name="function">onActionFormDialog</param>
+	      <param name="itemKind">action</param>
+	      <param name="itemId">my-newpublish-action</param>
+	      <param name="mode">create</param>
+	      <param name="destination">{node.nodeRef}</param>
+	      <param name="successMessage">message.mycompany.mynewpublish.success</param>
+	      <param name="failureMessage">message.mycompany.mynewpublish.failure</param>
+	    </action>
+	  </actions>
+	
+	  <actionGroups>
+	    <actionGroup id="document-browse">
+	      <action index="366" id="my-document-new-publish" />
+	    </actionGroup>   
+	  </actionGroups>
+	</config>
+	
+	<!--  
+	<config evaluator="string-compare" condition="my-newpublish-action">
+	  <forms>
+	    <form>
+	      <field-visibility>           
+	        <show id="myTarget"/>
+	      </field-visibility>
+	      <appearance>
+	        <field id="myTarget" label="Choose destination">
+	          <control template="/org/alfresco/components/form/controls/selectone.ftl">
+	            <control-param name="options">0|Intranet,1|Public Site</control-param>
+	          </control>
+	        </field> 
+	      </appearance>
+	    </form>
+	  </forms>
+	</config>
+	-->
+	
     <!--================================================================================================================
         Make custom types and aspects visible in "Change Type" and "Manage Aspects" actions.
          This will also make them visible when creating rules.
@@ -88,6 +138,7 @@
                 <aspect name="sc:webable" /> 
                 <aspect name="sc:clientRelated" /> 
                 <aspect name="cm:replaceable" />
+                <aspect name="sc:rateable" />
             </visible>
             <addable> <!-- defaults to visible config -->
             </addable>
@@ -484,6 +535,10 @@
     </config>
     
     <!-- MODIFICATO ASPECT E PROP AGGIUNTI -->
+    
+    <!-- =============== -->
+    <!-- ASPECTS -->
+    <!-- =============== -->
     <config evaluator="aspect" condition="sc:webable">
          <forms> 
              <form> 
@@ -496,7 +551,43 @@
                  </appearance> 
              </form> 
          </forms> 
-     </config>     
+     </config>  
+     
+     <config evaluator="aspect" condition="sc:clientRelated">
+		<forms>
+			<form>
+				<field-visibility>
+					<show id="sc:clientName" />
+					<show id="sc:projectName" />
+				</field-visibility>
+			</form>
+		</forms>
+	</config>
+
+	<config evaluator="aspect" condition="sc:rateable">
+		<forms>
+			<form>
+				<field-visibility>
+					<show id="sc:averageRating" read-only="true" />
+					<show id="sc:ratings" />
+				</field-visibility>
+			</form>
+		</forms>
+	</config>
+     
+     <config evaluator="aspect" condition="cm:replaceable"> 
+        <forms> 
+            <form> 
+                <field-visibility> 
+                    <show id="cm:replaces" /> 
+                </field-visibility> 
+            </form> 
+        </forms> 
+     </config> 
+     
+     <!-- =============== -->
+     <!-- NODE TYPE       -->
+     <!-- =============== -->   
      <config evaluator="node-type" condition="sc:doc"> 
           <forms> 
               <form> 
@@ -516,6 +607,7 @@
               </form> 
           </forms> 
       </config> 
+      
       <config evaluator="node-type" condition="sc:marketingDoc"> 
           <forms> 
               <form> 
@@ -633,6 +725,10 @@
           </forms> 
        </config> 
        
+       <!-- =================================== -->
+       <!-- MODEL TYPE (Search,View Properties) -->
+       <!-- =================================== --> 
+       
        <!--  create search form for somedoc -->
        <config evaluator="model-type" condition="sc:marketingDoc"> 
             <forms> 
@@ -671,22 +767,4 @@
             </forms> 
         </config> 
         
-       
-        <config evaluator="aspect" condition="cm:replaceable"> 
-            <forms> 
-                <form> 
-                    <field-visibility> 
-                        <show id="cm:replaces" /> 
-                    </field-visibility> 
-                </form> 
-            </forms> 
-        </config> 
- 
-       
-       
-       
-
-    
-    
-
 </alfresco-config>

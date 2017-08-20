@@ -8,4 +8,20 @@
 		  class="it.abd.alfresco_allinone_abd.platformsample.HelloWorldWebScript"
 		  parent="webscript">
 	</bean>
+	
+	<!-- Example run custom script -->
+	
+	<!-- ADD ASPECT ACTION -->
+  	<bean id="transform-to-pdf-action" parent="script">
+      <property name="scriptLocation">
+         <bean class="org.alfresco.repo.jscript.ClasspathScriptLocation">
+            <constructor-arg>
+               <value>alfresco/extension/scripts/addAspectAction.js</value>
+            </constructor-arg>
+         </bean>
+      </property>
+      <property name="publicAction">
+  		<value>true</value>
+	  </property>
+    </bean>
 </beans>

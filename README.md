@@ -20,6 +20,8 @@ https://gitlab.vismaconsulting.fi/baseline/alfresco.git
 
 https://github.com/Acosix/alfresco-utility.git
 
+https://github.com/share-extras/execute-script-action
+
 ** COOL ADDON
 
 https://github.com/form4/alfresco-triggerauthenticationsync.git

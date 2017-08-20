@@ -31,6 +31,12 @@
            </bean> 
          </property> 
      </bean> 
+     
+     <bean id="ratingBehaviour" class="it.abd.alfresco_allinone_abd.behaviors.Rating" init-method="init"> 
+         <property name="nodeService" ref="nodeService" /> 
+         <property name="policyComponent" ref="policyComponent" /> 
+     </bean> 
+     
     
     
     

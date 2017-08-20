@@ -46,13 +46,17 @@ public interface ScModelParameter
     public final static QName ASSOC_RELATEDOCUMENTS =  QName.createQName(SOMECO_MODEL_URI, "relatedDocuments"); 
   
 
-  
-
- 
+    public final static QName TYPE_RATING = QName.createQName(SOMECO_MODEL_URI, "rating"); 
+	public final static QName ASPECT_RATEABLE = QName.createQName(SOMECO_MODEL_URI, "rateable"); 
+	public final static QName PROP_RATING = QName.createQName(SOMECO_MODEL_URI, "rating"); 
+	public final static QName PROP_AVERAGERATING = QName.createQName(SOMECO_MODEL_URI, "averageRating"); 
+	public final static QName PROP_TOTALRATING = QName.createQName(SOMECO_MODEL_URI, "totalRating"); 
+	public final static QName PROP_RATINGCOUNT = QName.createQName(SOMECO_MODEL_URI, "ratingCount"); 
+	public final static QName ASSOC_RATINGS = QName.createQName(SOMECO_MODEL_URI, "ratings"); 
 
 //   static final QName PROP_STORE_PROTOCOL = QName.createQName(NamespaceService.SYSTEM_MODEL_1_0_URI, "store-protocol");
 //   static final QName PROP_STORE_IDENTIFIER = QName.createQName(NamespaceService.SYSTEM_MODEL_1_0_URI, "store-identifier");
-//   static final QName PROP_NODE_UUID = QName.createQName(NamespaceService.SYSTEM_MODEL_1_0_URI, "node-uuid");
+//   static final QName PR OP_NODE_UUID = QName.createQName(NamespaceService.SYSTEM_MODEL_1_0_URI, "node-uuid");
 //   static final QName PROP_NODE_DBID = QName.createQName(NamespaceService.SYSTEM_MODEL_1_0_URI, "node-dbid");
 
 }

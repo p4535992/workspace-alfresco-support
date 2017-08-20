@@ -22,5 +22,71 @@
          </list>
       </property>
    </bean>
+   
+   <bean id="evaluator.doclib.action.isSomecoPublisher" parent="evaluator.doclib.action.groupMembership"> 
+	    <property name="groups"> 
+	        <list> 
+	            <value>GROUP_SomecoPublisher</value> 
+	        </list> 
+	    </property> 
+	</bean> 
+	
+	<bean id="evaluator.doclib.action.isSomecoWhitepaper" parent="evaluator.doclib.action.nodeType"> 
+	    <property name="types"> 
+	        <list> 
+	            <value>sc:whitepaper</value> 
+	        </list> 
+	    </property> 
+	</bean> 
+	
+	<bean id="evaluator.doclib.action.isSomecoWebable" parent="evaluator.doclib.action.hasAspect"> 
+	    <property name="aspects"> 
+	        <list> 
+	            <value>sc:webable</value> 
+	        </list> 
+	    </property> 
+	</bean> 
+	
+	<bean id="evaluator.doclib.action.isSomecoWebActive" parent="evaluator.doclib.metadata.value"> 
+	    <property name="accessor" value="node.properties.sc:isActive" /> 
+	        <property name="comparator"> 
+	            <bean class="org.alfresco.web.evaluator.StringEqualsComparator"> 
+	                <property name="value" value="true" /> 
+	            </bean> 
+	        </property> 
+	</bean> 
+	
+	<bean id="evaluator.doclib.action.isSomecoWebInactive" parent="evaluator.doclib.action.isSomecoWebActive"> 
+	    <property name="negateOutput" value="true" /> 
+	</bean> 
+	
+	<bean id="evaluator.doclib.action.isSomecoPublishable" parent="evaluator.doclib.action.chainedMatchAll"> 
+	    <property name="evaluators"> 
+	        <list> 
+	            <ref bean="evaluator.doclib.action.isSomecoPublisher" /> 
+	            <ref bean="evaluator.doclib.action.isSomecoWhitepaper" /> 
+	            <ref bean="evaluator.doclib.action.isSomecoWebable" /> 
+	            <ref bean="evaluator.doclib.action.isSomecoWebInactive" /> 
+	        </list> 
+	    </property> 
+	</bean> 
+	
+	<bean id="evaluator.doclib.action.isSomecoUnpublishable" parent="evaluator.doclib.action.chainedMatchAll"> 
+	    <property name="evaluators"> 
+	        <list> 
+	            <ref bean="evaluator.doclib.action.isSomecoPublisher" /> 
+	            <ref bean="evaluator.doclib.action.isSomecoWhitepaper" /> 
+	            <ref bean="evaluator.doclib.action.isSomecoWebable" /> 
+	            <ref bean="evaluator.doclib.action.isSomecoWebActive" /> 
+	        </list> 
+	    </property> 
+	</bean> 
+	
+	
+ 
+	
+	
+	
+   
 
 </beans>
