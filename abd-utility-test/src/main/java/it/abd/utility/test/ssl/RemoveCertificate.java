@@ -6,7 +6,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.security.KeyStore;
-
+/**
+ * keytool -delete -noprompt -alias ${cert.alias}  -keystore ${keystore.file} -storepass ${keystore.pass}
+ *
+ */
 public class RemoveCertificate {
 	
 	public static void main(String args[]) throws IOException{

@@ -47,6 +47,7 @@ import javax.naming.ldap.Rdn;
 import javax.net.SocketFactory;
 import java.io.*;
 import java.net.InetAddress;
+import java.net.Socket;
 import java.security.KeyStore;
 import java.security.MessageDigest;
 import java.security.cert.CertificateException;
@@ -56,6 +57,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Enumeration;
 import java.util.List;
 
 /**
@@ -72,13 +74,15 @@ import java.util.List;
 public class InstallCert {
 
     public static void main(String[] args) throws Exception {
-    	
+    	/*
     	System.setProperty("http.proxySet", "true");
         System.setProperty("http.proxyHost", "192.168.1.188");
         System.setProperty("http.proxyPort", "3128");
         System.setProperty("https.proxyHost", "192.168.1.188");
         System.setProperty("https.proxyPort", "3128");
-    	
+        
+        System.setProperty("https.protocols", "TLSv1,SSLv3");
+    	*/
     	String host;
         int port;
 		String pathKeyStore;
@@ -114,6 +118,11 @@ public class InstallCert {
 	            if (file.isFile() == false) {
                 	throw new IOException("Not exists any keystore JKS of default under the keystore path:" + pathKeyStore);
 	            }
+            }else if(pathKeyStore.toLowerCase().trim().endsWith("p12")){
+            	file = new File(pathKeyStore);           
+	            if (file.isFile() == false) {
+                	throw new IOException("Not exists any keystore P12 of default under the keystore path:" + pathKeyStore);
+	            }
             }else{
 	            //if path is under XXX/lib/security/ do set
 	            if(pathKeyStore.contains(SEP + "lib" + SEP + "security")){
@@ -141,23 +150,28 @@ public class InstallCert {
 		//ks.load(new FileInputStream( certPath ), certPasswd.toCharArray() );
         ks.load(in, passphrase);
         in.close();
+        
+//    	Socket sock = new Socket("192.168.1.1", 3128);
+//    	doHandshakeTunnel(sock, host, port);
 
-        SSLContext context = SSLContext.getInstance("TLS");
+        SSLContext context = SSLContext.getInstance("TLS");//TSL,SSL
         TrustManagerFactory tmf = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
         tmf.init(ks);
         X509TrustManager defaultTrustManager = (X509TrustManager) tmf.getTrustManagers()[0];
         SavingTrustManager tm = new SavingTrustManager(defaultTrustManager);
         context.init(null, new TrustManager[]{tm}, null);
-        SSLSocketFactory factory = context.getSocketFactory();
-        
-        
+           
         InetAddress address = InetAddress.getByName(host);
-
         System.out.println("Opening connection to " + host + ":" + port + " with InetAdress: "+address.toString()+" ...");
+        
+        SSLSocketFactory factory = context.getSocketFactory();
         SSLSocket socket = (SSLSocket) factory.createSocket(host, port);
+        //SSLSocket socket = (SSLSocket)factory.getDefault().createSocket(host, port);
+        //socket.setEnabledProtocols(new String[]{"SSLv3", "TLSv1.1"});
         socket.setSoTimeout(10000);
         try {
             System.out.println("Starting SSL handshake...");
+            //doHandshakeTunnel(socket, host, port);
             socket.startHandshake();
             socket.close();
             System.out.println();
@@ -201,8 +215,25 @@ public class InstallCert {
             return;
         }
 
-        X509Certificate cert = chain[k];        
-        String alias = host + "-" + (k + 1);
+        X509Certificate cert = chain[k];  
+        
+        boolean aliasIsAlreadySaved = false;
+        Enumeration enumeration = ks.aliases();
+        while(enumeration.hasMoreElements()) {
+            String alias = (String)enumeration.nextElement();
+            if(alias.equalsIgnoreCase(host)){
+            	aliasIsAlreadySaved = true;
+            	break;
+            }
+            //Certificate certificate = keystore.getCertificate(alias);
+        }
+        String alias="";
+        if(aliasIsAlreadySaved){
+        	alias = host + "-" + (k + 1);
+        }else{
+        	alias = host;
+        }
+
         ks.setCertificateEntry(alias, cert);
 
         OutputStream out = new FileOutputStream(file);
@@ -294,6 +325,66 @@ public class InstallCert {
         SSLContext sc = SSLContext.getInstance("SSL");
         sc.init(null, trustManagers, null);
         SSLContext.setDefault(sc);
+    }
+    
+    static void doHandshakeTunnel(Socket tunnel, String host, int port) throws IOException
+    {
+    	OutputStream out = tunnel.getOutputStream();
+    	String msg = "CONNECT " + host + ":" + port + " HTTP/1.0\n"
+    	              + "User-Agent: "
+    	             + sun.net.www.protocol.http.HttpURLConnection.userAgent
+    	             + "\r\n\r\n";
+    	byte b[];
+    	try {
+    	/*
+    	* We really do want ASCII7 -- the http protocol doesn't change
+    	* with locale.
+    	*/
+    	   b = msg.getBytes("ASCII7");
+    	} catch (UnsupportedEncodingException ignored) {
+    	    b = msg.getBytes();
+    	}
+    	out.write(b);
+    	out.flush();
+
+    	byte           reply[] = new byte[200];
+    	int            replyLen = 0;
+    	int            newlinesSeen = 0;
+    	boolean        headerDone = false;     /* Done on first newline */
+
+    	InputStream    in = tunnel.getInputStream();
+    	boolean        error = false;
+
+    	while (newlinesSeen < 2) {
+    		int i = in.read();
+    	    if (i < 0) {
+    			throw new IOException("Unexpected EOF from proxy");
+    		}
+    		if (i == '\n') {
+    			headerDone = true;
+    			++newlinesSeen;
+    		} else if (i != '\r') {
+    			newlinesSeen = 0;
+    			if (!headerDone && replyLen < reply.length) {
+    				reply[replyLen++] = (byte) i;
+    			}
+    		}
+    	}
+
+    	String replyStr;
+    	try {
+    		replyStr = new String(reply, 0, replyLen, "ASCII7");
+    	} catch (UnsupportedEncodingException ignored) {
+    		replyStr = new String(reply, 0, replyLen);
+    	}
+
+    	//if (!replyStr.startsWith("HTTP/1.0 200")) {
+    	if(replyStr.toLowerCase().indexOf(
+    		"200 connection established") == -1){
+    		throw new IOException("Unable to tunnel through "
+    			+ "192.168.1.1" + ":" + 3128
+    			+ ".  Proxy returns \"" + replyStr + "\"");
+    	}
     }
     
 

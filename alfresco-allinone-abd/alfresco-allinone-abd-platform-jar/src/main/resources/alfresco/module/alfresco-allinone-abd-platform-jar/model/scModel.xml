@@ -35,6 +35,17 @@
                  </list> 
              </parameter> 
          </constraint> 
+         
+         <constraint name="sc:statusIndicatorList" type="LIST"> 
+            <parameter name="allowedValues"> 
+                <list> 
+                    <value>Green</value> 
+                    <value>Yellow</value> 
+                    <value>Red</value> 
+                </list> 
+            </parameter> 
+        </constraint> 
+         
      </constraints> 
 
 	<types> 
@@ -100,8 +111,18 @@
         <type name="sc:legalDoc"> 
             <title>Someco Legal Document</title> 
             <parent>sc:doc</parent> 
-        </type> 
+        </type>
         
+        <!-- WITH ASPECT -->
+        
+        <type name="sc:opsDoc"> 
+            <title>Someco Operations Document</title> 
+                <parent>sc:doc</parent> 
+                <mandatory-aspects> 
+                <aspect>sc:statusable</aspect> 
+                </mandatory-aspects> 
+        </type> 
+               
         <!-- POLICY -->
     
 	    <type name="sc:hrPolicy"> 
@@ -191,6 +212,24 @@
 	            </target> 
 	            </child-association> 
 	        </associations> 
+        </aspect> 
+        
+        <aspect name="sc:statusable"> 
+          <title>Someco Status Tracking</title> 
+            <properties> 
+              <property name="sc:statusIndicator"> 
+              <type>d:text</type> 
+              <mandatory>true</mandatory> 
+              <default>Green</default> 
+              <constraints> 
+                <constraint ref="sc:statusIndicatorList" /> 
+              </constraints> 
+            </property> 
+            <property name="sc:statusSummary"> 
+                <type>d:text</type> 
+                <mandatory>true</mandatory> 
+            </property> 
+          </properties> 
         </aspect> 
         
     </aspects> 

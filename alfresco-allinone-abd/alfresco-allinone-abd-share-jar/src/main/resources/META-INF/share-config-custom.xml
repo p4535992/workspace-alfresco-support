@@ -444,7 +444,7 @@
             </form>
         </forms>
     </config>
-
+    
     <!-- Create and search forms for acme:document -->
     <config evaluator="model-type" condition="acme:document">
         <forms>
@@ -701,7 +701,18 @@
                       <show id="cm:modifier" for-mode="view" /> 
                       <show id="cm:modified" for-mode="view" />                     
                       <show id="sc:relatedDocuments" /> 
+                      
+                      <show id="sc:statusIndicator" /> 
+                	  <show id="sc:statusSummary" />
                   </field-visibility> 
+                  <appearance> 
+		              <field id="sc:statusSummary"> 
+		                <control template="/org/alfresco/components/form/controls/textarea.ftl"> 
+		                    <control-param name="rows">5</control-param> 
+		                    <control-param name="columns">50</control-param> 
+		                </control> 
+		              </field> 
+	              </appearance> 
               </form> 
           </forms> 
        </config> 

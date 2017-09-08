@@ -11,7 +11,12 @@ import java.security.NoSuchAlgorithmException;
 import java.security.Provider;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
+import java.util.Date;
 import java.util.Enumeration;
+import java.util.Map;
+import java.util.TreeMap;
+
+import org.apache.commons.collections.map.HashedMap;
 
 /**
  * 
@@ -34,17 +39,22 @@ public class ListCertificate {
 		KeyStore keystore = KeyStore.getInstance(KeyStore.getDefaultType());
         keystore.load(new FileInputStream(pathKeyStore), password.toCharArray());
         Enumeration<String> aliases = keystore.aliases();
+        Map<String,String> map = new HashedMap();
         while(aliases.hasMoreElements()){
             String alias = aliases.nextElement();
             if(keystore.getCertificate(alias).getType().equals("X.509")){
+            	Date expired = ((X509Certificate) keystore.getCertificate(alias)).getNotAfter();
 //            	X509Certificate myCert = (X509Certificate)CertificateFactory.getInstance("X509").generateCertificate(// string encoded with default charset
 //                       new ByteArrayInputStream(cert.getBytes())
 //                        );
-                System.out.println(alias + " expires " + ((X509Certificate) keystore.getCertificate(alias)).getNotAfter());
-                
-                
+                //System.out.println(alias + " expires " + ((X509Certificate) keystore.getCertificate(alias)).getNotAfter());
+                map.put(alias, expired.toString());                
             }
     	}
+        Map<String, String> treeMap = new TreeMap<String, String>(map);
+        for (Map.Entry entry : treeMap.entrySet()) {
+            System.out.println(entry.getKey() + " expires " + entry.getValue());
+        }
 	}
 	
 	

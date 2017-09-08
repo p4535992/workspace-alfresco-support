@@ -82,7 +82,13 @@
 		    <artifactId>httpclient</artifactId>
 		    <version>4.5.3</version>
 		</dependency>
-		  
+		<dependency>
+		 	<groupId>com.zebra.sdk</groupId>
+		    <artifactId>zsdk_api</artifactId>		    
+			<version>2.9.2275</version>	
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/zsdk_api-2.9.2275.jar</systemPath>		
+		</dependency>
   </dependencies>
   <build>
     <finalName>abd-utility-test</finalName>

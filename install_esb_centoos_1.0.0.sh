@@ -295,7 +295,7 @@ if [ ! -d "$SERVICEMIX_HOME" ]; then
 	
 	feature:install webconsole
 	#installazione automatica con il nome del servizio KARAF-service
-	feature:install wrapper
+	#feature:install wrapper
 	
 	#wrapper:install -s manual -n servicemix -d servicemix
 	#wrapper:install -s AUTO_START -n KARAF -d Karaf -D Karaf
@@ -304,7 +304,7 @@ if [ ! -d "$SERVICEMIX_HOME" ]; then
 	#wrapper:install -s AUTO_START -n servicemix6 -d servicemix6 -D "ServiceMix 6"
 	#wrapper:install -s AUTO_START -n KARAF -d Karaf -D "Karaf Service"
 	
-	#wrapper:install -s AUTO_START -n $SERVICEMIX_NAME_SCRIPT_SERVICE -d $SERVICEMIX_NAME_SCRIPT_SERVICE -D $SERVICEMIX_NAME_SCRIPT_SERVICE
+	wrapper:install -s AUTO_START -n $SERVICEMIX_NAME_SCRIPT_SERVICE -d $SERVICEMIX_NAME_SCRIPT_SERVICE -D $SERVICEMIX_NAME_SCRIPT_SERVICE
 	shutdown
 	yes
 	
