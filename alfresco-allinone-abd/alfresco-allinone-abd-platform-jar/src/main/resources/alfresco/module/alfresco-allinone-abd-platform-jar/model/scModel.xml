@@ -102,19 +102,21 @@
             <title>Someco Sales Document</title> 
             <parent>sc:doc</parent> 
         </type> 
- 
-        <type name="sc:opsDoc"> 
-            <title>Someco Operations Document</title> 
-            <parent>sc:doc</parent> 
-        </type> 
- 
+
         <type name="sc:legalDoc"> 
             <title>Someco Legal Document</title> 
             <parent>sc:doc</parent> 
         </type>
         
-        <!-- WITH ASPECT -->
         
+        <!--  WITH  NO ASPECT -->
+        <!--  
+        <type name="sc:opsDoc"> 
+            <title>Someco Operations Document</title> 
+            <parent>sc:doc</parent> 
+        </type> 
+        -->
+        <!-- WITH ASPECT -->
         <type name="sc:opsDoc"> 
             <title>Someco Operations Document</title> 
                 <parent>sc:doc</parent> 
