@@ -35,7 +35,7 @@ rpm --nosignature -ivh --force --prefix=/usr/java/ /usr/local/src/backup/2017-08
 #rpm --nosignature -ivh /tmp/alfrescoinstall/jdk-8u141-linux-x64.rpm
 #rpm --nosignature -Uvh /tmp/alfrescoinstall/jdk-8u141-linux-x64.rpm
 export JAVA_HOME=/usr/java/default
-export JRE_HOME=/usr/java/jre
+export JRE_HOME=/usr/java/default/jre
 export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
 	
 echo

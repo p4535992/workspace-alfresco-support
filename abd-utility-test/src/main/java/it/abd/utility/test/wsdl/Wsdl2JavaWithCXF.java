@@ -30,16 +30,21 @@ public class Wsdl2JavaWithCXF {
 	private static List<String> webServicesSip = new ArrayList<String>(Arrays.asList(
 	    //https://condidoc-test.regione.toscana.it/IrisBusiness/business/soap/WSCoreEsitoSipService SERVIZI INVIO
 	    //https://condidoc-test.regione.toscana.it/IrisBusiness/business/soap/WSCoreReceiveSipService SERVIZI STATUS
-		"https://condidoc-test.regione.toscana.it/IrisBusiness/business/soap/ServiceSoap?wsdl",
-		"https://condidoc-test.regione.toscana.it/IrisBusiness/business/soap/WSCoreReceiveSipService?wsdl",
-		"https://condidoc-test.regione.toscana.it:443/IrisBusiness/business/soap/WSCoreReceiveSipFromGateService?wsdl",
-		"https://condidoc-test.regione.toscana.it:443/IrisBusiness/business/soap/WSCoreManifestSipService?wsdl",
-		"https://condidoc-test.regione.toscana.it:443/IrisBusiness/business/soap/WSCoreSendSipService?wsdl",
-		"https://condidoc-test.regione.toscana.it:443/IrisBusiness/business/soap/WSCoreEsitoSipService?wsdl",
-		"https://condidoc-test.regione.toscana.it:443/IrisBusiness/business/soap/WSCoreDIPSincroService?wsdl",
-		"https://condidoc-test.regione.toscana.it:443/IrisBusiness/business/soap/WSCoreDIPGetService?wsdl",
-		"https://condidoc-test.regione.toscana.it:443/IrisBusiness/business/soap/WSCoreDIPAsincroService?wsdl",
-		"https://condidoc-test.regione.toscana.it:443/IrisBusiness/business/soap/WSCoreDIPAsincroFromGateService?wsdl"	
+//		
+//		"https://condidoc-test.regione.toscana.it/IrisBusiness/business/soap/ServiceSoap?wsdl",
+//		"https://condidoc-test.regione.toscana.it/IrisBusiness/business/soap/WSCoreReceiveSipService?wsdl",
+//		"https://condidoc-test.regione.toscana.it:443/IrisBusiness/business/soap/WSCoreReceiveSipFromGateService?wsdl",
+//		"https://condidoc-test.regione.toscana.it:443/IrisBusiness/business/soap/WSCoreManifestSipService?wsdl",
+//		"https://condidoc-test.regione.toscana.it:443/IrisBusiness/business/soap/WSCoreSendSipService?wsdl",
+//		"https://condidoc-test.regione.toscana.it:443/IrisBusiness/business/soap/WSCoreEsitoSipService?wsdl",
+//		"https://condidoc-test.regione.toscana.it:443/IrisBusiness/business/soap/WSCoreDIPSincroService?wsdl",
+//		"https://condidoc-test.regione.toscana.it:443/IrisBusiness/business/soap/WSCoreDIPGetService?wsdl",
+//		"https://condidoc-test.regione.toscana.it:443/IrisBusiness/business/soap/WSCoreDIPAsincroService?wsdl",
+//		"https://condidoc-test.regione.toscana.it:443/IrisBusiness/business/soap/WSCoreDIPAsincroFromGateService?wsdl"
+			
+		//"file:///C:/Users/Pancio/Desktop/test_wsdl/wsdl/ArubaSignService.wsdl"
+		//"file:///C:/Users/Pancio/Desktop/test_wsdl/wsdl/ArubaSignService-v1.13.2.wsdl"
+	    "file:///C:/Users/Pancio/Desktop/test_wsdl/wsdl/ArubaSignService-v1.13.7.wsdl"
 	));
 
 
@@ -97,9 +102,10 @@ public class Wsdl2JavaWithCXF {
 	        	String[] myargs = new String[] { 
 	        			
 	        			"-p",
-	        			"it.abd.alfresco.conservazione.sip.wsdl." + idStr,
+	        			//"it.abd.alfresco.conservazione.sip.wsdl." + idStr,
+	        			"it.arubapec.arubasignservice.i.xiii.vii",
 	        			"-d",
-	        			"C:\\Users\\Pancio\\Desktop",
+	        			"C:\\Users\\Pancio\\Desktop\\test_wsdl",
 	        			"-client", //generate starting point for a client maniline
 	        			"-server",
 	        			"-impl",

@@ -9,7 +9,7 @@
   
   
   <properties>
-  		<cxf.version>3.1.11</cxf.version>
+  		<cxf.version>3.0.4</cxf.version>
   </properties>
   
   <dependencies>

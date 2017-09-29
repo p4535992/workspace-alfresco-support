@@ -22,6 +22,8 @@ https://github.com/Acosix/alfresco-utility.git
 
 https://github.com/share-extras/execute-script-action
 
+https://github.com/gravitonian/all-in-one-spock-testing.git
+
 ** COOL ADDON
 
 https://github.com/form4/alfresco-triggerauthenticationsync.git
@@ -31,6 +33,8 @@ https://github.com/jpotts/share-site-creators.git
 ### Customize Form and Surf extensions
 
 https://github.com/douglascrp/alfresco-value-assistance.git
+
+https://github.com/covolution/activiti-custom-reports.git
 
 ** DIGITAL SIGN PDF
 

@@ -69,7 +69,8 @@ import java.util.List;
  * NOTA: devi far corre la classe come amministratore su windows
  * e.g. keytool -import -alias dax -file "C:\Users\Pancio\Desktop\OLD CERT\condidoc-testregionetoscanait.crt" -keystore "C:\Program Files\Java\jdk1.7.0_55\jre\lib\security\cacerts"
  * e.g. "C:\Users\Pancio\Desktop\OLD CERT\condidoc-testregionetoscanait.crt" dax2 changeit "C:\Program Files\Java\jdk1.7.0_55\jre\lib\security\cacerts"
- * e.g. "C:\Users\Pancio\Desktop\condidoc-testregionetoscanait.crt" 
+ * e.g. "C:\Users\Pancio\Desktop\condidoc-testregionetoscanait.crt"
+ * e.g. /usr/java/default/bin/keytool -import -alias abdpostaabdit -file "/usr/local/src/deployABD/2017-09-15_dialogopa_chivasso_patch_generale/abdpostaabdit.crt" -keystore "/usr/java/default/jre/lib/security/cacerts" 
  */
 public class InstallCertPhisicalFile {
 
