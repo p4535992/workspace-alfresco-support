@@ -1,16 +1,21 @@
 ### Start Archetype alfresco
 mvn archetype:generate -Dfilter=org.alfresco.maven.archetype:alfresco-allinone-archetype
 
+### REPOSITORY LEARNING
 
-### REPOSITORY TO REMEMBER
-
-https://github.com/ideiudicibus/sinekarta.git 
-
-https://github.com/jumanor/matamarcianos.git
+https://github.com/jpotts/alfresco-get-latest-document.git e https://ecmarchitect.com/archives/2012/05/08/1592
 
 https://github.com/jpotts/alfresco-api-java-examples.git
 
 https://github.com/jpotts/alfresco-developer-series.git
+
+### REPOSITORY TO REMEMBER
+
+https://github.com/Smile-SA/alfresco-basket.git
+
+https://github.com/ideiudicibus/sinekarta.git 
+
+https://github.com/jumanor/matamarcianos.git
 
 https://github.com/jpotts/share-announcements.git
 
