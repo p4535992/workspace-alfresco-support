@@ -22,7 +22,7 @@ public class CreateKeystore {
 	}
 	
 	//TODO DA REALIZZARE
-	//keytool -genkeypair -keystore clientkeystore.ks -keyalg RSA -alias "client" -keypass "password" -dname "cn=Client, c=US"
+	//keytool -genkeypair -keystore clientkeystore.ks -keyalg RSA -alias "client" -keypass "password" -validity 3650 -dname "cn=Client, c=US"
 	public static void createKeystore(){
 		
 	}

@@ -43,11 +43,14 @@ https://github.com/covolution/activiti-custom-reports.git
 
 ** DIGITAL SIGN PDF
 
+https://github.com/zylklab/alfresco-sinadura.git
+
 https://github.com/rouxemmanuel/DigitalSigning.git 
 
 https://github.com/keensoft/alfresco-esign-cert.git 
 
 https://github.com/form4/alfresco-pdf-toolkit.git
+
 https://github.com/ntmcminn/alfresco-pdf-toolkit
 
 ** NOT RELATED TO ALFRESCO BUT USEFUL 
