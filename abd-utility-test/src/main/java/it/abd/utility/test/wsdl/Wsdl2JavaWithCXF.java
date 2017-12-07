@@ -1,5 +1,6 @@
 package it.abd.utility.test.wsdl;
 
+import java.io.File;
 import java.net.URI;
 import java.security.GeneralSecurityException;
 import java.security.SecureRandom;
@@ -44,7 +45,8 @@ public class Wsdl2JavaWithCXF {
 			
 		//"file:///C:/Users/Pancio/Desktop/test_wsdl/wsdl/ArubaSignService.wsdl"
 		//"file:///C:/Users/Pancio/Desktop/test_wsdl/wsdl/ArubaSignService-v1.13.2.wsdl"
-	    "file:///C:/Users/Pancio/Desktop/test_wsdl/wsdl/ArubaSignService-v1.13.7.wsdl"
+	    //"file:///C:/Users/Pancio/Desktop/test_wsdl/wsdl/ArubaSignService-v1.13.7.wsdl"
+		"file:///C:/workspace-eclipse-2017/workspace-alfresco-support/abd-utility-test/src/main/resources/wsdl/FirmaRemotaService.wsdl"
 	));
 
 
@@ -91,6 +93,7 @@ public class Wsdl2JavaWithCXF {
 	        //With cxf
 	        try {       	
 	        	URI uri = new URI(url);
+	        	File f = new File(uri);
 	        	String[] segments = uri.getPath().split("/");
 	        	String idStr = segments[segments.length-1];
 	        	idStr = idStr.replace("?wsdl", "");
@@ -103,18 +106,22 @@ public class Wsdl2JavaWithCXF {
 	        			
 	        			"-p",
 	        			//"it.abd.alfresco.conservazione.sip.wsdl." + idStr,
-	        			"it.arubapec.arubasignservice.i.xiii.vii",
+	        			//"it.arubapec.arubasignservice.i.xiii.vii",
+	        			"it.abd.esb.firmaremota",
 	        			"-d",
 	        			"C:\\Users\\Pancio\\Desktop\\test_wsdl",
 	        			"-client", //generate starting point for a client maniline
 	        			"-server",
 	        			"-impl",
+	        			"-wsdlLocation",
+	        			"classpath:wsdl"+"/"+f.getName(),
 	        			//"-exsh false",
 	        			//"-dns true",
 	        			//"-dex true",
 	        			"-verbose",
-	        			url 
+	        			url	        			
 				};
+	        	System.out.println(Arrays.toString(myargs));
 	        	WSDLToJava.main(myargs);
 		      } catch (Exception e) {
 		        e.printStackTrace();

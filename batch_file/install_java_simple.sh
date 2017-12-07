@@ -33,7 +33,7 @@ done
 
 #delete /var/lib/alternatives/ on CentOS 6&7
 
-#rpm --nosignature -ivh --force --prefix=/usr/java/ /usr/local/src/jdk-8u141-linux-x64.rpm
+#rpm --nosignature -ivh --force --prefix=/usr/java/ /usr/local/src/jdk-8u151-linux-x64.rpm
 rpm --nosignature -ivh --force --prefix=/usr/java/ /usr/local/src/jdk-9_linux-x64_bin.rpm
 
 #rpm --nosignature -ivh /tmp/alfrescoinstall/jdk-8u141-linux-x64.rpm

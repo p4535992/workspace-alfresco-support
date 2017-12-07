@@ -89,6 +89,24 @@
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/zsdk_api-2.9.2275.jar</systemPath>		
 		</dependency>
+		
+		<dependency>
+		    <groupId>org.bouncycastle</groupId>
+		    <artifactId>bcprov-jdk15on</artifactId>
+		    <version>1.58</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.bouncycastle</groupId>
+		    <artifactId>bcpkix-jdk15on</artifactId>
+		    <version>1.58</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.6</version>
+		</dependency>
+		
   </dependencies>
   <build>
     <finalName>abd-utility-test</finalName>
@@ -111,7 +129,9 @@
 				                <extraargs>
 				                    <extraarg>-impl</extraarg>
 				                    <extraarg>-verbose</extraarg>
-				                </extraargs>		                    
+				                </extraargs>
+				                <wsdl>${project.basedir}/src/main/resources/wsdl/FooService.wsdl</wsdl>
+                                <wsdlLocation>classpath:wsdl/FooService.wsdl</wsdlLocation>		                    
 		                    </wsdlOption>
 		                </wsdlOptions>
 		            </configuration>
@@ -122,19 +142,7 @@
 		    </executions>
 		</plugin>
 		-->
-		
-<!-- 		 <plugin> -->
-<!--                 <groupId>org.springframework.boot</groupId> -->
-<!--                 <artifactId>spring-boot-maven-plugin</artifactId> -->
-<!--                 <version>1.4.0.RELEASE</version> -->
-<!--                 <executions> -->
-<!--                     <execution> -->
-<!--                         <goals> -->
-<!--                             <goal>repackage</goal> -->
-<!--                         </goals> -->
-<!--                     </execution> -->
-<!--                 </executions> -->
-<!-- 		</plugin> -->
+
     </plugins>
     
     
