@@ -1,5 +1,0 @@
-
-
-share-config-custom.xml in alfresco-community\tomcat\shared\classes\alfresco\web-extension
-
-share-form-config.xml in alfresco-community\tomcat\webapps\share\WEB-INF\classes\alfresco

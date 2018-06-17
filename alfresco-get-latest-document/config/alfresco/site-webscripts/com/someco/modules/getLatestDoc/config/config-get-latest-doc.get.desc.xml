@@ -1,5 +1,0 @@
-<webscript>
-  <shortname>config-get-latest-doc</shortname>
-  <description>Configuration dialog for Get Latest Document Dashlet</description>
-  <url>/modules/politie/get-latest-doc/config</url>
-</webscript>
