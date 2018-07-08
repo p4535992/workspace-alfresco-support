@@ -1,0 +1,38 @@
+Vagrant.configure(2) do |config| 
+# SET IP ADDRESS
+config.vm.network "private_network", ip: "192.168.0.40"
+# Launch command vagrant box add box-cutter/centos72
+config.vm.box = "box-cutter/centos72" 
+#config.vm.box_url = "http://files.vagrantup.com/box-cutter/centos72.box"
+#Run installer script
+#config.vm.provision :shell, :path => "install.sh"
+
+# Redirect Tomcat Port 
+#config.vm.network "forwarded_port", guest: 8080, host: 8080 
+# Redirect JPDA Debugging Port 
+#config.vm.network "forwarded_port", guest: 8000, host: 8000 
+# Redirect Custom NodeJS port 
+#config.vm.network "forwarded_port", guest: 9000, host: 9000 
+#Set size of the main disk (you must install the vagrant plugin 'vagrant plugin install vagrant-disksize')
+if Vagrant.has_plugin?("vagrant-disksize")
+	config.disksize.size = '15GB'
+end  
+
+#Set size of the main disk (you must install the vagrant plugin 'vagrant plugin install vagrant-proxyconf')
+#if Vagrant.has_plugin?("vagrant-proxyconf")
+#	config.proxy.http     = "http://192.168.1.188:3128/"
+#	config.proxy.https    = "http://192.168.1.188:3128/"
+#	config.proxy.no_proxy = "localhost,127.0.0.1,.example.com"
+#end
+
+
+
+config.vm.provider "virtualbox" do |v| 
+# Customize the amount of memory on the VM:
+v.memory = 4096 
+# Display the VirtualBox GUI when booting the machine
+# v.gui = true
+# Number of cpus
+v.cpus = 1 
+  end 
+end
